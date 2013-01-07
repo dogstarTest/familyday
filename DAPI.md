@@ -95,15 +95,8 @@ error: 	代表是否获取数据错误状态， 1 失败， 0成功。
 }`
 
 
-
-
-
-
-
-
-
 注：开发的时候如果想方便的查看每个接口的返回信息，可以在url中增加一个debug=1的参数，如：
-http://www.familyday.com.cn/dapi/info.php?ac=ad&debug=1
+网站域名/dapi/info.php?ac=ad&debug=1
 若没有此参数，将返回json数据格式。
 
 
@@ -113,7 +106,7 @@ http://www.familyday.com.cn/dapi/info.php?ac=ad&debug=1
 【参数】  
 无  
 【调用方式】  
-http://www.familyday.com.cn/dapi/info.php?ac=ad  
+网站域名/dapi/info.php?ac=ad  
 【返回值】  
 > 
 
@@ -127,7 +120,7 @@ http://www.familyday.com.cn/dapi/info.php?ac=ad
 【参数】  
 无
 【调用方式】  
-http://www.familyday.com.cn/dapi/space.php?do=topic  
+网站域名/dapi/space.php?do=topic  
 【返回值】  
 >  
 
@@ -147,11 +140,12 @@ http://www.familyday.com.cn/dapi/space.php?do=topic
 	perpage: 分页大小， 默认10
 	page:	当前页
 【调用方式】  
-http://www.familyday.com.cn/dapi/space.php?do=home&uid=1  
+网站域名/dapi/space.php?do=home&uid=1  
 【返回值】  
-1）多维数组：  
+
 >
 
+	1）多维数组：  
 		avatar: 		发布用户头像url
 		name: 			用户昵称
 		note : 			关系备注
@@ -193,17 +187,17 @@ http://www.familyday.com.cn/dapi/space.php?do=home&uid=1
 		fuid:				对象人uid
 		fname:				对象人名字
 		？？：				被操作的对象名称
-		id：					被操作的id
-		idtype：				被操作的类型
+		id：				被操作的id
+		idtype：			被操作的类型
 	6) 发布渠道 
 		come: 				发布的渠道  
 	
 	7） 最新的两条评论  
 		comment： 	数组
-		authorid：		评论人的uid
-		authorname:		评论人的名字
-		message：		评论内容
-		dateline：		评论时间
+			authorid：		评论人的uid
+			authorname:		评论人的名字
+			message：		评论内容
+			dateline：		评论时间
 
 
  
@@ -215,7 +209,7 @@ http://www.familyday.com.cn/dapi/space.php?do=home&uid=1
 	uid: 照片拥有人的uid
 	id:	照片帖子id
 【调用方式】  
-http://www.familyday.com.cn/dapi/space.php?do=photo&uid=1&id=293  
+网站域名/dapi/space.php?do=photo&uid=1&id=293  
 【返回值】  
 >  
 
@@ -231,15 +225,14 @@ http://www.familyday.com.cn/dapi/space.php?do=photo&uid=1&id=293
 	fuid:			转采uid
 	fname:			转采者名字
 	3） 
-	rephotonum：		转采数量
+	rephotonum：	转采数量
 	replynum：		评论数量
 	love:			收藏数量
 	4) 正文url
 	piclist:		多个图片组合起来的数组
 	pic:			图片地址	
 	title：			图片标题
-	message:		改组照片的描述
-	正文  =  piclist + message 组合起来显示
+	message:		改组照片的描述,正文  =  piclist + message 组合起来显示
 	5）
 	lng：			经度
 	lat：			纬度
@@ -250,10 +243,10 @@ http://www.familyday.com.cn/dapi/space.php?do=photo&uid=1&id=293
 		name:		在一起的人的名字
 		avatar:		在一起的人的头像
 	7) 评论（表态）
-	commentlist:	 多维数组
-	authorid：		评论人uid
-	avatar:			评论人头像
-	message：		评论内容
+	commentlist:多维数组
+		authorid：	评论人uid
+		avatar:		评论人头像
+		message：	评论内容
 	8) 发布渠道 
 	come:			发布渠道
  
@@ -265,7 +258,7 @@ http://www.familyday.com.cn/dapi/space.php?do=photo&uid=1&id=293
 	uid:  日志拥有人的uid
 	id:	 日志id 
 【调用方式】
-http://www.familyday.com.cn/dapi/space.php?do=blog&uid=1&id=18  
+网站域名/dapi/space.php?do=blog&uid=1&id=18  
 【返回值】  
 >  
 		
@@ -309,10 +302,10 @@ http://www.familyday.com.cn/dapi/space.php?do=blog&uid=1&id=18
 >  
 	
 	do:	 video
-	uid:  视频拥有人的uid
+	uid: 视频拥有人的uid
 	id:	 视频id  
 【调用方式】  
-http://www.familyday.com.cn/dapi/space.php?do=video&uid=1&id=4  
+网站域名/dapi/space.php?do=video&uid=1&id=4  
 【返回值】  
 >  
 		
@@ -328,7 +321,7 @@ http://www.familyday.com.cn/dapi/space.php?do=video&uid=1&id=4
 	fuid:			转采uid
 	fname:			转采者名字
 	3） 
-	revideonum：		转采数量
+	revideonum：	转采数量
 	replynum：		评论数量
 	love:			收藏数量
 	4) 视频url
@@ -349,7 +342,7 @@ http://www.familyday.com.cn/dapi/space.php?do=video&uid=1&id=4
 		avatar:		评论人头像
 		message：	评论内容
 	8) 发布渠道 
-	come:		发布渠道
+	come:			发布渠道
 
 
 
@@ -364,7 +357,7 @@ http://www.familyday.com.cn/dapi/space.php?do=video&uid=1&id=4
 	id:	 活动id
 
 【调用方式】  
-http://www.familyday.com.cn/dapi/space.php?do=event&uid=1&id=223  
+网站域名/dapi/space.php?do=event&uid=1&id=223  
 【返回值】  
 >  
 
@@ -380,12 +373,12 @@ http://www.familyday.com.cn/dapi/space.php?do=event&uid=1&id=223
 	fuid:			转采uid
 	fname:			转采者名字
 	3） 
-	reeventnum：		转采数量
+	reeventnum：	转采数量
 	replynum：		评论数量
 	love:			收藏数量
 	4) 活动信息
 	title:			活动标题
-	detail：			活动主要内容
+	detail：		活动主要内容
 	dateline:		活动时间
 	lng：			经度
 	lat：			纬度
@@ -396,10 +389,10 @@ http://www.familyday.com.cn/dapi/space.php?do=event&uid=1&id=223
 		name:		在一起的人的名字
 		avatar:		在一起的人的头像
 	6) 评论（表态）
-	commentlist:	 多维数组
-		authorid：		评论人uid
-		avatar:			评论人头像
-		message：		评论内容
+	commentlist:多维数组
+		authorid：	评论人uid
+		avatar:		评论人头像
+		message：	评论内容
 	7) 发布渠道 
 	come:			发布渠道
 	
@@ -416,7 +409,7 @@ http://www.familyday.com.cn/dapi/space.php?do=event&uid=1&id=223
 	perpage:	每页数量，默认10
 
 【调用方式】  
-http://www.familyday.com.cn/dapi/space.php?do=comment&id=293&idtype=photoid  
+网站域名/dapi/space.php?do=comment&id=293&idtype=photoid  
 【返回值】  
 >  
 
@@ -440,7 +433,7 @@ http://www.familyday.com.cn/dapi/space.php?do=comment&id=293&idtype=photoid
 	perpage:	家庭成员的分页数, 默认10
 
 【调用方式】  
-http://www.familyday.com.cn/dapi/space.php?uid=1
+网站域名/dapi/space.php?uid=1
 【返回值】  
 >  
 
@@ -478,7 +471,7 @@ http://www.familyday.com.cn/dapi/space.php?uid=1
 	page:			当前页，默认1
 	perpage:		每页大小，默认1 (如果是ipad版本，可以传递大点的值过来,比如：20)  
 【调用方式】  
-http://www.familyday.com.cn/dapi/space.php?do=familyspace&uid=4&tagid=377  
+网站域名/dapi/space.php?do=familyspace&uid=4&tagid=377  
 【返回值】  
 >  
 
@@ -492,7 +485,7 @@ http://www.familyday.com.cn/dapi/space.php?do=familyspace&uid=4&tagid=377
 		subject:	标题
 		message:	概述
 		comment	 评论内容【数组】
-			authoreid		评论人的uid
+			authoreid	评论人的uid
 			author		评论人的名字
 			message		评论内容
 
@@ -508,7 +501,7 @@ http://www.familyday.com.cn/dapi/space.php?do=familyspace&uid=4&tagid=377
 	page:		当前页, 默认1
 	perpage:	分页大小，默认10
 【调用方式】  
-http://www.familyday.com.cn/dapi/space.php?do=pm&filter=privatepm&uid=1  
+网站域名/dapi/space.php?do=pm&filter=privatepm&uid=1  
 【返回值】  
 >  
 
@@ -534,7 +527,7 @@ http://www.familyday.com.cn/dapi/space.php?do=pm&filter=privatepm&uid=1
 	page:		当前页, 默认1
 	perpage:	分页大小，默认10  
 【调用方式】  
-http://www.familyday.com.cn/dapi/space.php?do=dialog&uid=1&touid=4  
+网站域名/dapi/space.php?do=dialog&uid=1&touid=4  
 【返回值】  
 >  
 
@@ -569,7 +562,7 @@ http://www.familyday.com.cn/dapi/space.php?do=dialog&uid=1&touid=4
 	page:			当前页, 默认1
 	perpage:		分页大小，默认10
 【调用方式】  
-http://www.familyday.com.cn/dapi/space.php?do=notice&uid=4  
+网站域名/dapi/space.php?do=notice&uid=4  
 【返回值】  
 >  
 
@@ -593,7 +586,7 @@ http://www.familyday.com.cn/dapi/space.php?do=notice&uid=4
 
 	uid:			用户id
 【调用方式】  
-http://www.familyday.com.cn/dapi/space.php?do=setup&uid=1  
+网站域名/dapi/space.php?do=setup&uid=1  
 【返回值】  
 >  
 
@@ -618,7 +611,7 @@ http://www.familyday.com.cn/dapi/space.php?do=setup&uid=1
 	uid:			自己的用户id
 	fuid:			对方的用户id  
 【调用方式】  
-http://www.familyday.com.cn/dapi/space.php?do=friend&uid=4&fuid=1  
+网站域名/dapi/space.php?do=friend&uid=4&fuid=1  
 【返回值】  
 >  
 
@@ -639,18 +632,18 @@ http://www.familyday.com.cn/dapi/space.php?do=friend&uid=4&fuid=1
 
 	uid:		用户id  
 【调用方式】  
-http://www.familyday.com.cn/dapi/space.php?do=fmembers&uid=1  
+网站域名/dapi/space.php?do=fmembers&uid=1  
 【返回值】  
 >  
 
-	uid:			自己的用户id
-	name:			自己的昵称
-	avatar:			自己的头像
-	fmembers：		自己的家人数量
-	fmemberlist：	家人列表【数组】
+	uid:				自己的用户id
+	name:				自己的昵称
+	avatar:				自己的头像
+	fmembers：			自己的家人数量
+	fmemberlist：家人列表【数组】
 			uid			家人的用户id
 		    name		家人的昵称
-		    avatar：		家人的头像
+		    avatar：	家人的头像
 		    note:		家人关系备注 
 		    feeds:		家人动态数量 
 		    fmembers：	家人的家人数量
@@ -668,7 +661,7 @@ http://www.familyday.com.cn/dapi/space.php?do=fmembers&uid=1
 	kw:					搜索的关键词,可以是电话号码或者名称
 	usernamelist:		post形式发送到服务器的手机号码(或者新浪/腾讯微博的用户名)  
 【调用方式】  
-http://www.familyday.com.cn/dapi/ space.php?do=fmembers&uid=1&fsearch=1&kw=小宝  
+网站域名/dapi/ space.php?do=fmembers&uid=1&fsearch=1&kw=小宝  
 【返回值】  
 >  
 
@@ -676,10 +669,10 @@ http://www.familyday.com.cn/dapi/ space.php?do=fmembers&uid=1&fsearch=1&kw=小�
 	name:			自己的昵称
 	avatar:			自己的头像
 	fmembers：		自己的家人数量
-	fmemberlist：	家人列表【数组】
+	fmemberlist：家人列表【数组】
 		uid			家人的用户id
 	    name		家人的昵称
-	    avatar：		家人的头像
+	    avatar：	家人的头像
 	    note:		家人关系备注 
 	    feeds:		家人动态数量 
 	    fmembers：	家人的家人数量
@@ -696,20 +689,20 @@ http://www.familyday.com.cn/dapi/ space.php?do=fmembers&uid=1&fsearch=1&kw=小�
 	
 	uid:			用户id  
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=friend&op=request  
+网站域名/dapi/cp.php?ac=friend&op=request  
 【返回值】  
 >  
 	
-	uid:			自己的用户id
-	name:			自己的昵称
-	avatar:			自己的头像
-	fmembers：		自己的家人数量
-	requestlist:	申请人列表【数组】
-	uid:			用户id
-	phone:			电话号码
-	name:			用户昵称
-	avatar:			用户头像
-	dateline:		申请时间
+	uid:				自己的用户id
+	name:				自己的昵称
+	avatar:				自己的头像
+	fmembers：			自己的家人数量
+	requestlist:申请人列表【数组】
+		uid:			用户id
+		phone:			电话号码
+		name:			用户昵称
+		avatar:			用户头像
+		dateline:		申请时间
 
  
 1．19、	有奖任务列表接口  
@@ -719,7 +712,7 @@ http://www.familyday.com.cn/dapi/cp.php?ac=friend&op=request
 	do:			task
 	uid:			用户id  
 【调用方式】  
-http://www.familyday.com.cn/dapi/space.php?do=task&uid=4  
+网站域名/dapi/space.php?do=task&uid=4  
 【返回值】  
 >  
 	
@@ -728,11 +721,11 @@ http://www.familyday.com.cn/dapi/space.php?do=task&uid=4
 	avatar:			自己的头像
 	tasknum:		未完成的有奖任务数
 	tasklist:【数组】有奖任务列表
-		taskid：		任务id
+		taskid：	任务id
 		image：		任务图标
 		name：		任务名称
 		note:		任务简介
-		credit：		奖励金币数量
+		credit：	奖励金币数量
 
 
 1．20、	随机有奖任务提醒  
@@ -743,16 +736,14 @@ http://www.familyday.com.cn/dapi/space.php?do=task&uid=4
 	op:			rand
 	uid:		用户id  
 【调用方式】  
-http://www.familyday.com.cn/dapi/space.php?do=task&op=rand&uid=4  
+网站域名/dapi/space.php?do=task&op=rand&uid=4  
 【返回值】  
 >  
 	
 	taskid：	任务id
-	image：	任务图标
-	name：	任务名称
-	note:	任务简介
-
-
+	image：		任务图标
+	name：		任务名称
+	note:		任务简介
 
  
 1．21、	有奖任务详情  
@@ -762,16 +753,17 @@ http://www.familyday.com.cn/dapi/space.php?do=task&op=rand&uid=4
 	do:			task
 	uid:		用户id
 	taskid:		某个任务的id  
+	
 【调用方式】  
-http://www.familyday.com.cn/dapi/space.php?do=task&&uid=4&taskid=1  
+网站域名/dapi/space.php?do=task&&uid=4&taskid=1  
 【返回值】  
 >  
 	
 	taskid：	任务id
-	image：	任务图标
-	name：	任务名称
-	note:	任务简介
-	xyz:	是否已经满足条件、未满足条件下前往的页面（x.y.z）
+	image：		任务图标
+	name：		任务名称
+	note:		任务简介
+	xyz:		是否已经满足条件、未满足条件下前往的页面（x.y.z）
  
 
 
@@ -785,9 +777,9 @@ http://www.familyday.com.cn/dapi/space.php?do=task&&uid=4&taskid=1
 
 	username:		账号
 	password:		密码
-	iscookie:			是否保存密码，为1时保存   
+	iscookie:		是否保存密码，为1时保存   
 【调用方式】  
-http://www.familyday.com.cn/dapi/do.php?ac=login  
+网站域名/dapi/do.php?ac=login  
 【返回值】  
 >  
 	
@@ -805,7 +797,7 @@ http://www.familyday.com.cn/dapi/do.php?ac=login
 	password:		密码
 	logintype:		weibo: 新浪微博, qq：腾讯微博  
 【调用方式】  
-http://www.familyday.com.cn/dapi/do.php?ac=login  
+网站域名/dapi/do.php?ac=login  
 【返回值】  
 >  
 	
@@ -826,11 +818,11 @@ http://www.familyday.com.cn/dapi/do.php?ac=login
 	password:			密码
 	invitecode:			邀请码  
 【调用方式】  
-http://www.familyday.com.cn/dapi/do.php?ac=register  
+网站域名/dapi/do.php?ac=register  
 【返回值】  
 >  
 	
-	msgkey：			信息提示码
+	msgkey：		信息提示码
 	msg：			返回的提示信息
 	error:			返回的错误的状态, 0无错误，1出错
 
@@ -842,23 +834,23 @@ http://www.familyday.com.cn/dapi/do.php?ac=register
 修改头像：  
 >  
 	
-	Filedata:			文件上传变量
+	Filedata:		文件上传变量
 	avatarsubmit：	提交表单用的验证，设为1即可  
 修改昵称：  
 >  
 
 	name:			昵称
-	namesubmit：		提交表单用的验证，设为1即可
+	namesubmit：	提交表单用的验证，设为1即可
 
 【调用方式】  
-修改头像：http://www.familyday.com.cn/dapi/cp.php?ac=avatar  
-修改昵称：http://www.familyday.com.cn/dapi/cp.php?ac=name  
+修改头像：网站域名/dapi/cp.php?ac=avatar  
+修改昵称：网站域名/dapi/cp.php?ac=name  
 【返回值】  
 >  
 	
 	data:
 		reward:
-			credit:		返回的积分
+			credit:			返回的积分
 			experience：	返回的经验
 
 
@@ -867,17 +859,17 @@ http://www.familyday.com.cn/dapi/do.php?ac=register
 【参数】  
 >  
 	
-	babyname:		孩子姓名
-	babysex:		孩子性别
-	babybirthday:	孩子出生年月
-	babyavatar:		孩子头像
+	babyname:			孩子姓名
+	babysex:			孩子性别
+	babybirthday:		孩子出生年月
+	babyavatar:			孩子头像
 	babysubmit：		提交表单用的验证，设为1即可  
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=baby  
+网站域名/dapi/cp.php?ac=baby  
 【返回值】  
 >  
 	
-	msgkey：			信息提示码
+	msgkey：		信息提示码
 	msg：			返回的提示信息
 	error:			返回的错误的状态, 0无错误，1出错
 
@@ -891,11 +883,11 @@ http://www.familyday.com.cn/dapi/cp.php?ac=baby
 	tagname:		空间名
 	tagsubmit：		提交表单用的验证，设为1即可  
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=tag  
+网站域名/dapi/cp.php?ac=tag  
 【返回值】  
 >  
 	
-	msgkey：			信息提示码
+	msgkey：		信息提示码
 	msg：			返回的提示信息
 	error:			返回的错误的状态, 0无错误，1出错
  
@@ -909,11 +901,11 @@ http://www.familyday.com.cn/dapi/cp.php?ac=tag
 	note:			申请时的附带信息
 	addsubmit：		提交申请表单用的验证，设为1即可  
 【调用方式】  
-http://www.familyday.com.cn/dapi/ dapi cp.php?ac=friend&op=add  
+网站域名/dapi/ dapi cp.php?ac=friend&op=add  
 【返回值】  
 >  
 	
-	msgkey：			信息提示码
+	msgkey：		信息提示码
 	msg：			返回的提示信息
 	error:			返回的错误的状态, 0无错误，1出错
 
@@ -922,15 +914,15 @@ http://www.familyday.com.cn/dapi/ dapi cp.php?ac=friend&op=add
 【参数】  
 >  
 	
-	applyuid:			申请人的uid
-	gid:				分组id
-	agreesubmit：		同意申请，设为1即可  
+	applyuid:		申请人的uid
+	gid:			分组id
+	agreesubmit：	同意申请，设为1即可  
 【调用方式】  
-http://www.familyday.com.cn/dapi cp.php?ac=friend&op=add  
+网站域名/dapi cp.php?ac=friend&op=add  
 【返回值】  
 >  
 	
-	msgkey：			信息提示码
+	msgkey：		信息提示码
 	msg：			返回的提示信息
 	error:			返回的错误的状态, 0无错误，1出错
 
@@ -938,15 +930,15 @@ http://www.familyday.com.cn/dapi cp.php?ac=friend&op=add
 【参数】  
 >  
 	
-	id			被收藏的对象id
-	idtype		被收藏的对象id类型(如：blogid, videoed)
-	type		是增加还是取消收藏，1添加到收藏，0取消收藏  
+	id				被收藏的对象id
+	idtype			被收藏的对象id类型(如：blogid, videoed)
+	type			是增加还是取消收藏，1添加到收藏，0取消收藏  
 【调用方式】  
-http://www.familyday.com.cn/dapi/do.php?ac=feedlove  
+网站域名/dapi/do.php?ac=feedlove  
 【返回值】  
 >  
 	
-	msgkey：			信息提示码
+	msgkey：		信息提示码
 	msg：			返回的提示信息
 	error:			返回的错误的状态, 0无错误，1出错
 
@@ -954,15 +946,15 @@ http://www.familyday.com.cn/dapi/do.php?ac=feedlove
 【参数】  
 >  
 	
-	id			被评论的对象id
-	idtype		被评论的对象id类型(如：blogid, videoed)
-	message		评论内容  
+	id				被评论的对象id
+	idtype			被评论的对象id类型(如：blogid, videoed)
+	message			评论内容  
 【调用方式】  
-http://www.familyday.com.cn/dapi/do.php?ac= comment  
+网站域名/dapi/do.php?ac= comment  
 【返回值】  
 >  
 	
-	msgkey：			信息提示码
+	msgkey：		信息提示码
 	msg：			返回的提示信息
 	error:			返回的错误的状态, 0无错误，1出错
 
@@ -971,22 +963,22 @@ http://www.familyday.com.cn/dapi/do.php?ac= comment
 【参数】  
 >  
 	
-	id			活动id
-	idtype		eventid
-	message		我要参加活动!
-	come		发布来源（iphone或者ipad，客户端生成）  
+	id				活动id
+	idtype			eventid
+	message			我要参加活动!
+	come			发布来源（iphone或者ipad，客户端生成）  
 【调用方式】  
-http://www.familyday.com.cn/dapi/do.php?ac=comment  
+网站域名/dapi/do.php?ac=comment  
 【返回值】  
 >  
 	
 	data	【数组】
-	selfreward		参加者的奖励【数组】
-	credit			金币
-	experience		经验
-	toreward		活动发起人的奖励【数组】
-	credit			金币
-	experience		积分
+		selfreward		参加者的奖励【数组】
+		credit			金币
+		experience		经验
+		toreward		活动发起人的奖励【数组】
+		credit			金币
+		experience		积分
 
 
 2.12、	表态接口  
@@ -997,8 +989,9 @@ http://www.familyday.com.cn/dapi/do.php?ac=comment
 	idtype		被表态对象的类型(eventid,blogid,vedioid,photoid)
 	clickid		表态类型的id，一个id可以对应一个表态的类型，如：鲜花，雷人
 	come		发布来源（iphone或者ipad，客户端生成）  
+	
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=click&op=add  
+网站域名/dapi/cp.php?ac=click&op=add  
 【返回值】  
 >  
 	
@@ -1021,11 +1014,11 @@ http://www.familyday.com.cn/dapi/cp.php?ac=click&op=add
 	come		发布来源（iphone或者ipad或者android，客户端生成）
 	pmsubmit	提交信息的表单验证，设为1即可  
 【调用方式】  
-http://www.familyday.com.cn/dapi/ cp.php?ac=pm&op=send  
+网站域名/dapi/ cp.php?ac=pm&op=send  
 【返回值】  
 >  
 	
-	msgkey：				信息提示码
+	msgkey：			信息提示码
 	msg：				返回的提示信息
 	error:				返回的错误的状态, 0无错误，1出错
 
@@ -1037,30 +1030,30 @@ http://www.familyday.com.cn/dapi/ cp.php?ac=pm&op=send
 	Filedata:			文件上传变量
 	avatarsubmit：		提交表单用的验证，设为1即可  
 【调用方式】  
-修改头像：http://www.familyday.com.cn/dapi/cp.php?ac=avatar  
+修改头像：网站域名/dapi/cp.php?ac=avatar  
 【返回值】  
 >  
 	
 	data:
 		reward:
 			credit:		返回的积分
-			experience：	返回的经验
+			experience：返回的经验
 
 2.15、	修改昵称接口  
 【参数】  
 >  
 	
 	name:				昵称
-	namesubmit：			提交表单用的验证，设为1即可  
+	namesubmit：		提交表单用的验证，设为1即可  
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=name  
+网站域名/dapi/cp.php?ac=name  
 【返回值】  
 >  
 	
 	data:
 		reward:
 			credit:		返回的积分
-			experience：	返回的经验
+			experience：返回的经验
  
 2.16、	修改生日接口  
 【参数】  
@@ -1069,11 +1062,11 @@ http://www.familyday.com.cn/dapi/cp.php?ac=name
 	birth:				生日,格式(1989-08-12)
 	birthsubmit：		提交表单用的验证，设为1即可  
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=birth  
+网站域名/dapi/cp.php?ac=birth  
 【返回值】  
 >  
 	
-	msgkey：				信息提示码
+	msgkey：			信息提示码
 	msg：				返回的提示信息
 	error:				返回的错误的状态, 0无错误，1出错
 
@@ -1084,7 +1077,7 @@ http://www.familyday.com.cn/dapi/cp.php?ac=birth
 	
 	taskid	任务的id  
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=task&op=do  
+网站域名/dapi/cp.php?ac=task&op=do  
 【返回值】  
 >  
 	
@@ -1101,11 +1094,11 @@ http://www.familyday.com.cn/dapi/cp.php?ac=task&op=do
 	note					关系备注名称
 	changenotesubmit		1  
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=friend&op=changenote  
+网站域名/dapi/cp.php?ac=friend&op=changenote  
 【返回值】  
 >  
 	
-	msgkey：					信息提示码
+	msgkey：				信息提示码
 	msg：					返回的提示信息
 	error:					返回的错误的状态, 0无错误，1出错
 
@@ -1117,11 +1110,11 @@ http://www.familyday.com.cn/dapi/cp.php?ac=friend&op=changenote
 	notebirth				生日日期
 	changenotesubmit		1  
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=friend&op=changenote  
+网站域名/dapi/cp.php?ac=friend&op=changenote  
 【返回值】  
 >  
 	
-	msgkey：				信息提示码
+	msgkey：			信息提示码
 	msg：				返回的提示信息
 	error:				返回的错误的状态, 0无错误，1出错
 
@@ -1133,14 +1126,15 @@ http://www.familyday.com.cn/dapi/cp.php?ac=friend&op=changenote
 	op				uploadphoto【照片上传】, uploadpic【日志的图片上传】
 	topicid			相册id
 	pic_title		照片描述  
+	
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=upload  
+网站域名/dapi/cp.php?ac=upload  
 【返回值】  
 >  
 	
 	data:
-		picid:			图片id
-		pic:			图片的url路径
+		picid:				图片id
+		pic:				图片的url路径
 		reward:
 				credit:		返回的积分
 		     experience：	返回的经验
@@ -1163,12 +1157,12 @@ http://www.familyday.com.cn/dapi/cp.php?ac=upload
 	makeweibo	是否发布到微博，1代表是
 	photosubmit	1 如果设置了此变量，代表提交了数据  
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=photo  
+网站域名/dapi/cp.php?ac=photo  
 【返回值】  
 >  
 	
 	data:
-		credit:		返回的积分
+		credit:			返回的积分
 		experience：	返回的经验
 
 注：发布界面中还需要调用：  
@@ -1183,17 +1177,17 @@ http://www.familyday.com.cn/dapi/cp.php?ac=photo
 	photoid		照片id
 	message		照片总体描述
 	friend		查看范围：1家人可见，2仅自己可见，0全站用户可见
-	tags			空间名
+	tags		空间名
 	friends		和谁在一起uid 【数组】array(uid=>username,uid2=>username2)
 	lat			纬度（客户端生成）
 	lng			经度（客户端生成）
 	address		发布地址（客户端生成）
 	come		发布来源（客户端生成, iphone或者ipad或者android）
-	makefeed		1, 是否产生feed
+	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
 	photosubmit	1 如果设置了此变量，代表提交了数据,  无此变量代表是发布界面  
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=rephoto  
+网站域名/dapi/cp.php?ac=rephoto  
 【返回值】  
 无photosubmit时，代表是发布的界面:  
 >  
@@ -1202,12 +1196,13 @@ http://www.familyday.com.cn/dapi/cp.php?ac=rephoto
 		photoid:		照片id
 		message:		照片内容
 		pic:			照片的图片
-		countpic:		照片中包含的图片张数  
+		countpic:		照片中包含的图片张数 
+		
 有photosubmit是，代表是提交了表单数据：  
 >  
 	
 	data:
-		credit:		返回的积分
+		credit:			返回的积分
 		experience：	返回的经验
 
 注：发布界面中还需要调用：  
@@ -1231,13 +1226,14 @@ http://www.familyday.com.cn/dapi/cp.php?ac=rephoto
 	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
 	blogsubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面  
+	
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=blog  
+网站域名/dapi/cp.php?ac=blog  
 【返回值】  
 >  
 	
 	data:
-		credit:		返回的积分
+		credit:			返回的积分
 		experience：	返回的经验
 
 注：发布界面中还需要调用：  
@@ -1254,23 +1250,23 @@ http://www.familyday.com.cn/dapi/cp.php?ac=blog
 	subject		日志标题
 	message		日志正文内容, 内容 + 图片<调用2.21单张图片上传接口op=uploadpic>  <组合为html>
 	friend		查看范围：1家人可见，2仅自己可见，0全站用户可见
-	tags			空间名
+	tags		空间名
 	friends		和谁在一起uid 【数组】array(uid=>username,uid2=>username2)
 	lat			纬度（客户端生成）
 	lng			经度（客户端生成）
 	address		发布地址（客户端生成）
 	come		发布来源（客户端生成, iphone或者ipad或者android）
-	makefeed		1, 是否产生feed
+	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
 	blogsubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面  
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=reblog&blogid=被转的日志id  
+网站域名/dapi/cp.php?ac=reblog&blogid=被转的日志id  
 【返回值】  
 没有设置blogsubmit时, 即发布时的生成界面：  
 >  
 	
 	data:
-		blogid:		被转发的日志id
+		blogid:			被转发的日志id
 		subject:		日志标题
 		message:		日志内容<html>
 		其他参数与发布时提交参数含义一样
@@ -1284,7 +1280,7 @@ http://www.familyday.com.cn/dapi/cp.php?ac=reblog&blogid=被转的日志id
 >  
 	
 	data:
-		credit:		返回的积分
+		credit:			返回的积分
 		experience：	返回的经验
 
 2.27、	发表活动接口  
@@ -1307,12 +1303,12 @@ http://www.familyday.com.cn/dapi/cp.php?ac=reblog&blogid=被转的日志id
 	makeweibo		是否发布到微博，1代表是
 	eventsubmit		1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面  
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=event  
+网站域名/dapi/cp.php?ac=event  
 【返回值】  
 >  
 	
 	data:
-		credit:		返回的积分
+		credit:			返回的积分
 		experience：	返回的经验
 
 注：发布界面中还需要调用：  
@@ -1341,7 +1337,7 @@ http://www.familyday.com.cn/dapi/cp.php?ac=event
 	makeweibo	是否发布到微博，1代表是
 	eventsubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面   
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=reevent&eventid=被转发的活动id  
+网站域名/dapi/cp.php?ac=reevent&eventid=被转发的活动id  
 【返回值】  
 没有设置eventsubmit时, 即发布时的生成界面：  
 >  
@@ -1360,14 +1356,14 @@ http://www.familyday.com.cn/dapi/cp.php?ac=reevent&eventid=被转发的活动id
 >  
 	
 	data:
-		credit:		返回的积分
+		credit:			返回的积分
 		experience：	返回的经验
 
 2.29、	活动分类接口  
 【参数】[GET方式]  
 无  
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=event&op=eventclass  
+网站域名/dapi/cp.php?ac=event&op=eventclass  
 【返回值】  
 >  
 	
@@ -1384,25 +1380,25 @@ http://www.familyday.com.cn/dapi/cp.php?ac=event&op=eventclass
 >  
 	
 	subject		视频标题
-	videourl		视频地址
+	videourl	视频地址
 	message		视频正文内容, 内容 + 图片<调用2.21单张图片上传接口op=uploadpic>  <组合为html>
 	friend		查看范围：1家人可见，2仅自己可见，0全站用户可见
-	tags			空间名
+	tags		空间名
 	friends		和谁在一起uid 【数组】array(uid=>username,uid2=>username2)
 	lat			纬度（客户端生成）
 	lng			经度（客户端生成）
 	address		发布地址（客户端生成）
 	come		发布来源（客户端生成, iphone或者ipad或者android）
-	makefeed		1, 是否产生feed
+	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
 	videosubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面  
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=video  
+网站域名/dapi/cp.php?ac=video  
 【返回值】  
 >  
 	
 	data:
-		credit:		返回的积分
+		credit:			返回的积分
 		experience：	返回的经验  
 
 注：发布界面中还需要调用：  
@@ -1416,21 +1412,21 @@ http://www.familyday.com.cn/dapi/cp.php?ac=video
 	
 
 	subject		视频标题
-	videourl		视频地址
+	videourl	视频地址
 	message		视频正文内容, 内容 + 图片<调用2.21单张图片上传接口op=uploadpic>  <组合为html>
 	friend		查看范围：1家人可见，2仅自己可见，0全站用户可见
-	tags			空间名
+	tags		空间名
 	friends		和谁在一起uid 【数组】array(uid=>username,uid2=>username2)
 	lat			纬度（客户端生成）
 	lng			经度（客户端生成）
 	address		发布地址（客户端生成）
 	come		发布来源（客户端生成, iphone或者ipad或者android）
-	makefeed		1, 是否产生feed
+	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
 	videosubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面 
  
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=video  
+网站域名/dapi/cp.php?ac=video  
 【返回值】  
 没有设置videosubmit时, 即发布时的生成界面：  
 >  
@@ -1448,7 +1444,7 @@ http://www.familyday.com.cn/dapi/cp.php?ac=video
 设置了videosubmit后，即提交了表单后：  
 
 	data:
-		credit:		返回的积分
+		credit:			返回的积分
 		experience：	返回的经验
 
 2.32、	发表我想说接口  
@@ -1464,7 +1460,7 @@ http://www.familyday.com.cn/dapi/cp.php?ac=video
 		makeweibo	是否发布到微博，1代表是
 		isaysubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面  
 【调用方式】  
-http://www.familyday.com.cn/dapi/cp.php?ac=isay  
+网站域名/dapi/cp.php?ac=isay  
 【返回值】  
 如果没有设置isaysubmit, 即发布界面上，得到的是默认的我说的句子列表：  
 >  
@@ -1476,25 +1472,26 @@ http://www.familyday.com.cn/dapi/cp.php?ac=isay
 		zid:			祝福 句子列表 [数组]
 
 注：发布界面中还需要调用：  
-2.34  和谁在一起的人列表接口  
+> 
+	2.34  和谁在一起的人列表接口  
   
 点击发布后，即设置了isaysubmit，则返回值为：  
 > 
 	
 	data:
-		credit:		返回的积分
+		credit:			返回的积分
 		experience：	返回的经验
 
 2.33、	空间名称列表接口  
 【参数】【GET方式】  
 无  
 【调用方式】  
-http://www.familyday.com.cn/dapi/do.php?ac=ajax&op=taglist    
+网站域名/dapi/do.php?ac=ajax&op=taglist    
 【返回值】  
 >  
 	
 	data
-		taglist:		【数组】  
+		taglist:【数组】  
 			tagname	 	名称  
 
 
@@ -1503,12 +1500,12 @@ http://www.familyday.com.cn/dapi/do.php?ac=ajax&op=taglist
 【参数】【GET方式】  
 无  
 【调用方式】  
-http://www.familyday.com.cn/dapi/do.php?ac=ajax&op=taglist  
+网站域名/dapi/do.php?ac=ajax&op=taglist  
 【返回值】  
 >   
 
 		data
-			friendlist:		【数组】
+			friendlist:	【数组】
 				fuid		 	用户uid
 				fusername		用户名
 
