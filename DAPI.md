@@ -115,12 +115,13 @@ http://www.familyday.com.cn/dapi/info.php?ac=ad&debug=1
 【调用方式】  
 http://www.familyday.com.cn/dapi/info.php?ac=ad  
 【返回值】  
-`
-title		广告标题  
-imagesrc	广告图片url  
-idtype		广告对应的帖子类型  
-id			帖子id
-`
+> 
+
+	title		广告标题  
+	imagesrc	广告图片url  
+	idtype		广告对应的帖子类型  
+	id			帖子id
+
  
 1．2、	今日话题
 【参数】
