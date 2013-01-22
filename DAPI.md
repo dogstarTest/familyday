@@ -27,6 +27,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．19、[有奖任务列表接口](#有奖任务列表接口)
 	* 1．20、[随机有奖任务提醒](#随机有奖任务提醒)
 	* 1．21、[有奖任务详情](#有奖任务详情)
+	* 1．22、[微信家庭动态列表接口](#微信家庭动态列表接口)
 
 * 第二部分 [上行接口部分](#上行接口部分)
 	* 2.1、 [普通登录接口](#普通登录接口)
@@ -762,6 +763,41 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	name：		任务名称
 	note:		任务简介
 	xyz:		是否已经满足条件、未满足条件下前往的页面（x.y.z）
+	
+<h3>1．22、	</h3><h3>微信家庭动态列表接口</h3>  
+【参数】  
+>  
+	
+	do:	 		wxfeed
+	uid:		用户id
+	perpage: 	分页大小， 默认5
+	page:		当前页
+
+	
+【调用方式】  
+网站域名/dapi/space.php?do=wxfeed&uid=1  
+【返回值】  
+>  
+	
+	data【多维数组】 
+		uid				用户id
+		username		用户昵称
+		avatar: 		发布用户头像url
+		id: 			动态id
+		idtype: 		动态类型(
+							eventid: 		发布活动
+							reeventid：		转采活动
+							blogid: 	 	发布日志
+							reblogid： 		转采日志
+							photoid：	  	上传图片
+							rephotoid：		转采图片
+							videoid：		发布视频
+							revideoid：		转采视频
+						)
+		title: 			动态标题
+		image_1 		动态带的图片
+		message:		动态简介文字
+
  
 
 
