@@ -143,10 +143,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 
-	do:	 	home
+	do:	 		home
 	uid:		用户id
-	perpage: 分页大小， 默认10
-	page:	当前页
+	perpage: 	分页大小， 默认10
+	page:		当前页
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=home&uid=1  
 【返回值】  
@@ -213,9 +214,10 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 > 
 
-	do:	 photo
-	uid: 照片拥有人的uid
-	id:	照片帖子id
+	do:	 		photo
+	uid: 		照片拥有人的uid
+	id:	        照片帖子id  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=photo&uid=1&id=293  
 【返回值】  
@@ -262,9 +264,10 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 	
-	do:	 blog
-	uid:  日志拥有人的uid
-	id:	 日志id 
+	do:	 		blog
+	uid:  		日志拥有人的uid
+	id:	 		日志id 
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】
 网站域名/dapi/space.php?do=blog&uid=1&id=18  
 【返回值】  
@@ -312,6 +315,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	do:	 video
 	uid: 视频拥有人的uid
 	id:	 视频id  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=video&uid=1&id=4  
 【返回值】  
@@ -360,6 +364,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	do:	 event
 	uid:  活动发布人的uid
 	id:	 活动id
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 
 【调用方式】  
 网站域名/dapi/space.php?do=event&uid=1&id=223  
@@ -412,6 +417,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	idtype:		被评论的类型(photoid: 照片,  'eventid': 活动,  'blogid'：日志,  'videoid'：视频)
 	page:		当前页，默认1
 	perpage:	每页数量，默认10
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 
 【调用方式】  
 网站域名/dapi/space.php?do=comment&id=293&idtype=photoid  
@@ -436,6 +442,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	uid:  		自己的uid
 	page:		家庭成员的当前页，默认1
 	perpage:	家庭成员的分页数, 默认10
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 
 【调用方式】  
 网站域名/dapi/space.php?uid=1
@@ -475,6 +482,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	tagid:			空间id
 	page:			当前页，默认1
 	perpage:		每页大小，默认1 (如果是ipad版本，可以传递大点的值过来,比如：20)  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=familyspace&uid=4&tagid=377  
 【返回值】  
@@ -502,6 +510,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	uid:		用户id
 	page:		当前页, 默认1
 	perpage:	分页大小，默认10
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=pm&filter=privatepm&uid=1  
 【返回值】  
@@ -528,6 +537,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	touid: 		对话的用户id
 	page:		当前页, 默认1
 	perpage:	分页大小，默认10  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=dialog&uid=1&touid=4  
 【返回值】  
@@ -559,7 +569,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 
 	uid:			用户id
 	page:			当前页, 默认1
-	perpage:		分页大小，默认10
+	perpage:		分页大小，默认10 
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=notice&uid=4  
 【返回值】  
@@ -584,6 +595,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 
 	uid:			用户id
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=setup&uid=1  
 【返回值】  
@@ -609,6 +621,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 
 	uid:			自己的用户id
 	fuid:			对方的用户id  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=friend&uid=4&fuid=1  
 【返回值】  
@@ -630,6 +643,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 
 	uid:		用户id  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=fmembers&uid=1  
 【返回值】  
@@ -659,6 +673,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	fsearch:			提交搜索的标志，固定值1
 	kw:					搜索的关键词,可以是电话号码或者名称
 	usernamelist:		post形式发送到服务器的手机号码(或者新浪/腾讯微博的用户名)  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/ space.php?do=fmembers&uid=1&fsearch=1&kw=小宝  
 【返回值】  
@@ -687,6 +702,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 	
 	uid:			用户id  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=friend&op=request  
 【返回值】  
@@ -709,7 +725,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 
 	do:			task
-	uid:			用户id  
+	uid:		用户id  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=task&uid=4  
 【返回值】  
@@ -734,6 +751,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	do:			task
 	op:			rand
 	uid:		用户id  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=task&op=rand&uid=4  
 【返回值】  
@@ -752,6 +770,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	do:			task
 	uid:		用户id
 	taskid:		某个任务的id  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
 网站域名/dapi/space.php?do=task&&uid=4&taskid=1  
@@ -819,9 +838,10 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	
 	data:
 	 return: 返回的状态码，
-		-1： 用户名或者密码为空
-		-2： 用户名或者密码错误
-		 1： 登录成功
+			-1： 用户名或者密码为空
+			-2： 用户名或者密码错误
+			 1： 登录成功
+	 m_auth: 登录成功后返回的登录密匙，请求每个接口都需要发送这个参数给服务器,重新登录时，这个值会改变。
 	 
 <h3>2.2、	</h3><h3>第三方登录接口</h3>  
 【参数】  
@@ -859,6 +879,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	msgkey：		信息提示码
 	msg：			返回的提示信息
 	error:			返回的错误的状态, 0无错误，1出错
+	data:
+					return:	返回的状态码
+						-1：用户名或者密码为空
+						-2：用户名或者密码错误
+						 1：登录成功
+					m_auth: 注册成功后返回的登录密匙，需要保持在客户端。
 
 
 
@@ -870,11 +896,13 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	
 	Filedata:		文件上传变量
 	avatarsubmit：	提交表单用的验证，设为1即可  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 修改昵称：  
 >  
 
 	name:			昵称
 	namesubmit：	提交表单用的验证，设为1即可
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 
 【调用方式】  
 修改头像：网站域名/dapi/cp.php?ac=avatar  
@@ -898,6 +926,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	babybirthday:		孩子出生年月
 	babyavatar:			孩子头像
 	babysubmit：		提交表单用的验证，设为1即可  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=baby  
 【返回值】  
@@ -916,6 +945,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	
 	tagname:		空间名
 	tagsubmit：		提交表单用的验证，设为1即可  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=tag  
 【返回值】  
@@ -924,6 +954,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	msgkey：		信息提示码
 	msg：			返回的提示信息
 	error:			返回的错误的状态, 0无错误，1出错
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
  
 <h3>2.7、	</h3><h3>申请成为家人接口</h3>  
 【参数】  
@@ -934,6 +965,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	gid:			申请的分组
 	note:			申请时的附带信息
 	addsubmit：		提交申请表单用的验证，设为1即可  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/ dapi cp.php?ac=friend&op=add  
 【返回值】  
@@ -941,7 +973,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	
 	msgkey：		信息提示码
 	msg：			返回的提示信息
-	error:			返回的错误的状态, 0无错误，1出错
+	error:			返回的错误的状态, 0无错误，1出错 
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 
 
 <h3>2.8、	</h3><h3>同意成为家人接口</h3>  
@@ -951,6 +984,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	applyuid:		申请人的uid
 	gid:			分组id
 	agreesubmit：	同意申请，设为1即可  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi cp.php?ac=friend&op=add  
 【返回值】  
@@ -967,6 +1001,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	id				被收藏的对象id
 	idtype			被收藏的对象id类型(如：blogid, videoed)
 	type			是增加还是取消收藏，1添加到收藏，0取消收藏  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/do.php?ac=feedlove  
 【返回值】  
@@ -981,8 +1016,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 	
 	id				被评论的对象id
-	idtype			被评论的对象id类型(如：blogid, videoed)
+	idtype			被评论的对象id类型(如：blogid, videoed) 
 	message			评论内容  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/do.php?ac= comment  
 【返回值】  
@@ -1001,6 +1037,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	idtype			eventid
 	message			我要参加活动!
 	come			发布来源（iphone或者ipad，客户端生成）  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/do.php?ac=comment  
 【返回值】  
@@ -1023,6 +1060,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	idtype		被表态对象的类型(eventid,blogid,vedioid,photoid)
 	clickid		表态类型的id，一个id可以对应一个表态的类型，如：鲜花，雷人
 	come		发布来源（iphone或者ipad，客户端生成）  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
 网站域名/dapi/cp.php?ac=click&op=add  
@@ -1047,6 +1085,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	address		发布地址（客户端生成）
 	come		发布来源（iphone或者ipad或者android，客户端生成）
 	pmsubmit	提交信息的表单验证，设为1即可  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/ cp.php?ac=pm&op=send  
 【返回值】  
@@ -1063,6 +1102,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	
 	Filedata:			文件上传变量
 	avatarsubmit：		提交表单用的验证，设为1即可  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 修改头像：网站域名/dapi/cp.php?ac=avatar  
 【返回值】  
@@ -1079,6 +1119,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	
 	name:				昵称
 	namesubmit：		提交表单用的验证，设为1即可  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=name  
 【返回值】  
@@ -1095,6 +1136,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	
 	birth:				生日,格式(1989-08-12)
 	birthsubmit：		提交表单用的验证，设为1即可  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=birth  
 【返回值】  
@@ -1110,6 +1152,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 	
 	taskid	任务的id  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=task&op=do  
 【返回值】  
@@ -1127,6 +1170,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	fuid					被备注人的uid
 	note					关系备注名称
 	changenotesubmit		1  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=friend&op=changenote  
 【返回值】  
@@ -1143,6 +1187,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	fuid					被设置生日的人的uid
 	notebirth				生日日期
 	changenotesubmit		1  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=friend&op=changenote  
 【返回值】  
@@ -1160,6 +1205,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	op				uploadphoto【照片上传】, uploadpic【日志的图片上传】
 	topicid			相册id
 	pic_title		照片描述  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
 网站域名/dapi/cp.php?ac=upload  
@@ -1190,6 +1236,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
 	photosubmit	1 如果设置了此变量，代表提交了数据  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=photo  
 【返回值】  
@@ -1219,6 +1266,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
 	photosubmit	1 如果设置了此变量，代表提交了数据,  无此变量代表是发布界面  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=rephoto  
 【返回值】  
@@ -1258,6 +1306,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
 	blogsubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
 网站域名/dapi/cp.php?ac=blog  
@@ -1290,6 +1339,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
 	blogsubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=reblog&blogid=被转的日志id  
 【返回值】  
@@ -1332,6 +1382,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	makefeed		1, 是否产生feed
 	makeweibo		是否发布到微博，1代表是
 	eventsubmit		1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=event  
 【返回值】  
@@ -1365,6 +1416,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
 	eventsubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面   
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=reevent&eventid=被转发的活动id  
 【返回值】  
@@ -1389,7 +1441,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 
 <h3>2.29、	</h3><h3>活动分类接口</h3>  
 【参数】[GET方式]  
-无  
+m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=event&op=eventclass  
 【返回值】  
@@ -1420,6 +1472,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
 	videosubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=video  
 【返回值】  
@@ -1451,6 +1504,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
 	videosubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面 
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
  
 【调用方式】  
 网站域名/dapi/cp.php?ac=video  
@@ -1485,6 +1539,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		come		发布来源（客户端生成, iphone或者ipad或者android）
 		makeweibo	是否发布到微博，1代表是
 		isaysubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面  
+		m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=isay  
 【返回值】  
@@ -1509,7 +1564,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 
 <h3>2.33、	</h3><h3>空间名称列表接口</h3>  
 【参数】【GET方式】  
-无  
+m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/do.php?ac=ajax&op=taglist    
 【返回值】  
@@ -1523,7 +1578,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 
 <h3>2.34、</h3><h3>和谁在一起的人列表接口</h3>  
 【参数】【GET方式】  
-无  
+m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/do.php?ac=ajax&op=taglist  
 【返回值】  
