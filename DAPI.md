@@ -28,6 +28,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．20、[随机有奖任务提醒](#随机有奖任务提醒)
 	* 1．21、[有奖任务详情](#有奖任务详情)
 	* 1．22、[微信家庭动态列表接口](#微信家庭动态列表接口)
+	* 1．23、[M_auth验证接口](#M_auth验证接口)
 
 * 第二部分 [上行接口部分](#上行接口部分)
 	* 2.1、 [普通登录接口](#普通登录接口)
@@ -817,6 +818,21 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		image_1 		动态带的图片
 		message:		动态简介文字
 
+<h3>1．23、	</h3><h3>M_auth验证接口</h3>  
+【参数】  
+>  
+	
+	ac:	 		ckmauth
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+
+	
+【调用方式】  
+网站域名/dapi/do.php?ac=ckmauth&m_auth=?
+【返回值】  
+>  
+	
+	data
+		return: 1：验证通过  2：验证失败 (需要重新登录得到新的m_auth)
  
 
 
