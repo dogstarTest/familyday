@@ -54,15 +54,15 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 2.22、	[发表照片接口](#发表照片接口)
 	* 2.23、	[转发照片接口](#转发照片接口)
 	* 2.24、	[发表日记接口](#发表日记接口)
-	* 2.26、	[转发日记接口](#转发日记接口)
-	* 2.27、	[发表活动接口](#发表活动接口)
-	* 2.28、	[转发活动接口](#转发活动接口)
-	* 2.29、	[活动分类接口](#活动分类接口)
-	* 2.30、	[发表视频接口](#发表视频接口)
-	* 2.31、	[转发视频接口](#转发视频接口)
-	* 2.32、	[发表我想说接口](#发表我想说接口)
-	* 2.33、	[空间名称列表接口](#空间名称列表接口)
-	* 2.34、	[和谁在一起的人列表接口](#和谁在一起的人列表接口)
+	* 2.25、	[转发日记接口](#转发日记接口)
+	* 2.26、	[发表活动接口](#发表活动接口)
+	* 2.27、	[转发活动接口](#转发活动接口)
+	* 2.28、	[活动分类接口](#活动分类接口)
+	* 2.29、	[发表视频接口](#发表视频接口)
+	* 2.30、	[转发视频接口](#转发视频接口)
+	* 2.31、	[发表我想说接口](#发表我想说接口)
+	* 2.32、	[空间名称列表接口](#空间名称列表接口)
+	* 2.33、	[和谁在一起的人列表接口](#和谁在一起的人列表接口)
 
  
 <h2>前言</h2>  
@@ -726,10 +726,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 
 	do:			task
-	uid:		用户id  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=task&uid=4  
+网站域名/dapi/space.php?do=task  
 【返回值】  
 >  
 	
@@ -749,12 +748,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 	
-	do:			task
-	op:			rand
-	uid:		用户id  
+	do:			task 
+	op:			rand 
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=task&op=rand&uid=4  
+网站域名/dapi/space.php?do=task&op=rand  
 【返回值】  
 >  
 	
@@ -768,13 +766,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 	
-	do:			task
-	uid:		用户id
+	do:			task 
 	taskid:		某个任务的id  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
-网站域名/dapi/space.php?do=task&&uid=4&taskid=1  
+网站域名/dapi/space.php?do=task&taskid=1  
 【返回值】  
 >  
 	
@@ -792,6 +789,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	uid:		用户id
 	perpage: 	分页大小， 默认5
 	page:		当前页
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器
 
 	
 【调用方式】  
@@ -962,7 +960,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	
 	tagname:		空间名
 	tagsubmit：		提交表单用的验证，设为1即可  
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=tag  
 【返回值】  
@@ -971,7 +969,6 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	msgkey：		信息提示码
 	msg：			返回的提示信息
 	error:			返回的错误的状态, 0无错误，1出错
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
  
 <h3>2.7、	</h3><h3>申请成为家人接口</h3>  
 【参数】  
@@ -982,7 +979,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	gid:			申请的分组
 	note:			申请时的附带信息
 	addsubmit：		提交申请表单用的验证，设为1即可  
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/ dapi cp.php?ac=friend&op=add  
 【返回值】  
@@ -991,7 +988,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	msgkey：		信息提示码
 	msg：			返回的提示信息
 	error:			返回的错误的状态, 0无错误，1出错 
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 
 
 <h3>2.8、	</h3><h3>同意成为家人接口</h3>  
@@ -1001,7 +998,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	applyuid:		申请人的uid
 	gid:			分组id
 	agreesubmit：	同意申请，设为1即可  
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi cp.php?ac=friend&op=add  
 【返回值】  
@@ -1018,7 +1015,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	id				被收藏的对象id
 	idtype			被收藏的对象id类型(如：blogid, videoed)
 	type			是增加还是取消收藏，1添加到收藏，0取消收藏  
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/do.php?ac=feedlove  
 【返回值】  
@@ -1035,7 +1032,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	id				被评论的对象id
 	idtype			被评论的对象id类型(如：blogid, videoed) 
 	message			评论内容  
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/do.php?ac= comment  
 【返回值】  
@@ -1054,7 +1051,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	idtype			eventid
 	message			我要参加活动!
 	come			发布来源（iphone或者ipad，客户端生成）  
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/do.php?ac=comment  
 【返回值】  
@@ -1119,7 +1116,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	
 	Filedata:			文件上传变量
 	avatarsubmit：		提交表单用的验证，设为1即可  
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	m_auth:				API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 修改头像：网站域名/dapi/cp.php?ac=avatar  
 【返回值】  
@@ -1136,7 +1133,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	
 	name:				昵称
 	namesubmit：		提交表单用的验证，设为1即可  
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	m_auth:				API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=name  
 【返回值】  
@@ -1153,7 +1150,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	
 	birth:				生日,格式(1989-08-12)
 	birthsubmit：		提交表单用的验证，设为1即可  
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	m_auth:				API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=birth  
 【返回值】  
@@ -1168,7 +1165,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 	
-	taskid	任务的id  
+	taskid		任务的id  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=task&op=do  
@@ -1187,7 +1184,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	fuid					被备注人的uid
 	note					关系备注名称
 	changenotesubmit		1  
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	m_auth:					API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=friend&op=changenote  
 【返回值】  
@@ -1204,7 +1201,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	fuid					被设置生日的人的uid
 	notebirth				生日日期
 	changenotesubmit		1  
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	m_auth:					API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=friend&op=changenote  
 【返回值】  
@@ -1222,7 +1219,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	op				uploadphoto【照片上传】, uploadpic【日志的图片上传】
 	topicid			相册id
 	pic_title		照片描述  
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
 网站域名/dapi/cp.php?ac=upload  
@@ -1264,8 +1261,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		experience：	返回的经验
 
 注：发布界面中还需要调用：  
-2.33  [空间名称列表接口](#空间名称列表接口)  
-2.34  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
+2.32  [空间名称列表接口](#空间名称列表接口)  
+2.33  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
 
 <h3>2.23、	</h3><h3>转发照片接口</h3>  
 【参数】  
@@ -1304,8 +1301,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		experience：	返回的经验
 
 注：发布界面中还需要调用：  
-2.33  [空间名称列表接口](#空间名称列表接口)  
-2.34  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
+2.32  [空间名称列表接口](#空间名称列表接口)  
+2.33  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
 
 <h3>2.24、	</h3><h3>发表日记接口</h3>  
 【参数】  
@@ -1335,11 +1332,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		experience：	返回的经验
 
 注：发布界面中还需要调用：  
-2.33  [空间名称列表接口](#空间名称列表接口)  
-2.34  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
+2.32  [空间名称列表接口](#空间名称列表接口)  
+2.33  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
 
 
-<h3>2.26、	</h3><h3>转发日记接口</h3>  
+<h3>2.25、	</h3><h3>转发日记接口</h3>  
 【参数】  
 >  
 	
@@ -1370,8 +1367,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		其他参数与发布时提交参数含义一样
 
 注：发布界面中还需要调用：  
-2.33  [空间名称列表接口](#空间名称列表接口)  
-2.34  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
+2.32  [空间名称列表接口](#空间名称列表接口)  
+2.33  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
 
 设置了blogsubmit后，即提交了表单后：  
 >  
@@ -1380,7 +1377,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		credit:			返回的积分
 		experience：	返回的经验
 
-<h3>2.27、	</h3><h3>发表活动接口</h3>  
+<h3>2.26、	</h3><h3>发表活动接口</h3>  
 【参数】  
 >  
 	
@@ -1410,11 +1407,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		experience：	返回的经验
 
 注：发布界面中还需要调用：  
-2.29  [活动分类接口](#活动分类接口)  
-2.33  [空间名称列表接口](#空间名称列表接口)  
-2.34  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
+2.28  [活动分类接口](#活动分类接口)  
+2.32  [空间名称列表接口](#空间名称列表接口)  
+2.33  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
 
-<h3>2.28、	</h3><h3>转发活动接口</h3>  
+<h3>2.27、	</h3><h3>转发活动接口</h3>  
 【参数】  
 >  
 	
@@ -1445,9 +1442,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		其他参数与发布时提交参数含义一样  
 
 注：发布界面中还需要调用：  
-2.29  [活动分类接口](#活动分类接口)  
-2.33  [空间名称列表接口](#空间名称列表接口)  
-2.34  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
+2.28  [活动分类接口](#活动分类接口)  
+2.32  [空间名称列表接口](#空间名称列表接口)  
+2.33  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
 
 设置了blogsubmit后，即提交了表单后：  
 >  
@@ -1456,7 +1453,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		credit:			返回的积分
 		experience：	返回的经验
 
-<h3>2.29、	</h3><h3>活动分类接口</h3>  
+<h3>2.28、	</h3><h3>活动分类接口</h3>  
 【参数】[GET方式]  
 m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
@@ -1472,7 +1469,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 
 
  
-<h3>2.30、	</h3><h3>发表视频接口</h3>  
+<h3>2.29、	</h3><h3>发表视频接口</h3>  
 【参数】  
 >  
 	
@@ -1500,10 +1497,10 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 		experience：	返回的经验  
 
 注：发布界面中还需要调用：  
-2.33  [空间名称列表接口](#空间名称列表接口)  
-2.34  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
+2.32  [空间名称列表接口](#空间名称列表接口)  
+2.33  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
 
-<h3>2.31、	</h3><h3>转发视频接口</h3>  
+<h3>2.30、	</h3><h3>转发视频接口</h3>  
 【参数】  
 >   
 	
@@ -1535,8 +1532,8 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 		其他参数与发布时提交参数含义一样  
 
 注：发布界面中还需要调用：  
-2.33  [空间名称列表接口](#空间名称列表接口)  
-2.34  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
+2.32  [空间名称列表接口](#空间名称列表接口)  
+2.33  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
 
 设置了videosubmit后，即提交了表单后：  
 
@@ -1544,7 +1541,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 		credit:			返回的积分
 		experience：	返回的经验
 
-<h3>2.32、	</h3><h3>发表我想说接口</h3>  
+<h3>2.31、	</h3><h3>发表我想说接口</h3>  
 【参数】  
 > 
 
@@ -1570,7 +1567,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 		zid:			祝福 句子列表 [数组]
 
 注：发布界面中还需要调用：  
-2.34  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
+2.33  [和谁在一起的人列表接口](#和谁在一起的人列表接口) 
   
 点击发布后，即设置了isaysubmit，则返回值为：  
 > 
@@ -1579,7 +1576,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 		credit:			返回的积分
 		experience：	返回的经验
 
-<h3>2.33、	</h3><h3>空间名称列表接口</h3>  
+<h3>2.32、	</h3><h3>空间名称列表接口</h3>  
 【参数】【GET方式】  
 m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
@@ -1593,7 +1590,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 
 
 
-<h3>2.34、</h3><h3>和谁在一起的人列表接口</h3>  
+<h3>2.33、</h3><h3>和谁在一起的人列表接口</h3>  
 【参数】【GET方式】  
 m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
