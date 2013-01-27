@@ -145,12 +145,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 
 	do:	 		home
-	uid:		用户id
+	uid:		用户id, 无则代表登陆用户的uid  
 	perpage: 	分页大小， 默认10
 	page:		当前页
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=home&uid=1  
+网站域名/dapi/space.php?do=home&m_auth=?    
 【返回值】  
 
 >
@@ -216,11 +216,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 > 
 
 	do:	 		photo
-	uid: 		照片拥有人的uid
+	uid: 		照片拥有人的uid, 无则代表登陆用户的uid  
 	id:	        照片帖子id  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=photo&uid=1&id=293  
+网站域名/dapi/space.php?do=photo&id=293&m_auth=?  
 【返回值】  
 >  
 
@@ -266,11 +266,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 	
 	do:	 		blog
-	uid:  		日志拥有人的uid
+	uid:  		日志拥有人的uid, 无则代表登陆用户的uid  
 	id:	 		日志id 
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】
-网站域名/dapi/space.php?do=blog&uid=1&id=18  
+网站域名/dapi/space.php?do=blog&id=18  
 【返回值】  
 >  
 		
@@ -313,12 +313,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 	
-	do:	 video
-	uid: 视频拥有人的uid
-	id:	 视频id  
+	do:	 		video
+	uid: 		视频拥有人的uid, 无则代表登陆用户的uid  
+	id:	 		视频id  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=video&uid=1&id=4  
+网站域名/dapi/space.php?do=video&id=4&m_auth=?    
 【返回值】  
 >  
 		
@@ -362,13 +362,13 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 
-	do:	 event
-	uid:  活动发布人的uid
-	id:	 活动id
+	do:	 		event
+	uid:  		活动发布人的uid, 无则代表登陆用户的uid  
+	id:	 		活动id
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 
 【调用方式】  
-网站域名/dapi/space.php?do=event&uid=1&id=223  
+网站域名/dapi/space.php?do=event&id=223&m_auth=?  
 【返回值】  
 >  
 
@@ -440,13 +440,13 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 	
-	uid:  		自己的uid
+	uid:  		自己的uid, 无则代表登陆用户的uid  
 	page:		家庭成员的当前页，默认1
 	perpage:	家庭成员的分页数, 默认10
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 
 【调用方式】  
-网站域名/dapi/space.php?uid=1
+网站域名/dapi/space.php?m_auth=?
 【返回值】  
 >  
 
@@ -479,13 +479,13 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 
-	uid:			用户id
+	uid:			用户id, 无则代表登陆用户的uid  
 	tagid:			空间id
 	page:			当前页，默认1
 	perpage:		每页大小，默认1 (如果是ipad版本，可以传递大点的值过来,比如：20)  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=familyspace&uid=4&tagid=377  
+网站域名/dapi/space.php?do=familyspace&m_auth=?&tagid=377  
 【返回值】  
 >  
 
@@ -508,12 +508,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 
-	uid:		用户id
+	uid:		用户id, 无则代表登陆用户的uid  
 	page:		当前页, 默认1
 	perpage:	分页大小，默认10
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=pm&filter=privatepm&uid=1  
+网站域名/dapi/space.php?do=pm&filter=privatepm&m_auth=?   
 【返回值】  
 >  
 
@@ -534,13 +534,13 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 
-	uid:		用户id
+	uid:		用户id, 无则代表登陆用户的uid  
 	touid: 		对话的用户id
 	page:		当前页, 默认1
 	perpage:	分页大小，默认10  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=dialog&uid=1&touid=4  
+网站域名/dapi/space.php?do=dialog&m_auth=?&touid=4  
 【返回值】  
 >  
 
@@ -568,12 +568,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 
-	uid:			用户id
+	uid:			用户id, 无则代表登陆用户的uid  
 	page:			当前页, 默认1
 	perpage:		分页大小，默认10 
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=notice&uid=4  
+网站域名/dapi/space.php?do=notice&m_auth=?  
 【返回值】  
 >  
 
@@ -595,10 +595,10 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 
-	uid:			用户id
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	uid:			用户id, 无则代表登陆用户的uid  
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=setup&uid=1  
+网站域名/dapi/space.php?do=setup&m_auth=?  
 【返回值】  
 >  
 
@@ -620,11 +620,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 
-	uid:			自己的用户id
+	uid:			自己的用户id, 无则代表登陆用户的uid  
 	fuid:			对方的用户id  
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=friend&uid=4&fuid=1  
+网站域名/dapi/space.php?do=friend&m_auth=?&fuid=1  
 【返回值】  
 >  
 
@@ -643,10 +643,10 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 
-	uid:		用户id  
+	uid:		用户id, 无则代表登陆用户的uid    
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=fmembers&uid=1  
+网站域名/dapi/space.php?do=fmembers&m_auth=?  
 【返回值】  
 >  
 
@@ -668,15 +668,15 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 
-	uid:				用户id
+	uid:				用户id, 无则代表登陆用户的uid  
 	page:				当前页，默认为1
 	perpage:			每页数量，默认为10
 	fsearch:			提交搜索的标志，固定值1
 	kw:					搜索的关键词,可以是电话号码或者名称
 	usernamelist:		post形式发送到服务器的手机号码(或者新浪/腾讯微博的用户名)  
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	m_auth:				API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/ space.php?do=fmembers&uid=1&fsearch=1&kw=小宝  
+网站域名/dapi/ space.php?do=fmembers&m_auth=?&fsearch=1&kw=小宝  
 【返回值】  
 >  
 
@@ -702,10 +702,10 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 	
-	uid:			用户id  
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	uid:			用户id, 无则代表登陆用户的uid    
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/cp.php?ac=friend&op=request  
+网站域名/dapi/cp.php?ac=friend&op=request&m_auth=?    
 【返回值】  
 >  
 	
@@ -728,7 +728,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	do:			task
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=task  
+网站域名/dapi/space.php?do=task&m_auth=?  
 【返回值】  
 >  
 	
@@ -977,7 +977,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 	
-	uid:			自己的uid, 若登陆有保存，则用登陆保存的uid
+	uid:			自己的uid, 无则代表登陆用户的uid  
 	applyuid:		对方的uid
 	gid:			申请的分组
 	note:			申请时的附带信息
