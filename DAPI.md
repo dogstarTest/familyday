@@ -76,6 +76,14 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	1)	下行接口中，除非标注有POST方式，否则一律用GET方式请求数据。  
 	2)	上行接口中，除非标注有GET方式，否则一律用POST方式发送数据。  
 	3)	在上行接口中，包含有部分下行接口，用来生成发布界面，如：空间列表，和谁在一起。  
+	4)	如果服务器返回：
+		"data": {
+			"return": "-1",
+		},
+		"msgkey": "auth_failure",
+		"msg": "auth_failure",
+		"error": 1
+		则代表m_auth不对或者已经失效，需要重新登录更新m_auth。  
 
 所有的接口服务器均以Json格式返回数据，在每个返回的信息中，分别是：   
 >  
