@@ -786,14 +786,13 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 	
 	do:	 		wxfeed
-	uid:		用户id
 	perpage: 	分页大小， 默认5
 	page:		当前页
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器
+	wxkey:		用户微信key
 
 	
 【调用方式】  
-网站域名/dapi/space.php?do=wxfeed&uid=1  
+网站域名/dapi/space.php?do=wxfeed  
 【返回值】  
 >  
 	
@@ -814,8 +813,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 						)
 		title: 			动态标题
 		image_1 		动态带的图片
-		message:		动态简介文字
-
+		message:		动态简介文字  
+		
+	如果wxkey不对，则服务器会返回:  
+	data
+		return:		-1
+	
 <h3>1．23、	</h3><h3>m_auth验证接口</h3>  
 【参数】  
 >  
