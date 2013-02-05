@@ -29,6 +29,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．21、[有奖任务详情](#有奖任务详情)
 	* 1．22、[微信家庭动态列表接口](#微信家庭动态列表接口)
 	* 1．23、[m_auth验证接口](#m_auth验证接口)
+	* 1．24、[pm版本统计接口](#pm版本统计接口)
 
 * 第二部分 [上行接口部分](#上行接口部分)
 	* 2.1、 [普通登录接口](#普通登录接口)
@@ -527,9 +528,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 
 	data:		数组
-		msgfromid:				对话对方用户uid
-		msgfromname:			对话对方name
-		msgfromavatar:			对方对方的头像url
+		touid:					对话对方用户uid
+		msgtoname:				对话对方name
+		msgtoavatar:			对方对方的头像url
 		note:					备注名
 		lastdateline:			最后对话的时间
 		lastsummary:			最后对话的内容
@@ -633,7 +634,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	fuid:			对方的用户id  
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=friend&m_auth=?&fuid=1  
+网站域名/dapi/space.php?do=friend&m_auth=?&fuid=?  
 【返回值】  
 >  
 
@@ -844,7 +845,21 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	data
 		return: 1：验证通过  2：验证失败 (需要重新登录得到新的m_auth)
  
+<h3>1．24、	</h3><h3>pm版本统计接口</h3>  
+【参数】  
+>  
 
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+【调用方式】  
+网站域名/dapi/space.php?do=elder&m_auth=?  
+【返回值】  
+>  
+
+	addphoto:		新图片数量  
+	addblog:		新日志数量  
+	addevent:		新活动数量  
+	addvideo:		新视频数量  
+	pmcount：		新对话数量  
 
 <h2>第二部分 </h2><h2>上行接口部分</h2>
 ==================
