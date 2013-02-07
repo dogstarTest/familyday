@@ -451,8 +451,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 	
 	uid:  		自己的uid, 无则代表登陆用户的uid  
-	page:		家庭成员的当前页，默认1
-	perpage:	家庭成员的分页数, 默认10
+	page:		空间的当前页，默认1
+	perpage:	空间的分页数, 默认4
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 
 【调用方式】  
@@ -464,8 +464,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	uid:			用户id
 	name:			用户名字
 	avatar:			用户头像url
-	fmembers:		家人数量
 	feeds:			动态数量
+	fmembers:		家人数量	
 	birthday：		生日
 	2）家人列表
 	fmemberlist：	家人列表数组
@@ -475,14 +475,13 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		note：		关系备注
 	3) 空间列表
 	spacelist:		数组
-		uid:		空间id
-		name:		空间名称
-	avatar:	空间头像
-		latestpic:	空间最新一张图片
+		tagid:		空间id
+		tagname:	空间名称		
 		blogs:		空间日志数
 		photos:		空间照片数
 		events:		空间活动数
 		videos:		空间视频数
+		pic:		空间最新一张图片
 
  
 <h3>1．10、	</h3><h3>空间内容列表接口</h3>  
@@ -492,18 +491,18 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	uid:			用户id, 无则代表登陆用户的uid  
 	tagid:			空间id
 	page:			当前页，默认1
-	perpage:		每页大小，默认1 (如果是ipad版本，可以传递大点的值过来,比如：20)  
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	perpage:		每页大小，默认1 (如果是ipad版本，可以传递大点的值过来,比如：10)  
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=familyspace&m_auth=?&tagid=377  
+网站域名/dapi/space.php?do=familyspace&m_auth=?&tagid=?  
 【返回值】  
 >  
 
 	tagname:		标签名，即：网站详情中的概述
-	blognum:		该标签的信息数量
+	feednum:		该标签的信息数量
 	feedlist:		信息详情，【数组】
 		image_1		图片地址
-		idtype:		信息的类型，包括（'blogid','photoid','eventid','videoid'）
+		idtype:		信息的类型，包括（'blogid','photoid','eventid','videoid','reblogid','rephotoid','reeventid','revideoid'）
 		id:			信息的id
 		uid:		该条信息的发布人uid
 		subject:	标题
