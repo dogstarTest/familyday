@@ -237,6 +237,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	1）
 	uid:			发布者的uid
 	name:			发布者的name
+	avatar:			发布者的头像  
 	note:			关系备注
 	dateline:		发布时间
 	title:			标题
@@ -286,7 +287,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		
 	1）
 	uid:			发布者的uid
-	name:			发布者的name
+	name:			发布者的name  
+	avatar:			发布者的头像  
 	note:			关系备注
 	dateline:		发布时间
 	subject:		标题
@@ -334,7 +336,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		
 	1）
 	uid:			发布者的uid
-	name:			发布者的name
+	name:			发布者的name  
+	avatar:			发布者的头像  
 	note:			关系备注
 	dateline:		发布时间
 	subject:		标题
@@ -384,7 +387,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 
 	1）
 	uid:			发布者的uid
-	name:			发布者的name
+	name:			发布者的name  
+	avatar:			发布者的头像  
 	note:			关系备注
 	dateline:		发布时间
 	title:			标题
