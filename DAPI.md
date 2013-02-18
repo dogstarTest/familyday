@@ -158,7 +158,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	uid:		用户id, 无则代表登陆用户的uid  
 	perpage: 	分页大小， 默认10
 	page:		当前页
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器 
+	idtype:		动态的类型【可选】，默认为空（代表全部），如果指定值（则只得到该类型的动态）
 【调用方式】  
 网站域名/dapi/space.php?do=home&m_auth=?    
 【返回值】  
@@ -553,7 +554,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	perpage:	分页大小，默认10  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=dialog&m_auth=?&touid=4  
+网站域名/dapi/space.php?do=pm&subop=view&m_auth=?&touid=4  
 【返回值】  
 >  
 
