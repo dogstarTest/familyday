@@ -207,7 +207,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		name:				行为人名字
 		fuid:				对象人uid
 		fname:				对象人名字
-		？？：				被操作的对象名称
+		subject：			被操作的对象名称
 		id：				被操作的id
 		idtype：			被操作的类型
 	6) 发布渠道 
@@ -255,7 +255,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	piclist:		多个图片组合起来的数组
 	pic:			图片地址	
 	title：			图片标题
-	message:		改组照片的描述,正文  =  piclist + message 组合起来显示
+	message:		该组照片的描述,正文  =  piclist + message 组合起来显示
 	5）
 	lng：			经度
 	lat：			纬度
