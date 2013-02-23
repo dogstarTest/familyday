@@ -233,11 +233,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 > 
 
 	do:	 		photo
-	uid: 		照片拥有人的uid, 无则代表登陆用户的uid  
+	uid: 		照片发布人的uid  
 	id:	        照片帖子id  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=photo&id=293&m_auth=?  
+网站域名/dapi/space.php?do=photo&id=293&m_auth=?&uid=?  
 【返回值】  
 >  
 
@@ -285,11 +285,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 	
 	do:	 		blog
-	uid:  		日志拥有人的uid, 无则代表登陆用户的uid  
+	uid:  		日志发布人的uid  
 	id:	 		日志id 
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】
-网站域名/dapi/space.php?do=blog&id=18  
+网站域名/dapi/space.php?do=blog&id=18&uid=?&m_auth=?   
 【返回值】  
 >  
 		
@@ -335,11 +335,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 	
 	do:	 		video
-	uid: 		视频拥有人的uid, 无则代表登陆用户的uid  
+	uid: 		视频发布人的uid  
 	id:	 		视频id  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=video&id=4&m_auth=?    
+网站域名/dapi/space.php?do=video&id=4&uid=?&m_auth=?    
 【返回值】  
 >  
 		
@@ -386,12 +386,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 
 	do:	 		event
-	uid:  		活动发布人的uid, 无则代表登陆用户的uid  
+	uid:  		活动发布人的uid  
 	id:	 		活动id
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 
 【调用方式】  
-网站域名/dapi/space.php?do=event&id=223&m_auth=?  
+网站域名/dapi/space.php?do=event&id=223&uid=?&m_auth=?  
 【返回值】  
 >  
 
