@@ -172,6 +172,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		note : 			关系备注
 		dateline: 		动态时间
 		id: 			动态id
+		tag:
+			tagid:		空间id
+			tagname:	空间名称
 		idtype: 		动态类型(
 				eventid: 		发布活动
 				reeventid：		转采活动
@@ -188,6 +191,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 				profield: 		更新资料
 				avatar:  		更新头像
 		)
+		replynum		评论数量
+		reblognum		转发数量
+		love			收藏数量
 	2）转采  
 		fuid				原作者uid
 		fname				原作者名称
@@ -242,8 +248,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	note:			关系备注
 	dateline:		发布时间
 	title:			标题
-	uid:			空间id
-	name:			空间名称
+	tag:
+		tagid:		空间id
+		tagname:	空间名称
 	2）转采
 	fuid:			转采uid
 	fname:			转采者名字
@@ -293,8 +300,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	note:			关系备注
 	dateline:		发布时间
 	subject:		标题
-	uid:			空间id
-	name:			空间名称
+	tag:
+		tagid:		空间id
+		tagname:	空间名称
 	2）转采
 	fuid:			转采uid
 	fname:			转采者名字
@@ -342,8 +350,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	note:			关系备注
 	dateline:		发布时间
 	subject:		标题
-	uid:			空间id
-	name:			空间名称
+	tag:
+		tagid:		空间id
+		tagname:	空间名称
 	2）转采
 	fuid:			转采uid
 	fname:			转采者名字
@@ -393,8 +402,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	note:			关系备注
 	dateline:		发布时间
 	title:			标题
-	uid:			空间id
-	name:			空间名称
+	tag:
+		tagid:		空间id
+		tagname:	空间名称
 	2）转采
 	fuid:			转采uid
 	fname:			转采者名字
