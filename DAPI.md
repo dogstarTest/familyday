@@ -171,7 +171,6 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		name: 			用户昵称
 		note : 			关系备注
 		dateline: 		动态时间
-		id: 			动态id
 		tag:
 			tagid:		空间id
 			tagname:	空间名称
@@ -824,7 +823,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		uid				用户id
 		username		用户昵称
 		avatar: 		发布用户头像url
-		id: 			动态id
+		id: 			被操作的对象id
 		idtype: 		动态类型(
 							eventid: 		发布活动
 							reeventid：		转采活动
@@ -875,6 +874,30 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	addvideo:		新视频数量  
 	pmcount：		新对话数量  
 
+<h3>1．25、	</h3><h3>pm版本动态接口</h3>  
+【参数】  
+>  
+
+	do:	 		pmfeed
+	uid:		用户id, 无则代表登陆用户的uid  
+	perpage: 	分页大小， 默认10
+	page:		当前页
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器 
+	idtype:		动态的类型【可选】，默认为空（代表全部），如果指定值（则只得到该类型的动态）
+【调用方式】  
+网站域名/dapi/space.php?do=pmfeed&m_auth=?    
+【返回值】  
+
+>
+
+	1）多维数组：  
+		uid:			行为人uid
+		id：			被操作对象的id
+
+
+	
+	
+	
 <h2>第二部分 </h2><h2>上行接口部分</h2>
 ==================
 
