@@ -148,8 +148,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	message:			内容
 	dateline:			发布时间
 	endtime：			结束时间
-
-
+	pic:				今日话题图片
+	imagesize
+		height:			图片高度
+		width:			图片宽度
+		
  
 <h3>1．3、	</h3><h3>家庭动态列表接口</h3>  
 【参数】  
@@ -518,6 +521,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	feednum:		该标签的信息数量
 	feedlist:		信息详情，【数组】
 		image_1		图片地址
+		imagesize	图片信息
+			height: 图片高度
+			width:	图片宽度
 		idtype:		信息的类型，包括（'blogid','photoid','eventid','videoid','reblogid','rephotoid','reeventid','revideoid'）
 		id:			信息的id
 		uid:		该条信息的发布人uid
