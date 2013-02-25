@@ -29,7 +29,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．21、[有奖任务详情](#有奖任务详情)
 	* 1．22、[微信家庭动态列表接口](#微信家庭动态列表接口)
 	* 1．23、[m_auth验证接口](#m_auth验证接口)
-	* 1．24、[pm版本统计接口](#pm版本统计接口)
+	* 1．24、[pm版本统计接口](#pm版本统计接口) 
+	* 1．25、[pm版本动态接口](#pm版本动态接口)
 
 * 第二部分 [上行接口部分](#上行接口部分)
 	* 2.1、 [普通登录接口](#普通登录接口)
@@ -193,6 +194,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		replynum		评论数量
 		reblognum		转发数量
 		love			收藏数量
+		picnum			照片数量
 	2）转采  
 		fuid				原作者uid
 		fname				原作者名称
