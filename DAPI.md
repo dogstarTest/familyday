@@ -137,10 +137,15 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 
  
 <h3>1.2、</h3><h3>今日话题</h3>  
-【参数】  
-无
+【参数】   
+>   
+
+	perpage: 	分页大小， 默认10 
+	page:		当前页 
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器 
+	
 【调用方式】  
-网站域名/dapi/space.php?do=topic  
+网站域名/dapi/space.php?do=topic&m_auth=?   
 【返回值】  
 >  
 
@@ -152,7 +157,27 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	imagesize
 		height:			图片高度
 		width:			图片宽度
-		
+	content: 【话题的内容】	 
+		image_1：   内容的图片 
+		idtype：    内容的类型(blogid,eventid,videoid,photoid) 
+		id：        内容的id 
+		uid：  	    发布人的uid 
+		subject：   内容的标题 
+		message：   内容的详情说明 
+		imagesize： 图片的尺寸 
+			height：高 
+			width： 宽 
+		commentlist【评论】
+			authorid:		评论用户uid
+			avatar:			头像url
+			authorname:		评论用户名
+			note:			关系备注
+			message:		评论内容
+			dateline:		评论时间
+			lng:			经度
+			lat:			纬度
+			address:		地名
+			come:			发布来源	
  
 <h3>1．3、	</h3><h3>家庭动态列表接口</h3>  
 【参数】  
@@ -435,6 +460,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		message：	评论内容
 	7) 发布渠道 
 	come:			发布渠道
+	7) 活动成员 
+	members【数组】:  
+		uid:		参加者的uid
+		name:		参加者的名字
+		dateline:	参加时间
+	
 	
 
  
@@ -454,7 +485,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【返回值】  
 >  
 
-	authored:		评论用户uid、
+	authorid:		评论用户uid
 	avatar:			头像url
 	authorname:		评论用户名
 	note:			关系备注
