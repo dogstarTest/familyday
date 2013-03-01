@@ -560,7 +560,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		uid:		该条信息的发布人uid
 		subject:	标题
 		message:	概述
-		comment	 评论内容【数组】
+		commentlist 评论内容【数组】
 			authoreid	评论人的uid
 			author		评论人的名字
 			message		评论内容
