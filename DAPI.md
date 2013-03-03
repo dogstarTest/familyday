@@ -223,6 +223,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		reblognum		转发数量
 		love			收藏数量
 		picnum			照片数量
+		mylove			是否是我收藏的，1：是，0：否
 	2）转采  
 		fuid				原作者uid
 		fname				原作者名称
@@ -523,6 +524,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		name:		家人名字
 		avatar:		家人头像
 		note：		关系备注
+		birthday：	生日
 	3) 空间列表
 	spacelist:		数组
 		tagid:		空间id
@@ -694,6 +696,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	name:			对方的昵称
 	phone:			对方的电话号码
 	avatar:			对方的头像
+	isfamily:		是否是我的家人，1：是，0：否
 	birthday:		对方生日
 	fmembers：		对方的家人数量
 	tags:			空间数量
