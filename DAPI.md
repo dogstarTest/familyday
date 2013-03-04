@@ -963,6 +963,10 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 			-2： 用户名或者密码错误
 			 1： 登录成功
 	 m_auth: 登录成功后返回的登录密匙，请求每个接口都需要发送这个参数给服务器,重新登录时，这个值会改变。
+	 uid:	   用户的uid  
+	 username: 用户名  
+	 name:     用户昵称  
+	 avatar:   用户头像  
 	 
 <h3>2.2、	</h3><h3>第三方登录接口</h3>  
 【参数】  
@@ -982,7 +986,10 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 			-2：用户名或者密码错误
 			 1：登录成功
 		m_auth: 登录成功后返回的登录密匙，请求每个接口都需要发送这个参数给服务器,重新登录时，这个值会改变  
-
+		uid:	   用户的uid  
+		username: 用户名  
+		name:     用户昵称  
+		avatar:   用户头像  
 
 
  
@@ -1007,7 +1014,10 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 						-2：用户名或者密码错误
 						 1：登录成功
 					m_auth: 注册成功后返回的登录密匙，需要保持在客户端。
-
+					uid:	   用户的uid  
+					username:  用户名  
+					name:      用户昵称  
+					avatar:    用户头像  
 
 
  
