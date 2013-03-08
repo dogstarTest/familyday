@@ -1753,28 +1753,28 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 <h3>2．36、	</h3><h3>忽略/删除家人</h3>  
 【参数】  
 >  
-	uid:			被忽略或者被删除的家人的uid
+	uid:			被忽略或者被删除的家人的uid  
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
-	friendsubmit    1 如果设置了此变量，代表提交了数据
+	friendsubmit    1 如果设置了此变量，代表提交了数据    
 【调用方式】  
 网站域名/dapi/cp.php?ac=friend&op=ignore&uid=?&m_auth=?    
 【返回值】  
 >  
-	
+	 
 	data
 			return:  1  
 			
 <h3>2.37、	</h3><h3>删除对话接口</h3>  
 【参数】  
 >  
-	pmid			对话列表的id
-	deletesubmit	提交信息的表单验证，设为1即可  
+	pmid			对话列表的id  
+	deletesubmit	提交信息的表单验证，设为1即可   
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/cp.php?ac=pm&op=delete&folder=inbox&pmid=?&deletesubmit=1
+网站域名/dapi/cp.php?ac=pm&op=delete&folder=inbox&pmid=?&deletesubmit=1  
 【返回值】  
 >  
 	
-	msgkey：			信息提示码
-	msg：				返回的提示信息
-	error:				返回的错误的状态, 0无错误，1出错
+	msgkey：			信息提示码  
+	msg：				返回的提示信息  
+	error:				返回的错误的状态, 0无错误，1出错  
