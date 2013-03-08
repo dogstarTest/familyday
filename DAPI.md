@@ -45,7 +45,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 2.10、	[评论接口](#评论接口)
 	* 2.11、	[参加活动接口](#参加活动接口)
 	* 2.12、	[表态接口](#表态接口)
-	* 2.13、	[发消息（对话）接口](#发消息（对话）接口)
+	* 2.13、	[发消息对话接口](#发消息对话接口)
 	* 2.14、	[修改头像接口](#修改头像接口)
 	* 2.15、	[修改昵称接口](#修改昵称接口)
 	* 2.16、	[修改生日接口](#修改生日接口)
@@ -65,7 +65,10 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 2.31、	[发表我想说接口](#发表我想说接口)
 	* 2.32、	[空间名称列表接口](#空间名称列表接口)
 	* 2.33、	[和谁在一起的人列表接口](#和谁在一起的人列表接口)
-	* 2.34、	[退出登录接口](#退出登录接口)
+	* 2.34、	[退出登录接口](#退出登录接口) 
+	* 2.35、	[家人分组接口](#家人分组接口)
+	* 2.36、	[忽略/删除家人](#忽略/删除家人)
+	* 2.37、	[删除对话接口](#删除对话接口)
 
  
 <h2>前言</h2>  
@@ -1082,10 +1085,10 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 网站域名/dapi/cp.php?ac=tag  
 【返回值】  
 >  
-	
-	msgkey：		信息提示码
-	msg：			返回的提示信息
-	error:			返回的错误的状态, 0无错误，1出错
+	data
+        tagid:		   空间id  
+        tagname:       空间名称  
+        default_image: 空间默认的图片  
  
 <h3>2.7、	</h3><h3>申请成为家人接口</h3>  
 【参数】  
@@ -1204,7 +1207,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		experience		经验
 
  
-<h3>2.13、	</h3><h3>发消息（对话）接口</h3>  
+<h3>2.13、	</h3><h3>发消息对话接口</h3>  
 【参数】  
 >  
 	
@@ -1218,7 +1221,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	pmsubmit	提交信息的表单验证，设为1即可  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/ cp.php?ac=pm&op=send  
+网站域名/dapi/cp.php?ac=pm&op=send  
 【返回值】  
 >  
 	
@@ -1760,3 +1763,18 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	
 	data
 			return:  1  
+			
+<h3>2.37、	</h3><h3>删除对话接口</h3>  
+【参数】  
+>  
+	pmid			对话列表的id
+	deletesubmit	提交信息的表单验证，设为1即可  
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+【调用方式】  
+网站域名/dapi/cp.php?ac=pm&op=delete&folder=inbox&pmid=?&deletesubmit=1
+【返回值】  
+>  
+	
+	msgkey：			信息提示码
+	msg：				返回的提示信息
+	error:				返回的错误的状态, 0无错误，1出错
