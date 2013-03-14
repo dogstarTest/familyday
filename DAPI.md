@@ -68,7 +68,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 2.34、	[退出登录接口](#退出登录接口) 
 	* 2.35、	[家人分组接口](#家人分组接口)
 	* 2.36、	[忽略/删除家人](#忽略/删除家人)
-	* 2.37、	[删除对话接口](#删除对话接口)
+	* 2.37、	[删除对话接口](#删除对话接口)  
+	* 2.38、	[邀请注册接口](#邀请注册接口)
 
  
 <h2>前言</h2>  
@@ -1379,6 +1380,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	come		发布来源（客户端生成, iphone或者ipad或者android）
 	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
+	makeqqweibo	是否发布到腾讯微博，1代表是
 	photosubmit	1 如果设置了此变量，代表提交了数据  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
@@ -1409,6 +1411,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	come		发布来源（客户端生成, iphone或者ipad或者android）
 	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
+	makeqqweibo	是否发布到腾讯微博，1代表是
 	photosubmit	1 如果设置了此变量，代表提交了数据,  无此变量代表是发布界面  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
@@ -1450,6 +1453,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	come		发布来源（客户端生成, iphone或者ipad或者android）
 	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
+	makeqqweibo	是否发布到腾讯微博，1代表是
 	blogsubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
@@ -1484,6 +1488,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	come		发布来源（客户端生成, iphone或者ipad或者android）
 	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
+	makeqqweibo	是否发布到腾讯微博，1代表是
 	blogsubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
@@ -1528,6 +1533,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	come			发布来源（客户端生成, iphone或者ipad或者android）
 	makefeed		1, 是否产生feed
 	makeweibo		是否发布到微博，1代表是
+	makeqqweibo	    是否发布到腾讯微博，1代表是
 	eventsubmit		1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
@@ -1563,6 +1569,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	come		发布来源（客户端生成, iphone或者ipad或者android）
 	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
+	makeqqweibo	是否发布到腾讯微博，1代表是
 	eventsubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面   
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
@@ -1619,6 +1626,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	come		发布来源（客户端生成, iphone或者ipad或者android）
 	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
+	makeqqweibo	是否发布到腾讯微博，1代表是
 	videosubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
@@ -1650,6 +1658,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	come		发布来源（客户端生成, iphone或者ipad或者android）
 	makefeed	1, 是否产生feed
 	makeweibo	是否发布到微博，1代表是
+	makeqqweibo	是否发布到腾讯微博，1代表是
 	videosubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面 
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
  
@@ -1685,6 +1694,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 		address		发布地址（客户端生成）
 		come		发布来源（客户端生成, iphone或者ipad或者android）
 		makeweibo	是否发布到微博，1代表是
+		makeqqweibo	是否发布到腾讯微博，1代表是
 		isaysubmit	1 如果设置了此变量，代表提交了数据，没有设置，那么就是发布界面  
 		m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
@@ -1792,3 +1802,20 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	msgkey：			信息提示码  
 	msg：				返回的提示信息  
 	error:				返回的错误的状态, 0无错误，1出错  
+	
+	
+<h3>2.38、	</h3><h3>邀请注册接口</h3>  
+【参数】  
+>  
+	ac				invite  
+	username		邀请的用户名(即手机号)
+	name			邀请的人的昵称
+	smsinvite		提交信息的表单验证，设为1即可   
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+【调用方式】  
+网站域名/dapi/cp.php?ac=invite&username=?&name=?&smsinvite=1  
+【返回值】  
+>  
+	
+	data
+		password		被邀请人的登录密码  
