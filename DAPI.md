@@ -608,6 +608,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	touid: 		对话的用户id
 	page:		当前页, 默认1
 	perpage:	分页大小，默认10  
+	daterange	时间范围(1:最近一天，2：最近两天 3:最近三天 4:本周 5:全部)，默认为5 
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=pm&subop=view&m_auth=?&touid=4  
