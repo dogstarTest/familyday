@@ -702,7 +702,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		babysex		 孩子性别
 		babybirthday 孩子生日
 		babyavatar	 孩子头像
-		tagid		 还是所属的空间详情的id
+		tagid		 孩子所属的空间详情的id
 	
 	存客户端:		主题
 	sina_uid:		是否绑定新浪微博，有uid则说明绑定
