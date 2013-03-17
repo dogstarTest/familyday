@@ -695,6 +695,15 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	credit:			金币
 	tasknum:		有奖任务
 	lovenum:		收藏数量
+	babylist:【数组】孩子
+		babyid		 孩子id
+		uid			 孩子所属的uid
+		babyname	 孩子名称
+		babysex		 孩子性别
+		babybirthday 孩子生日
+		babyavatar	 孩子头像
+		tagid		 还是所属的空间详情的id
+	
 	存客户端:		主题
 	sina_uid:		是否绑定新浪微博，有uid则说明绑定
 	is_qq_bing:		是否绑定qq
@@ -1073,7 +1082,6 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	babyname:			孩子姓名
 	babysex:			孩子性别
 	babybirthday:		孩子出生年月
-	babyavatar:			孩子头像
 	babysubmit：		提交表单用的验证，设为1即可  
 	m_auth:				API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
