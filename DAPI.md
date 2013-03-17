@@ -774,12 +774,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	    avatar：	家人的头像
 	    note:		家人关系备注 
 	    feeds:		家人动态数量 
-	    fmembers：	家人的家人数量
-	birthday：		家人的生日
-	isfamily:		是否已经成为家人，1已经是家人，0不是
-	noregister:		为1时，表示没有注册
-
-
+	    fmembers：	家人的家人数量  
+		birthday：	家人的生日  
+		isfamily:	是否已经成为家人，1已经是家人，0不是  
 
  
 <h3>1．18、	</h3><h3>家人申请接口</h3>  
