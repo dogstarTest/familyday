@@ -230,6 +230,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		love			收藏数量
 		picnum			照片数量
 		mylove			是否是我收藏的，1：是，0：否
+		eventdetail		活动详情   
+        eventstarttime	活动时间  
 	2）转采  
 		fuid				原作者uid
 		fname				原作者名称
@@ -450,7 +452,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	love:			收藏数量
 	4) 活动信息
 	title:			活动标题
-	detail：		活动主要内容
+	detail：		活动主要内容, html形式
 	dateline:		活动时间
 	lng：			经度
 	lat：			纬度
