@@ -487,6 +487,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	idtype:		被评论的类型(photoid: 照片,  'eventid': 活动,  'blogid'：日志,  'videoid'：视频)
 	page:		当前页，默认1
 	perpage:	每页数量，默认10
+	starttime:	取数据的开始时间，不包含变量自身, 默认空值不设置数据范围 
+	endtime:	取数据的结束时间，不包含变量自身, 默认空值不设置数据范围 
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 
 【调用方式】  
@@ -611,6 +613,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	page:		当前页, 默认1
 	perpage:	分页大小，默认10  
 	daterange	时间范围(1:最近一天，2：最近两天 3:最近三天 4:本周 5:全部)，默认为5 
+	starttime:	取数据的开始时间，不包含变量自身, 默认空值不设置数据范围, 设置了此变量后，daterange参数将失效 
+	endtime:	取数据的结束时间，不包含变量自身, 默认空值不设置数据范围 
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=pm&subop=view&m_auth=?&touid=4  
@@ -1100,7 +1104,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
  
 <h3>2.6、	</h3><h3>创建空间接口</h3>  
 【参数】  
->  
+>
 	
 	tagname:		空间名
 	tagsubmit：		提交表单用的验证，设为1即可  
@@ -1108,7 +1112,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【调用方式】  
 网站域名/dapi/cp.php?ac=tag  
 【返回值】  
->  
+>
+
 	data
         tagid:		   空间id  
         tagname:       空间名称  
@@ -1788,7 +1793,8 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 
 <h3>2．36、	</h3><h3>忽略/删除家人</h3>  
 【参数】  
->  
+>
+
 	uid:			被忽略或者被删除的家人的uid  
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	friendsubmit    1 如果设置了此变量，代表提交了数据    
@@ -1802,7 +1808,8 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 			
 <h3>2.37、	</h3><h3>删除对话接口</h3>  
 【参数】  
->  
+>
+
 	pmid			对话列表的id  
 	deletesubmit	提交信息的表单验证，设为1即可   
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
@@ -1818,7 +1825,8 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	
 <h3>2.38、	</h3><h3>邀请注册接口</h3>  
 【参数】  
->  
+>
+
 	ac				invite  
 	username		邀请的用户名(即手机号)
 	name			邀请的人的昵称
@@ -1835,7 +1843,8 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 		
 <h3>2.39、	</h3><h3>表态类型接口</h3>  
 【参数】  
->  
+>
+
 	ac				click  
 	op				clicktype
 	idtype			类型(blogid,eventid,photoid,vedioid)
@@ -1851,7 +1860,24 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 		icon		表情的图标
 		idtype		表情所属的类型(blogid,eventid,photoid,vedioid)
 		
-		
+<h3>2.40、	</h3><h3>修改密码接口</h3>  
+【参数】  
+>
+
+	ac				account  
+	password		当前密码 
+	newpasswd1		新密码 
+	newpasswd2		确认密码  
+	pwdsubmit		提交信息的表单验证，设为1即可   
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+【调用方式】  
+网站域名/dapi/cp.php?ac=account 
+【返回值】  
+>  
+	
+	msgkey：			信息提示码  
+	msg：				返回的提示信息  
+	error:				返回的错误的状态, 0无错误，1出错  		
 		
 		
 		
