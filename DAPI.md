@@ -74,7 +74,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 2.40、	[修改密码接口](#修改密码接口) 
 	* 2.41、	[孩子资料修改接口](#孩子资料修改接口) 
 	* 2.42、	[找回密码接口](#找回密码接口) 
-	
+	* 2.43、	[注册获取验证码接口](#注册获取验证码接口) 
 
  
 <h2>前言</h2>  
@@ -1034,10 +1034,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 <h3>2.3、	</h3><h3>注册接口</h3>  
 【参数】  
 >  
+	注册前调用 2.43、注册获取验证码接口
 	
-	username:			注册用户名(手机号)
-	password:			密码
-	invitecode:			邀请码  
+	username:		注册用户名(手机号)
+	password:		密码
+	seccode:		手机验证码  
 【调用方式】  
 网站域名/dapi/do.php?ac=register  
 【返回值】  
@@ -1966,6 +1967,18 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	msgkey：		信息提示码
 	msg：			返回的提示信息
 	error:			返回的错误的状态, 0无错误，1出错		
+	
+<h3>2.43、	</h3><h3>注册获取验证码接口</h3>  
+【参数】  
+>  
+	username:			用户名（手机号）
+【调用方式】  
+网站域名/dapi/do.php?ac=register&op=getseccode&username=? 
+【返回值】  
+>  
+	data
+		seccode		验证码
+		username	注册的用户名
 		
 		
 		
