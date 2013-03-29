@@ -30,7 +30,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．22、[微信家庭动态列表接口](#微信家庭动态列表接口)
 	* 1．23、[m_auth验证接口](#m_auth验证接口)
 	* 1．24、[pm版本统计接口](#pm版本统计接口) 
-	* 1．25、[pm版本动态接口](#pm版本动态接口)
+	* 1．25、[pm版本动态接口](#pm版本动态接口)  
+	* 1．26、[空间详情简化接口](#空间详情简化接口)  
+	* 1．27、[我收藏的帖子的动态列表接口](#我收藏的帖子的动态列表接口)  
 
 * 第二部分 [上行接口部分](#上行接口部分)
 	* 2.1、 [普通登录接口](#普通登录接口)
@@ -75,6 +77,10 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 2.41、	[孩子资料修改接口](#孩子资料修改接口) 
 	* 2.42、	[找回密码接口](#找回密码接口) 
 	* 2.43、	[注册获取验证码接口](#注册获取验证码接口) 
+	* 2.44、	[删除日记接口](#删除日记接口) 
+	* 2.45、	[删除活动接口](#删除活动接口) 
+	* 2.46、	[删除视频接口](#删除视频接口) 
+	* 2.47、	[删除照片接口](#删除照片接口)  
 
  
 <h2>前言</h2>  
@@ -973,7 +979,108 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		id：			被操作对象的id
 		idtype:			被操作的对象类型
 
+		
+<h3>1．26、	</h3><h3>空间详情简化接口</h3>  
+【参数】  
+>  
 
+	uid:			用户id, 无则代表登陆用户的uid  
+	tagid:			空间id
+	page:			当前页，默认1
+	perpage:		每页大小，默认1 (如果是ipad版本，可以传递大点的值过来,比如：10)  
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+【调用方式】  
+网站域名/dapi/space.php?do=familyspace&m_auth=?&tagid=?  
+【返回值】  
+>  
+
+	tagname:		标签名，即：网站详情中的概述
+	feednum:		该标签的信息数量
+	feedlist:		信息详情，【数组】
+		idtype:		信息的类型，包括（'blogid','photoid','eventid','videoid','reblogid','rephotoid','reeventid','revideoid'）
+		id:			信息的id
+		uid:		该条信息的发布人uid
+
+<h3>1．27、	</h3><h3>我收藏的帖子的动态列表接口</h3>  
+【参数】  
+>  
+
+	do:	 		lovefeed
+	uid:		用户id, 无则代表登陆用户的uid  
+	perpage: 	分页大小， 默认10
+	page:		当前页
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器 
+	idtype:		动态的类型【可选】，默认为空（代表全部），如果指定值（则只得到该类型的动态）
+【调用方式】  
+网站域名/dapi/space.php?do=lovefeed&m_auth=?    
+【返回值】  
+
+>
+
+	1）多维数组：  
+		avatar: 		发布用户头像url
+		name: 			用户昵称
+		note : 			关系备注
+		dateline: 		动态时间
+		tag:
+			tagid:		空间id
+			tagname:	空间名称
+		idtype: 		动态类型(
+				eventid: 		发布活动
+				reeventid：		转采活动
+				eventcomment：	活动评论
+				blogid: 	 	发布更新日志
+				reblogid： 		转采日志
+				blogcomment： 	日志评论
+				photoid：	  	上传图片
+				photocomment： 	评论图片
+				rephotoid：		转采图片
+				videoid：		发布视频
+				revideoid：		转采视频
+				videocomment：	视频评论
+				profield: 		更新资料
+				avatar:  		更新头像
+		)
+		replynum		评论数量
+		reblognum		转发数量
+		love			收藏数量
+		picnum			照片数量
+		mylove			是否是我收藏的，1：是，0：否
+		eventdetail		活动详情   
+        eventstarttime	活动时间  
+	2）转采  
+		fuid				原作者uid
+		fname				原作者名称
+	3)普通动态  
+		title: 				动态标题
+		image_1 – image_4:	动态带的图片和内容附图的数量, 如果有图片则有值，否则为空值
+		message:			动态简介文字
+		id:					原文id
+		fuid:				原文所属于的空间id
+		fname:				原文所属于的空间名称
+	4） 活动动态  
+		lng:				活动地点的经度
+		lat:				活动地点的纬度
+		location:			活动地点的地名
+	5） 行为动态  
+		uid:				行为人uid
+		name:				行为人名字
+		fuid:				对象人uid
+		fname:				对象人名字
+		subject：			被操作的对象名称
+		id：				被操作的id
+		idtype：			被操作的类型
+	6) 发布渠道 
+		come: 				发布的渠道  
+	
+	7） 最新的两条评论  
+		comment： 	数组
+			authorid：		评论人的uid
+			authorname:		评论人的名字
+			message：		评论内容
+			dateline：		评论时间
+
+ 
 	
 	
 	
@@ -1039,6 +1146,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	username:		注册用户名(手机号)
 	password:		密码
 	seccode:		手机验证码  
+	如果需要绑定微博，需要提供以下参数： 
+	sina_uid		新浪微博用户id【可选】
+	sina_token		新浪微博token【可选】
+	qq_openid		新浪微博用户id【可选】
+	qq_token		新浪微博token【可选】
 【调用方式】  
 网站域名/dapi/do.php?ac=register  
 【返回值】  
@@ -1981,9 +2093,73 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 		username	注册的用户名
 		
 		
+<h3>2.44、	</h3><h3>删除日记接口</h3>  
+【参数】  
+>  
+	op			  delete   
+	blogid		  日志id
+	deletesubmit  1
+	m_auth:		  API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	
+【调用方式】  
+网站域名/dapi/cp.php?ac=blog&op=delete   
+【返回值】  
+>  
+	
+	msgkey：		信息提示码
+	msg：			返回的提示信息
+	error:			返回的错误的状态, 0无错误，1出错		
 		
+<h3>2.45、	</h3><h3>删除活动接口</h3>  
+【参数】  
+>  
+	op			  delete   
+	eventid		  活动id 
+	deletesubmit  1
+	m_auth:		  API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	
+【调用方式】  
+网站域名/dapi/cp.php?ac=event&op=delete   
+【返回值】  
+>  
+	
+	msgkey：		信息提示码
+	msg：			返回的提示信息
+	error:			返回的错误的状态, 0无错误，1出错				
+	
+	
+<h3>2.46、	</h3><h3>删除视频接口</h3>  
+【参数】  
+>  
+	op			  delete   
+	videoid		  视频id 
+	deletesubmit  1
+	m_auth:		  API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	
+【调用方式】  
+网站域名/dapi/cp.php?ac=video&op=delete   
+【返回值】  
+>  
+	
+	msgkey：		信息提示码
+	msg：			返回的提示信息
+	error:			返回的错误的状态, 0无错误，1出错	
 		
-		
-		
+<h3>2.47、	</h3><h3>删除照片接口</h3>  
+【参数】  
+>  
+	op			  delete   
+	photoid		  照片id 
+	deletesubmit  1
+	m_auth:		  API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	
+【调用方式】  
+网站域名/dapi/cp.php?ac=photoid&op=delete   
+【返回值】  
+>  
+	
+	msgkey：		信息提示码
+	msg：			返回的提示信息
+	error:			返回的错误的状态, 0无错误，1出错			
 		
 		
