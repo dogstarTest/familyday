@@ -77,10 +77,10 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 2.41、	[孩子资料修改接口](#孩子资料修改接口) 
 	* 2.42、	[找回密码接口](#找回密码接口) 
 	* 2.43、	[注册获取验证码接口](#注册获取验证码接口) 
-	* 2.44、	[删除日记接口](#删除日记接口) 
-	* 2.45、	[删除活动接口](#删除活动接口) 
-	* 2.46、	[删除视频接口](#删除视频接口) 
-	* 2.47、	[删除照片接口](#删除照片接口)  
+	* 2.44、	[删除日记/转发接口](#删除日记/转发接口) 
+	* 2.45、	[删除活动/转发接口](#删除活动/转发接口) 
+	* 2.46、	[删除视频/转发接口](#删除视频/转发接口) 
+	* 2.47、	[删除照片/转发接口](#删除照片/转发接口)  
 
  
 <h2>前言</h2>  
@@ -185,6 +185,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		commentlist【评论】
 			authorid:		评论用户uid
 			avatar:			头像url
+			vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 			authorname:		评论用户名
 			note:			关系备注
 			message:		评论内容
@@ -212,6 +213,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 
 	1）多维数组：  
 		avatar: 		发布用户头像url
+		vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 		name: 			用户昵称
 		note : 			关系备注
 		dateline: 		动态时间
@@ -292,6 +294,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	uid:			发布者的uid
 	name:			发布者的name
 	avatar:			发布者的头像  
+	vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 	note:			关系备注
 	dateline:		发布时间
 	title:			标题
@@ -319,10 +322,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		uid:		在一起的人的uid
 		name:		在一起的人的名字
 		avatar:		在一起的人的头像
+		vipstatus:	personal: 个人, family： 家庭， 空值：普通用户
 	7) 评论（表态）
 	commentlist:多维数组
 		authorid：	评论人uid
 		avatar:		评论人头像
+		vipstatus:	personal: 个人, family： 家庭， 空值：普通用户
 		message：	评论内容
 	8) 发布渠道 
 	come:			发布渠道
@@ -344,6 +349,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	uid:			发布者的uid
 	name:			发布者的name  
 	avatar:			发布者的头像  
+	vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 	note:			关系备注
 	dateline:		发布时间
 	subject:		标题
@@ -368,10 +374,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		uid:		在一起的人的uid
 		name:		在一起的人的名字
 		avatar:		在一起的人的头像
+		vipstatus:	personal: 个人, family： 家庭， 空值：普通用户
 	7) 评论（表态）
 	commentlist:多维数组
 		authorid：	评论人uid
 		avatar:		评论人头像
+		vipstatus:	personal: 个人, family： 家庭， 空值：普通用户
 		message：	评论内容
 	8) 发布渠道 
 	come:			发布渠道
@@ -394,6 +402,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	uid:			发布者的uid
 	name:			发布者的name  
 	avatar:			发布者的头像  
+	vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 	note:			关系备注
 	dateline:		发布时间
 	subject:		标题
@@ -419,10 +428,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		uid:		在一起的人的uid
 		name:		在一起的人的名字
 		avatar:		在一起的人的头像
+		vipstatus:	personal: 个人, family： 家庭， 空值：普通用户
 	7) 评论（表态）
 	commentlist:多维数组
 		authorid：	评论人uid
 		avatar:		评论人头像
+		vipstatus:	personal: 个人, family： 家庭， 空值：普通用户
 		message：	评论内容
 	8) 发布渠道 
 	come:			发布渠道
@@ -446,6 +457,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	uid:			发布者的uid
 	name:			发布者的name  
 	avatar:			发布者的头像  
+	vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 	note:			关系备注
 	dateline:		发布时间
 	title:			标题
@@ -471,10 +483,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		uid:		在一起的人的uid
 		name:		在一起的人的名字
 		avatar:		在一起的人的头像
+		vipstatus:	personal: 个人, family： 家庭， 空值：普通用户
 	6) 评论（表态）
 	commentlist:多维数组
 		authorid：	评论人uid
 		avatar:		评论人头像
+		vipstatus:	personal: 个人, family： 家庭， 空值：普通用户
 		message：	评论内容
 	7) 发布渠道 
 	come:			发布渠道
@@ -507,6 +521,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 
 	authorid:		评论用户uid
 	avatar:			头像url
+	vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 	authorname:		评论用户名
 	note:			关系备注
 	message:		评论内容
@@ -534,6 +549,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	uid:			用户id
 	name:			用户名字
 	avatar:			用户头像url
+	vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 	feeds:			动态数量
 	fmembers:		家人数量	
 	birthday：		生日
@@ -542,6 +558,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		uid:		家人uid
 		name:		家人名字
 		avatar:		家人头像
+		vipstatus:	personal: 个人, family： 家庭， 空值：普通用户
 		note：		关系备注
 		birthday：	生日
 	3) 空间列表
@@ -634,11 +651,13 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		uid:			当前用户的uid
 		name:			当前用户的name
 		avatar:			头像url
+		vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 		lastmsgtime:	最后一条对话的时间
 	touser: 	
 		uid:			对方的uid
 		name:			对方的name
 		avatar:			对方头像url
+		vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 	dialog: 多条信息的数组
 		msgfromid:		发信人uid
 		msgtoid:		接收信息人uid
@@ -666,6 +685,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	1）	
 	authorid:			发通知的用户uid
 	authouravatar:		头像url
+	vipstatus:			personal: 个人, family： 家庭， 空值：普通用户
 	authourname:		发通知的用户昵称
 	note:				通知详情(仅仅供参考, 不用来显示)
 	notesplit:			拆分后的通知内容   
@@ -703,6 +723,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	uid:			用户id
 	name:			用户名字
 	avatar:			用户头像url
+	vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 	phone:			电话号码
 	birthday：		生日
 	fmembers:		家人数量
@@ -740,6 +761,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	name:			对方的昵称
 	phone:			对方的电话号码
 	avatar:			对方的头像
+	vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 	isfamily:		是否是我的家人，1：是，0：否
 	birthday:		对方生日
 	fmembers：		对方的家人数量
@@ -762,6 +784,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	uid:				自己的用户id
 	name:				自己的昵称
 	avatar:				自己的头像
+	vipstatus:			personal: 个人, family： 家庭， 空值：普通用户
 	fmembers：			自己的家人数量
 	fmemberlist：家人列表【数组】
 			uid			家人的用户id
@@ -791,6 +814,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	uid:			自己的用户id
 	name:			自己的昵称
 	avatar:			自己的头像
+	vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 	fmembers：		自己的家人数量
 	fmemberlist：家人列表【数组】
 		uid			家人的用户id
@@ -817,12 +841,14 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	uid:				自己的用户id
 	name:				自己的昵称
 	avatar:				自己的头像
+	vipstatus:			personal: 个人, family： 家庭， 空值：普通用户
 	fmembers：			自己的家人数量
 	requestlist:申请人列表【数组】
 		uid:			用户id
 		phone:			电话号码
 		name:			用户昵称
 		avatar:			用户头像
+		vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 		dateline:		申请时间
 
  
@@ -840,6 +866,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	uid:			自己的用户id
 	name:			自己的昵称
 	avatar:			自己的头像
+	vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 	tasknum:		未完成的有奖任务数
 	tasklist:【数组】有奖任务列表
 		taskid：	任务id
@@ -905,6 +932,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		uid				用户id
 		username		用户昵称
 		avatar: 		发布用户头像url
+		vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 		id: 			被操作的对象id
 		idtype: 		动态类型(
 							eventid: 		发布活动
@@ -990,16 +1018,17 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	perpage:		每页大小，默认1 (如果是ipad版本，可以传递大点的值过来,比如：10)  
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=familyspace&m_auth=?&tagid=?  
+网站域名/dapi/space.php?do=familyspacesimple&m_auth=?&tagid=?  
 【返回值】  
 >  
 
-	tagname:		标签名，即：网站详情中的概述
+	tagname:		空间名，即：网站详情中的概述
 	feednum:		该标签的信息数量
 	feedlist:		信息详情，【数组】
 		idtype:		信息的类型，包括（'blogid','photoid','eventid','videoid','reblogid','rephotoid','reeventid','revideoid'）
 		id:			信息的id
 		uid:		该条信息的发布人uid
+		dateline:	时间
 
 <h3>1．27、	</h3><h3>我收藏的帖子的动态列表接口</h3>  
 【参数】  
@@ -1019,6 +1048,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 
 	1）多维数组：  
 		avatar: 		发布用户头像url
+		vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 		name: 			用户昵称
 		note : 			关系备注
 		dateline: 		动态时间
@@ -1110,6 +1140,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	 username: 用户名  
 	 name:     用户昵称  
 	 avatar:   用户头像  
+	 vipstatus:	personal: 个人, family： 家庭， 空值：普通用户
 	 credit：  本次登录的积分
 	 experience 本次登录的经验
 	 
@@ -1134,6 +1165,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		username: 用户名  
 		name:     用户昵称  
 		avatar:   用户头像  
+		vipstatus:	personal: 个人, family： 家庭， 空值：普通用户
 		credit：  本次登录的积分
 		experience 本次登录的经验
 
@@ -1169,6 +1201,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 					username:  用户名  
 					name:      用户昵称  
 					avatar:    用户头像  
+					vipstatus: personal: 个人, family： 家庭， 空值：普通用户
 
 
  
@@ -1914,7 +1947,8 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 			friendlist:	【数组】
 				fuid		 	用户uid
 				fusername		用户名
-				avatar			用户头像
+				favatar			用户头像
+				vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 				
 <h3>2.34、</h3><h3>退出登录接口</h3>  
 【参数】【GET方式】  
@@ -2093,7 +2127,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 		username	注册的用户名
 		
 		
-<h3>2.44、	</h3><h3>删除日记接口</h3>  
+<h3>2.44、	</h3><h3>删除日记/转发接口</h3>  
 【参数】  
 >  
 	op			  delete   
@@ -2110,7 +2144,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	msg：			返回的提示信息
 	error:			返回的错误的状态, 0无错误，1出错		
 		
-<h3>2.45、	</h3><h3>删除活动接口</h3>  
+<h3>2.45、	</h3><h3>删除活动/转发接口</h3>  
 【参数】  
 >  
 	op			  delete   
@@ -2128,7 +2162,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	error:			返回的错误的状态, 0无错误，1出错				
 	
 	
-<h3>2.46、	</h3><h3>删除视频接口</h3>  
+<h3>2.46、	</h3><h3>删除视频/转发接口</h3>  
 【参数】  
 >  
 	op			  delete   
@@ -2145,7 +2179,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	msg：			返回的提示信息
 	error:			返回的错误的状态, 0无错误，1出错	
 		
-<h3>2.47、	</h3><h3>删除照片接口</h3>  
+<h3>2.47、	</h3><h3>删除照片/转发接口</h3>  
 【参数】  
 >  
 	op			  delete   
