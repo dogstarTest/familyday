@@ -33,6 +33,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．25、[pm版本动态接口](#pm版本动态接口)  
 	* 1．26、[空间详情简化接口](#空间详情简化接口)  
 	* 1．27、[我收藏的帖子的动态列表接口](#我收藏的帖子的动态列表接口)  
+	* 1．28、[pm版本收藏动态接口](#pm版本收藏动态接口)  
 
 * 第二部分 [上行接口部分](#上行接口部分)
 	* 2.1、 [普通登录接口](#普通登录接口)
@@ -1110,7 +1111,27 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 			message：		评论内容
 			dateline：		评论时间
 
- 
+			
+<h3>1．28、	</h3><h3>pm版本收藏动态接口</h3>  
+【参数】  
+>  
+
+	do:	 		pmfeed
+	uid:		用户id, 无则代表登陆用户的uid  
+	perpage: 	分页大小， 默认10
+	page:		当前页
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器 
+	idtype:		动态的类型【可选】，默认为空（代表全部），如果指定值（则只得到该类型的动态）
+【调用方式】  
+网站域名/dapi/space.php?do=lovefeedpm&m_auth=?    
+【返回值】  
+
+>
+
+	1）多维数组：  
+		uid:			行为人uid
+		id：			被操作对象的id
+		idtype:			被操作的对象类型 
 	
 	
 	
