@@ -1281,6 +1281,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >
 	
 	tagname:		空间名
+	pic:			空间封面照片(url), 可以通过利用上传单张图片接口上传
 	tagsubmit：		提交表单用的验证，设为1即可  
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
