@@ -82,7 +82,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 2.45、	[删除活动/转发接口](#删除活动/转发接口) 
 	* 2.46、	[删除视频/转发接口](#删除视频/转发接口) 
 	* 2.47、	[删除照片/转发接口](#删除照片/转发接口)  
-
+	* 2.49、	[已读通知接口](#已读通知接口)  
  
 <h2>前言</h2>  
 
@@ -844,6 +844,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	avatar:				自己的头像
 	vipstatus:			personal: 个人, family： 家庭， 空值：普通用户
 	fmembers：			自己的家人数量
+	requestnum:			家人申请数量
 	requestlist:申请人列表【数组】
 		uid:			用户id
 		phone:			电话号码
@@ -2229,6 +2230,21 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	m_auth:		  	API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/do.php?ac=bindweibo&type=?&id=?&token=?&m_auth=?  
+【返回值】  
+>  
+	
+	msgkey：		信息提示码
+	msg：			返回的提示信息
+	error:			返回的错误的状态, 0无错误，1出错	
+
+<h3>2.49、	</h3><h3>已读通知接口</h3>  
+【参数】  
+>  
+	id		  	  通知id 
+	m_auth:		  API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	
+【调用方式】  
+网站域名/dapi/cp.php?ac=notice
 【返回值】  
 >  
 	
