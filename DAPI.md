@@ -2126,6 +2126,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 网站域名/dapi/do.php?ac=lostpasswd  
 【返回值】  
 >  
+
 	第一步：
 	data:
 		uid:		用户uid
@@ -2140,11 +2141,13 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 <h3>2.43、	</h3><h3>注册获取验证码接口</h3>  
 【参数】  
 >  
+
 	username:			用户名（手机号）
 【调用方式】  
 网站域名/dapi/do.php?ac=register&op=getseccode&username=? 
 【返回值】  
 >  
+
 	data
 		seccode		验证码
 		username	注册的用户名
@@ -2153,6 +2156,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 <h3>2.44、	</h3><h3>删除日记/转发接口</h3>  
 【参数】  
 >  
+
 	op			  delete   
 	blogid		  日志id
 	deletesubmit  1
@@ -2170,6 +2174,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 <h3>2.45、	</h3><h3>删除活动/转发接口</h3>  
 【参数】  
 >  
+
 	op			  delete   
 	eventid		  活动id 
 	deletesubmit  1
@@ -2188,6 +2193,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 <h3>2.46、	</h3><h3>删除视频/转发接口</h3>  
 【参数】  
 >  
+
 	op			  delete   
 	videoid		  视频id 
 	deletesubmit  1
@@ -2205,6 +2211,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 <h3>2.47、	</h3><h3>删除照片/转发接口</h3>  
 【参数】  
 >  
+
 	op			  delete   
 	photoid		  照片id 
 	deletesubmit  1
@@ -2223,6 +2230,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 <h3>2.48、	</h3><h3>绑定微博接口</h3>  
 【参数】  
 >  
+
 	ac:				bindweibo
 	type:			sina: 新浪微博, qq：腾讯微博  
 	id:				微博的id
@@ -2239,12 +2247,13 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 
 <h3>2.49、	</h3><h3>已读通知接口</h3>  
 【参数】  
->  
+> 
+
 	id		  	  通知id 
 	m_auth:		  API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
-网站域名/dapi/cp.php?ac=notice
+网站域名/dapi/cp.php?ac=notice  
 【返回值】  
 >  
 	
