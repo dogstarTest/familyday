@@ -1355,7 +1355,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 	
 	id				被评论的对象id
-	idtype			被评论的对象id类型(如：blogid, videoed) 
+	idtype			被评论的对象id类型(blogid, videoid, photoid, eventid)，转发的也是这几个
 	message			评论内容  
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
