@@ -178,6 +178,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		idtype：    内容的类型(blogid,eventid,videoid,photoid) 
 		id：        内容的id 
 		uid：  	    发布人的uid 
+		name：  	发布人的昵称 
 		subject：   内容的标题 
 		message：   内容的详情说明 
 		imagesize： 图片的尺寸 
@@ -597,6 +598,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		idtype:		信息的类型，包括（'blogid','photoid','eventid','videoid','reblogid','rephotoid','reeventid','revideoid'）
 		id:			信息的id
 		uid:		该条信息的发布人uid
+		name:		该条信息的发布人昵称
 		subject:	标题
 		message:	概述
 		commentlist 评论内容【数组】
