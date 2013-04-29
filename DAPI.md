@@ -259,14 +259,25 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		lng:				活动地点的经度
 		lat:				活动地点的纬度
 		location:			活动地点的地名
-	5） 行为动态  
+	5） 行为动态
+		
+		普通的行为动态：
 		uid:				行为人uid
 		name:				行为人名字
 		fuid:				对象人uid
 		fname:				对象人名字
+		
+		评论的行为动态(即：idtype为：**comment的)：
+		cuid:				评论人uid
+		cname:				评论人名字
+		uid:				被评论对象人uid
+		name:				被评论对象人名字
+		
+		------------------------------
 		subject：			被操作的对象名称
 		id：				被操作的id
 		idtype：			被操作的类型
+		
 	6) 发布渠道 
 		come: 				发布的渠道  
 	
@@ -602,8 +613,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		subject:	标题
 		message:	概述
 		commentlist 评论内容【数组】
-			authoreid	评论人的uid
-			author		评论人的名字
+			authorid	评论人的uid
+			author		评论人的用户名
+			authorname	评论人的昵称
 			message		评论内容
 
  
