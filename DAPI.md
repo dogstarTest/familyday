@@ -271,6 +271,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		cuid:				评论人uid
 		cname:				评论人名字
 		cavatar: 			评论人头像
+		cvipstatus:			personal: 个人, family： 家庭， 空值：普通用户
 		uid:				被评论对象人uid
 		name:				被评论对象人名字
 		
