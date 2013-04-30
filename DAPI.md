@@ -270,6 +270,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		评论的行为动态(即：idtype为：**comment的)：
 		cuid:				评论人uid
 		cname:				评论人名字
+		cavatar: 			评论人头像
 		uid:				被评论对象人uid
 		name:				被评论对象人名字
 		
