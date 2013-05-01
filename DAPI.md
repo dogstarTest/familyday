@@ -1162,7 +1162,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	range:		范围，默认3000, 单位米  
 	perpage: 	分页大小， 默认10
 	page:		当前页, 默认1
-	keywords:   关键词，如：酒店
+	keyword:    关键词，如：酒店
 【调用方式】  
 网站域名/dapi/map.php?lng=?&lat=?  
 【返回值】  
