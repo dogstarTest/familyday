@@ -1366,7 +1366,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	agreesubmit：	同意申请，设为1即可  
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi cp.php?ac=friend&op=add  
+网站域名/dapi/cp.php?ac=friend&op=add  
 【返回值】  
 >  
 	
