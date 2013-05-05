@@ -647,7 +647,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		lat:					最后对话经度
 		address;				最后对话地点
 		come:					最后对话发布来源
-		new:					这个对话中有几个未读消息的数量
+		new:					这个对话中是否有未读消息 1是， 0否
+		newnum:					这个对话中有几个未读消息的数量
  
 <h3>1．12、	</h3><h3>对话详情接口</h3>  
 【参数】  
@@ -1400,7 +1401,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	message			评论内容  
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/do.php?ac= comment  
+网站域名/dapi/do.php?ac=comment  
 【返回值】  
 >  
 	
