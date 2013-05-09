@@ -1245,8 +1245,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	如果需要绑定微博，需要提供以下参数： 
 	sina_uid		新浪微博用户id【可选】
 	sina_token		新浪微博token【可选】
-	qq_openid		新浪微博用户id【可选】
-	qq_token		新浪微博token【可选】
+	qq_openid		腾讯微博用户id【可选】
+	qq_token		腾讯微博token【可选】
 【调用方式】  
 网站域名/dapi/do.php?ac=register  
 【返回值】  
