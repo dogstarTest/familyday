@@ -1216,6 +1216,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	 vipstatus:	personal: 个人, family： 家庭， 空值：普通用户
 	 credit：  本次登录的积分
 	 experience 本次登录的经验
+	 is_sina_bind 是否绑定新浪微博 1 是 0 否
+	 is_qq_bind   是否绑定腾讯微博 1 是 0 否
 	 
 <h3>2.2、	</h3><h3>第三方登录接口</h3>  
 【参数】  
@@ -1249,6 +1251,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		vipstatus:	personal: 个人, family： 家庭， 空值：普通用户
 		credit：  本次登录的积分
 		experience 本次登录的经验
+		is_sina_bind 是否绑定新浪微博 1 是 0 否  
+		is_qq_bind   是否绑定腾讯微博 1 是 0 否  
 
  
 <h3>2.3、	</h3><h3>注册接口</h3>  
@@ -1285,8 +1289,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 					username:  用户名  
 					name:      用户昵称  
 					avatar:    用户头像  
-					vipstatus: personal: 个人, family： 家庭， 空值：普通用户
-
+					vipstatus:   personal: 个人, family： 家庭， 空值：普通用户
+					is_sina_bind 是否绑定新浪微博 1 是 0 否  
+					is_qq_bind   是否绑定腾讯微博 1 是 0 否  
 
  
 <h3>2.4、	</h3><h3>个人头像和昵称设置接口</h3>  
