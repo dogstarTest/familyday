@@ -1188,7 +1188,16 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 
 	username:		账号
 	password:		密码
-	iscookie:		是否保存密码，为1时保存   
+	iscookie:		是否保存密码，为1时保存 
+	
+	如果需要绑定新浪微博，需要提供以下参数： 
+	sina_uid		新浪微博用户id【可选】
+	sina_token		新浪微博token【可选】
+	
+	如果需要绑定腾讯微博，需要提供以下参数： 
+	qq_openid		腾讯微博用户id【可选】
+	qq_token		腾讯微博token【可选】
+	
 【调用方式】  
 网站域名/dapi/do.php?ac=login  
 【返回值】  
@@ -1212,8 +1221,16 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 	
-	token:			新浪微博或者腾讯微博返回的token
+	token:			[这个参数已经没用了,可传可不传]
+	
 	logintype:		weibo: 新浪微博, qq：腾讯微博  
+	新浪微博登录
+	sina_uid		微博的uid 
+	腾讯微博登陆
+	qq_openid		腾讯微博的id  
+	
+	参数的组合方式：(weibo + sina_uid) 或者 (qq + qq_openid)  
+	
 【调用方式】  
 网站域名/dapi/do.php?ac=login  
 【返回值】  
@@ -1221,8 +1238,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	
 	data:
 		return:	返回的状态码
-			-1：用户名或者密码为空
-			-2：用户名或者密码错误
+			-1：token的uid参数为空
+			-2：token的uid未绑定
 			 1：登录成功
 		m_auth: 登录成功后返回的登录密匙，请求每个接口都需要发送这个参数给服务器,重新登录时，这个值会改变  
 		uid:	   用户的uid  
@@ -1242,9 +1259,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	username:		注册用户名(手机号)
 	password:		密码
 	seccode:		手机验证码  
-	如果需要绑定微博，需要提供以下参数： 
+	
+	如果需要绑定新浪微博，需要提供以下参数： 
 	sina_uid		新浪微博用户id【可选】
 	sina_token		新浪微博token【可选】
+	
+	如果需要绑定腾讯微博，需要提供以下参数： 
 	qq_openid		腾讯微博用户id【可选】
 	qq_token		腾讯微博token【可选】
 【调用方式】  
