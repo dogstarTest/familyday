@@ -1190,13 +1190,14 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	password:		密码
 	iscookie:		是否保存密码，为1时保存 
 	
-	如果需要绑定新浪微博，需要提供以下参数： 
-	sina_uid		新浪微博用户id【可选】
-	sina_token		新浪微博token【可选】
+	如果需要绑定新浪微博，需要提供以下参数【可选】： 
+	sina_uid			新浪微博用户id
+	sina_token			新浪微博token
+	sina_expires_in		新浪微博token过期时间
 	
-	如果需要绑定腾讯微博，需要提供以下参数： 
-	qq_openid		腾讯微博用户id【可选】
-	qq_token		腾讯微博token【可选】
+	如果需要绑定腾讯微博，需要提供以下参数【可选】： 
+	qq_openid		腾讯微博用户id
+	qq_token		腾讯微博token
 	
 【调用方式】  
 网站域名/dapi/do.php?ac=login  
@@ -1264,13 +1265,14 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	password:		密码
 	seccode:		手机验证码  
 	
-	如果需要绑定新浪微博，需要提供以下参数： 
-	sina_uid		新浪微博用户id【可选】
-	sina_token		新浪微博token【可选】
+	如果需要绑定新浪微博，需要提供以下参数【可选】： 
+	sina_uid			新浪微博用户id
+	sina_token			新浪微博token
+	sina_expires_in		新浪微博token过期时间
 	
-	如果需要绑定腾讯微博，需要提供以下参数： 
-	qq_openid		腾讯微博用户id【可选】
-	qq_token		腾讯微博token【可选】
+	如果需要绑定腾讯微博，需要提供以下参数【可选】： 
+	qq_openid		腾讯微博用户id
+	qq_token		腾讯微博token
 【调用方式】  
 网站域名/dapi/do.php?ac=register  
 【返回值】  
