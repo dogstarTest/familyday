@@ -1193,7 +1193,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	如果需要绑定新浪微博，需要提供以下参数【可选】： 
 	sina_uid			新浪微博用户id
 	sina_token			新浪微博token
-	sina_expires_in		新浪微博token过期时间
+	sina_expires_in		新浪微博token过期时间(格式：2013-05-12 22:59:59)
 	
 	如果需要绑定腾讯微博，需要提供以下参数【可选】： 
 	qq_openid		腾讯微博用户id
@@ -1268,7 +1268,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	如果需要绑定新浪微博，需要提供以下参数【可选】： 
 	sina_uid			新浪微博用户id
 	sina_token			新浪微博token
-	sina_expires_in		新浪微博token过期时间
+	sina_expires_in		新浪微博token过期时间(格式：2013-05-12 22:59:59)
 	
 	如果需要绑定腾讯微博，需要提供以下参数【可选】： 
 	qq_openid		腾讯微博用户id
