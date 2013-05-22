@@ -35,6 +35,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．27、[我收藏的帖子的动态列表接口](#我收藏的帖子的动态列表接口)  
 	* 1．28、[pm版本收藏动态接口](#pm版本收藏动态接口)  
 	* 1．29、[高德地图POI接口](#高德地图POI接口)  
+	* 1．30、[客户端升级接口](#客户端升级接口)  
 
 * 第二部分 [上行接口部分](#上行接口部分)
 	* 2.1、 [普通登录接口](#普通登录接口)
@@ -1177,6 +1178,25 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		type:			类型
 		lng:			经度
 		lat:			纬度
+		
+
+<h3>1．30、	</h3><h3>客户端升级接口</h3>  
+【参数】  
+>  
+
+	type:	 	客户端类型(可选值：iphone,ipad,android,winphone)
+【调用方式】  
+网站域名/dapi/upgrade.php?type=?  
+【返回值】  
+
+>
+
+	data：  
+		version:		版本号
+		versionname:	版本名称
+		upgradeinfo		升级信息
+		upgradedate:	升级日期
+		
 	
 <h2>第二部分 </h2><h2>上行接口部分</h2>
 ==================
