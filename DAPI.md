@@ -258,6 +258,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		id:					原文id
 		fuid:				原文所属于的空间id
 		fname:				原文所属于的空间名称
+		fmessage:			原文内容
 	4） 活动动态  
 		lng:				活动地点的经度
 		lat:				活动地点的纬度
@@ -292,7 +293,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 			authorname:		评论人的名字
 			message：		评论内容
 			dateline：		评论时间
-
+		
+		loveuser 收藏人列表(数组)
+			uid				收藏人uid
+			name			收藏人名字
+			avatar			收藏人头像
+			vipstatus		收藏人身份(personal: 个人, family： 家庭， 空值：普通用户)  
 
  
 <h3>1．4、	</h3><h3>照片详情接口</h3>  
@@ -1110,6 +1116,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		id:					原文id
 		fuid:				原文所属于的空间id
 		fname:				原文所属于的空间名称
+		fmessage:			原文内容
 	4） 活动动态  
 		lng:				活动地点的经度
 		lat:				活动地点的纬度
@@ -1132,6 +1139,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 			message：		评论内容
 			dateline：		评论时间
 
+		loveuser 收藏人列表(数组)
+			uid				收藏人uid
+			name			收藏人名字
+			avatar			收藏人头像
+			vipstatus		收藏人身份(personal: 个人, family： 家庭， 空值：普通用户)  
+			
 			
 <h3>1．28、	</h3><h3>pm版本收藏动态接口</h3>  
 【参数】  
