@@ -1219,7 +1219,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 	
-	unames[]:		上传上去的用户数组(注意变量名后面的[])，值的格式：(13578909878:弟弟) 
+	unames[]:		上传上去的用户数组(注意变量名后面的[])，值的格式手机号和名称中间用":"连接，如：13578909878:弟弟 
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】【POST方式】 
 网站域名/dapi/dapi/cp.php?ac=friend&op=find  
