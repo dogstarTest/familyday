@@ -36,7 +36,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．28、[pm版本收藏动态接口](#pm版本收藏动态接口)  
 	* 1．29、[高德地图POI接口](#高德地图POI接口)  
 	* 1．30、[客户端升级接口](#客户端升级接口)  
-
+	* 1．31、[上传用户查询用户接口](#上传用户查询用户接口)
+	
 * 第二部分 [上行接口部分](#上行接口部分)
 	* 2.1、 [普通登录接口](#普通登录接口)
 	* 2.2、	[第三方登录接口](#第三方登录接口)
@@ -817,12 +818,14 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	fmembers：			自己的家人数量
 	fmemberlist：家人列表【数组】
 			uid			家人的用户id
+			phone		家人的电话号码
 		    name		家人的昵称
 		    avatar：	家人的头像
 		    note:		家人关系备注 
 		    feeds:		家人动态数量 
 		    fmembers：	家人的家人数量
 		    birthday：	家人的生日
+			frequests:	家人申请数量
 
 
 <h3>1．17、	</h3><h3>搜索家人接口</h3>  
@@ -1212,6 +1215,25 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		upgradeinfo		升级信息
 		upgradedate:	升级日期
 		
+<h3>1.31、	</h3><h3>上传用户查询用户接口</h3>  
+【参数】  
+>  
+	
+	unames[]:		上传上去的用户数组(注意变量名后面的[])，值的格式：(13578909878:弟弟) 
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+【调用方式】【POST方式】 
+网站域名/dapi/dapi/cp.php?ac=friend&op=find  
+【返回值】  
+>  
+	data【多维数组】
+		uid:		用户uid，如果没找到，则返回字符串
+		username:	上传时的手机号
+		name:		上传时的名字
+		avatar:		头像, 如果没找到用户，则返回空字符串
+	msgkey：		信息提示码
+	msg：			返回的提示信息
+	error:			返回的错误的状态, 0无错误，1出错 
+
 	
 <h2>第二部分 </h2><h2>上行接口部分</h2>
 ==================
@@ -1410,7 +1432,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	addsubmit：		提交申请表单用的验证，设为1即可  
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/ dapi cp.php?ac=friend&op=add  
+网站域名/dapi/dapi/cp.php?ac=friend&op=add  
 【返回值】  
 >  
 	
