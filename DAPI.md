@@ -1235,6 +1235,33 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	error:			返回的错误的状态, 0无错误，1出错 
 
 	
+<h3>1.32、</h3><h3>今日话题</h3>  
+【参数】   
+>   
+
+	perpage: 	分页大小， 默认10 
+	page:		当前页 
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器 
+	
+【调用方式】  
+网站域名/dapi/space.php?do=topiclist&m_auth=?   
+【返回值】  
+>  
+	data【数组】
+		topicid				话题id
+		uid:				话题发布人uid
+		name:				话题发布人名字
+		avatar				话题发布人头像
+		jointype【数组】	允许发起的帖子类型(blog,photo,event,video)
+		subject:			话题标题
+		message:			话题内容
+		dateline:			话题发布时间
+		endtime：			话题结束时间
+		pic:				话题图片
+		joinnum:			话题跟帖数量
+		lastpost：			话题最后跟帖时间
+	
+	
 <h2>第二部分 </h2><h2>上行接口部分</h2>
 ==================
 
