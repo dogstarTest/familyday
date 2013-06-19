@@ -38,6 +38,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．30、[客户端升级接口](#客户端升级接口)  
 	* 1．31、[上传用户查询用户接口](#上传用户查询用户接口)
 	* 1．32、[今日话题列表接口](#今日话题列表接口)
+	* 1．33、[新的动态数量接口](#新的动态数量接口)
+	
 	
 * 第二部分 [上行接口部分](#上行接口部分)
 	* 2.1、 [普通登录接口](#普通登录接口)
@@ -817,16 +819,17 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	avatar:				自己的头像
 	vipstatus:			personal: 个人, family： 家庭， 空值：普通用户
 	fmembers：			自己的家人数量
+	frequests:			自己的家人申请数量
 	fmemberlist：家人列表【数组】
 			uid			家人的用户id
-			phone		家人的电话号码
+			username	家人的电话号码
 		    name		家人的昵称
 		    avatar：	家人的头像
 		    note:		家人关系备注 
 		    feeds:		家人动态数量 
 		    fmembers：	家人的家人数量
 		    birthday：	家人的生日
-			frequests:	家人申请数量
+			
 
 
 <h3>1．17、	</h3><h3>搜索家人接口</h3>  
@@ -1261,7 +1264,21 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		pic:				话题图片
 		joinnum:			话题跟帖数量
 		lastpost：			话题最后跟帖时间
+
+		
+<h3>1.33、</h3><h3>新的动态数量接口</h3>  
+【参数】   
+>   
+
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器 
 	
+【调用方式】  
+网站域名/dapi/space.php?do=feednew&m_auth=?   
+【返回值】  
+>  
+	data
+		newfeednum			新的动态的数量		
+		
 	
 <h2>第二部分 </h2><h2>上行接口部分</h2>
 ==================
