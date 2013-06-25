@@ -37,8 +37,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．29、[高德地图POI接口](#高德地图POI接口)  
 	* 1．30、[客户端升级接口](#客户端升级接口)  
 	* 1．31、[上传用户查询用户接口](#上传用户查询用户接口)
-	* 1．32、[今日话题列表接口](#今日话题列表接口)
-	* 1．33、[新的动态数量接口](#新的动态数量接口)
+	* 1．32、[新的动态数量接口](#新的动态数量接口)
 	
 	
 * 第二部分 [上行接口部分](#上行接口部分)
@@ -163,6 +162,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】   
 >   
 
+	topicid:	指定的话题id【默认为空，取今天的话题】
 	perpage: 	分页大小， 默认10 
 	page:		当前页 
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器 
@@ -180,6 +180,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	imagesize
 		height:			图片高度
 		width:			图片宽度
+	nexttopicid:		下一话题id【当前话题还有帖子未看完时为空；如果当前帖子已经看完，则会返回下一个话题的id，客户端需要利用这个id重新请求一次话题接口得到下一话题的内容】
 	content: 【话题的内容】	 
 		image_1：   内容的图片 
 		idtype：    内容的类型(blogid,eventid,videoid,photoid) 
@@ -1239,34 +1240,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	error:			返回的错误的状态, 0无错误，1出错 
 
 	
-<h3>1.32、</h3><h3>今日话题列表接口</h3>  
-【参数】   
->   
-
-	perpage: 	分页大小， 默认10 
-	page:		当前页 
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器 
-	
-【调用方式】  
-网站域名/dapi/space.php?do=topiclist&m_auth=?   
-【返回值】  
->  
-	data【数组】
-		topicid				话题id
-		uid:				话题发布人uid
-		name:				话题发布人名字
-		avatar				话题发布人头像
-		jointype【数组】	允许发起的帖子类型(blog,photo,event,video)
-		subject:			话题标题
-		message:			话题内容
-		dateline:			话题发布时间
-		endtime：			话题结束时间
-		pic:				话题图片
-		joinnum:			话题跟帖数量
-		lastpost：			话题最后跟帖时间
-
-		
-<h3>1.33、</h3><h3>新的动态数量接口</h3>  
+<h3>1.32、</h3><h3>新的动态数量接口</h3>  
 【参数】   
 >   
 
