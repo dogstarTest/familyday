@@ -339,6 +339,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	rephotonum：	转采数量
 	replynum：		评论数量
 	love:			收藏数量
+	loveuser：		收藏人列表【多维数组】
+		uid:		收藏人的uid
+		name:		收藏人的名字
+		avatar:		收藏人的头像
+		vipstatus:	personal: 个人, family： 家庭， 空值：普通用户 
 	4) 正文url
 	piclist:		多个图片组合起来的数组
 	pic:			图片地址	
@@ -394,6 +399,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	reblognum：		转采数量
 	replynum：		评论数量
 	love:			收藏数量
+	loveuser：		收藏人列表【多维数组】
+		uid:		在一起的人的uid
+		name:		在一起的人的名字
+		avatar:		在一起的人的头像
+		vipstatus:	personal: 个人, family： 家庭， 空值：普通用户 
 	4) 正文url
 	message:		正文的内容， html格式的
 	5）
@@ -402,9 +412,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	address：		地点名称
 	6） 和谁在一起
 	together：		多维数组
-		uid:		在一起的人的uid
-		name:		在一起的人的名字
-		avatar:		在一起的人的头像
+		uid:		收藏人的uid
+		name:		收藏人的名字
+		avatar:		收藏人的头像
 		vipstatus:	personal: 个人, family： 家庭， 空值：普通用户
 	7) 评论（表态）
 	commentlist:多维数组
@@ -447,6 +457,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	revideonum：	转采数量
 	replynum：		评论数量
 	love:			收藏数量
+	loveuser：		收藏人列表【多维数组】
+		uid:		收藏人的uid
+		name:		收藏人的名字
+		avatar:		收藏人的头像
+		vipstatus:	personal: 个人, family： 家庭， 空值：普通用户 
 	4) 视频url
 	videourl:		视频url
 	subject:		视频标题
@@ -502,6 +517,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	reeventnum：	转采数量
 	replynum：		评论数量
 	love:			收藏数量
+	loveuser：		收藏人列表【多维数组】
+		uid:		收藏人的uid
+		name:		收藏人的名字
+		avatar:		收藏人的头像
+		vipstatus:	personal: 个人, family： 家庭， 空值：普通用户 
 	4) 活动信息
 	title:			活动标题
 	detail：		活动主要内容, html形式
