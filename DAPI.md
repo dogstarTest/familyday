@@ -216,6 +216,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	page:		当前页
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器 
 	idtype:		动态的类型【可选】，默认为空（代表全部），如果指定值（则只得到该类型的动态）
+	apptype:	默认为空[显示全部类型的动态], 设为pm[则去掉评论以及行为动态]
 【调用方式】  
 网站域名/dapi/space.php?do=home&m_auth=?    
 【返回值】  
