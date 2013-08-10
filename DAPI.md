@@ -38,6 +38,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．30、[客户端升级接口](#客户端升级接口)  
 	* 1．31、[上传用户查询用户接口](#上传用户查询用户接口)
 	* 1．32、[新的动态数量接口](#新的动态数量接口)
+	* 1．33、[家庭动态列表按天分组接口](#家庭动态列表按天分组接口)
 	
 	
 * 第二部分 [上行接口部分](#上行接口部分)
@@ -1276,7 +1277,114 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 	data
 		newfeednum			新的动态的数量		
+
+ 
+<h3>1．33、	</h3><h3>家庭动态列表按天分组接口</h3>  
+【参数】  
+>  
+
+	do:	 		feedday
+	uid:		用户id, 无则代表登陆用户的uid  
+	perpage: 	分页大小， 默认10
+	page:		当前页
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器 
+	idtype:		动态的类型【可选】，默认为空（代表全部），如果指定值（则只得到该类型的动态）
+	apptype:	默认为空[显示全部类型的动态], 设为pm[则去掉评论以及行为动态]
+	date:		指定日期的动态，格式: 2013-08-01
+【调用方式】  
+网站域名/dapi/space.php?do=feedday&m_auth=?    
+【返回值】  
+
+>
+	dateline【每天的时间戳】
+
+		1）多维数组：  
+			avatar: 		发布用户头像url
+			vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
+			name: 			用户昵称
+			note : 			关系备注
+			dateline: 		动态时间
+			tag:
+				tagid:		空间id
+				tagname:	空间名称
+			idtype: 		动态类型(
+					eventid: 		发布活动
+					reeventid：		转采活动
+					eventcomment：	活动评论
+					blogid: 	 	发布更新日志
+					reblogid： 		转采日志
+					blogcomment： 	日志评论
+					photoid：	  	上传图片
+					photocomment： 	评论图片
+					rephotoid：		转采图片
+					videoid：		发布视频
+					revideoid：		转采视频
+					videocomment：	视频评论
+					profield: 		更新资料
+					avatar:  		更新头像
+			)
+			replynum		评论数量
+			reblognum		转发数量
+			love			收藏数量
+			picnum			照片数量
+			mylove			是否是我收藏的，1：是，0：否
+			eventdetail		活动详情   
+			eventstarttime	活动时间  
+		2）转采  
+			fuid				原作者uid
+			fname				原作者名称
+		3)普通动态  
+			title: 				动态标题
+			image_1 – image_4:	动态带的图片和内容附图的数量, 如果有图片则有值，否则为空值
+			image_1_width – image_4_width:		动态图片的宽度
+			image_1_height – image_4_height:	动态图片的高度
+			message:			动态简介文字
+			id:					原文id
+			fuid:				原文所属于的空间id
+			fname:				原文所属于的空间名称
+			fmessage:			原文内容
+		4） 活动动态  
+			lng:				活动地点的经度
+			lat:				活动地点的纬度
+			location:			活动地点的地名
+		5） 行为动态
+			
+			普通的行为动态：
+			uid:				行为人uid
+			name:				行为人名字
+			fuid:				对象人uid
+			fname:				对象人名字
+			
+			评论的行为动态(即：idtype为：**comment的)：
+			cuid:				评论人uid
+			cname:				评论人名字
+			cavatar: 			评论人头像
+			cvipstatus:			personal: 个人, family： 家庭， 空值：普通用户
+			uid:				被评论对象人uid
+			name:				被评论对象人名字
+			
+			------------------------------
+			subject：			被操作的对象名称
+			id：				被操作的id
+			idtype：			被操作的类型
+			
+		6) 发布渠道 
+			come: 				发布的渠道  
 		
+		7） 最新的两条评论  
+			comment： 	数组
+				authorid：		评论人的uid
+				authorname:		评论人的名字
+				message：		评论内容
+				dateline：		评论时间
+			
+			loveuser 收藏人列表(数组)
+				uid				收藏人uid
+				name			收藏人名字
+				avatar			收藏人头像
+				vipstatus		收藏人身份(personal: 个人, family： 家庭， 空值：普通用户)  
+
+ 		
 	
 <h2>第二部分 </h2><h2>上行接口部分</h2>
 ==================
