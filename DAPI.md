@@ -1498,10 +1498,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【返回值】  
 > 
 
-	title		广告标题  
-	imagesrc	广告图片url  
-	idtype		广告对应的帖子类型  
-	id			帖子id
+	picurl	图片url  
 
   		
 	
