@@ -2682,7 +2682,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 > 
 
 	tagid		  	 需要删除的空间id
-	totagid		  	 转移到的目标空间id
+	totagid		  	 转移到的目标空间id【可选, 不填则只是删除，不转移】
 	deletetagsubmit  1
 	m_auth:		  	 API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
