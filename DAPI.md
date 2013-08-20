@@ -1587,6 +1587,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	注册前调用 2.43、注册获取验证码接口
 	
 	username:		注册用户名(手机号)
+	name:			用户昵称
 	password:		密码
 	seccode:		手机验证码  
 	
