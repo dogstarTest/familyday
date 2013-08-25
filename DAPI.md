@@ -769,6 +769,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	ftitle:				其他帖子的标题
 	4）	通知的阅读状况
 	new:				0已读, 1未读
+	commentmessage		评论内容【如果通知是评论类型的，就会有】
  
 <h3>1．14、	</h3><h3>更多信息接口</h3>  
 【参数】  
