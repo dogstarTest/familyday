@@ -264,9 +264,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		fname				原作者名称
 	3)普通动态  
 		title: 				动态标题
-		image_1 – image_4:	动态带的图片和内容附图的数量, 如果有图片则有值，否则为空值
-		image_1_width – image_4_width:		动态图片的宽度
-		image_1_height – image_4_height:	动态图片的高度
+		image_1 – image_9:	    动态带的图片和内容附图的数量, 如果有图片则有值，否则为空值
+		width_1 – width_9:		动态图片的宽度
+		height_1 – height_9:	动态图片的高度
 		message:			动态简介文字
 		id:					原文id
 		fuid:				原文所属于的空间id
@@ -1151,7 +1151,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		fname				原作者名称
 	3)普通动态  
 		title: 				动态标题
-		image_1 – image_4:	动态带的图片和内容附图的数量, 如果有图片则有值，否则为空值
+		image_1 – image_9:	动态带的图片和内容附图的数量, 如果有图片则有值，否则为空值
 		message:			动态简介文字
 		id:					原文id
 		fuid:				原文所属于的空间id
@@ -1341,9 +1341,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 			fname				原作者名称
 		3)普通动态  
 			title: 				动态标题
-			image_1 – image_4:	动态带的图片和内容附图的数量, 如果有图片则有值，否则为空值
-			image_1_width – image_4_width:		动态图片的宽度
-			image_1_height – image_4_height:	动态图片的高度
+			image_1 – image_9:	    动态带的图片和内容附图的数量, 如果有图片则有值，否则为空值
+			width_1 – width_9:		动态图片的宽度
+			height_1 – height_9:	动态图片的高度
 			message:			动态简介文字
 			id:					原文id
 			fuid:				原文所属于的空间id
