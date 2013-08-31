@@ -1547,7 +1547,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	新浪微博登录
 	logintype:			weibo	
 	name:				新浪微博昵称 
-	sina_uid			微博的uid 	
+	sina_uid			新浪微博的uid 	
 	sina_token			新浪微博token  
 	sina_expires_in		新浪微博token过期时间(格式：2013-05-12 22:59:59) 
 	
