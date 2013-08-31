@@ -1557,7 +1557,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	qq_openid			腾讯微博的id  
 	qq_token			腾讯微博token 
 	
-	如果用户未绑定，后台会自动用参数进行注册。已经绑定的，直接登录。
+	如果用户未绑定，后台会自动用参数进行注册并登录。已经绑定的，直接登录。
 【调用方式】  
 网站域名/dapi/do.php?ac=login  
 【返回值】  
