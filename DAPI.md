@@ -1554,12 +1554,14 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	sina_uid			新浪微博的uid 	
 	sina_token			新浪微博token  
 	sina_expires_in		新浪微博token过期时间(格式：2013-05-12 22:59:59) 
+	avatar				新浪微博的头像(如果有传这个参数，会更新familyday的用户头像)
 	
 	腾讯微博登陆 
 	logintype:			qq  		
 	name:				腾讯微博的昵称 
 	qq_openid			腾讯微博的id  
 	qq_token			腾讯微博token 
+	avatar				腾讯微博的头像(如果有传这个参数，会更新familyday的用户头像)
 	
 	如果用户未绑定，后台会自动用参数进行注册并登录。已经绑定的，直接登录。
 【调用方式】  
