@@ -40,6 +40,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．32、[新的动态数量接口](#新的动态数量接口)
 	* 1．33、[家庭动态列表按天分组接口](#家庭动态列表按天分组接口)
 	* 1．34、[家庭行为动态列表接口](#家庭行为动态列表接口)
+	* 1．35、[订阅号列表接口](#订阅号列表接口)
 	
 	
 * 第二部分 [上行接口部分](#上行接口部分)
@@ -1496,7 +1497,35 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 			avatar			收藏人头像
 			vipstatus		收藏人身份(personal: 个人, family： 家庭， 空值：普通用户)  
 
- 						
+<h3>1．35、	</h3><h3>订阅号列表接口</h3>  
+【参数】  
+>  
+
+	do:	 		feedact
+	uid:		用户id, 无则代表登陆用户的uid  
+	perpage: 	分页大小， 默认10
+	page:		当前页
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器 
+	idtype:		动态的类型【可选】，默认为空（代表全部），如果指定值（则只得到该类型的动态）
+【调用方式】  
+网站域名/dapi/space.php?do=feedday&m_auth=?    
+【返回值】  
+
+>
+
+	subcribe【多维数组】：未订阅号  
+		uid				uid
+		username		用户名
+		avatar: 		发布用户头像url
+		vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
+		name: 			用户昵称
+		note : 			关系备注
+		birthday: 		生日
+		credit: 		积分
+		friendnum：		家人数
+	hadsubcribe【多维数组】：已订阅号
+		字段同【未订阅号】
+			
 <h3>1.35、</h3><h3>每日图片接口</h3>  
 【参数】  
 无  
