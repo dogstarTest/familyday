@@ -40,7 +40,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．32、[新的动态数量接口](#新的动态数量接口)
 	* 1．33、[家庭动态列表按天分组接口](#家庭动态列表按天分组接口)
 	* 1．34、[家庭行为动态列表接口](#家庭行为动态列表接口)
-	* 1．35、[订阅号列表接口](#订阅号列表接口)
+	* 1．35、[每日图片接口](#每日图片接口)
+	* 1．36、[订阅号列表接口](#订阅号列表接口)
 	
 	
 * 第二部分 [上行接口部分](#上行接口部分)
@@ -1497,7 +1498,19 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 			avatar			收藏人头像
 			vipstatus		收藏人身份(personal: 个人, family： 家庭， 空值：普通用户)  
 
-<h3>1．35、	</h3><h3>订阅号列表接口</h3>  
+						
+<h3>1.35、</h3><h3>每日图片接口</h3>  
+【参数】  
+无  
+【调用方式】  
+网站域名/dapi/info.php?ac=adpic  
+【返回值】  
+> 
+
+	picurl	图片url  
+	
+	
+<h3>1．36、	</h3><h3>订阅号列表接口</h3>  
 【参数】  
 >  
 
@@ -1525,16 +1538,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		friendnum：		家人数
 	hadsubcribe【多维数组】：已订阅号
 		字段同【未订阅号】
-			
-<h3>1.35、</h3><h3>每日图片接口</h3>  
-【参数】  
-无  
-【调用方式】  
-网站域名/dapi/info.php?ac=adpic  
-【返回值】  
-> 
 
-	picurl	图片url  
 
   		
 	
