@@ -380,6 +380,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		message：	评论内容
 	8) 发布渠道 
 	come:			发布渠道
+	fmessage:		被转载原文的内容
  
 <h3>1．5、	</h3><h3>日记详情接口</h3>
 【参数】  
@@ -437,7 +438,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		message：	评论内容
 	8) 发布渠道 
 	come:			发布渠道
-
+	fmessage:		被转载原文的内容
  
 <h3>1．6、	</h3><h3>视频详情接口</h3>
 【参数】  
@@ -1538,7 +1539,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		note : 			关系备注
 		birthday: 		生日
 		credit: 		积分
-		friendnum：		家人数
+		friendnum：		关注数量
+		feeds			动态数量
 	hadsubcribe【多维数组】：已订阅号
 		字段同【未订阅号】
 
