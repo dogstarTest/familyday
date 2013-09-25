@@ -438,8 +438,14 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		message：	评论内容
 	8) 发布渠道 
 	come:			发布渠道
-	fmessage:		被转载原文的内容
- 
+	fmessage:		被转载原文的内容	
+	
+	outsubject: 	外部帖子主题 
+	outcome:		外部来源 
+	outurl:			外部帖子网址 
+	outpic:			外部图片 
+	
+	
 <h3>1．6、	</h3><h3>视频详情接口</h3>
 【参数】  
 >  
