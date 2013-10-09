@@ -852,6 +852,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 
 	uid:		用户id, 无则代表登陆用户的uid    
+	subscribe:	是否显示订阅号，1：显示 0：不显示  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=fmembers&m_auth=?  
@@ -873,6 +874,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		    feeds:		家人动态数量 
 		    fmembers：	家人的家人数量
 		    birthday：	家人的生日
+			subscribe:	是否是订阅号 1 是 0 否
 			
 
 
@@ -1524,11 +1526,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 
-	do:	 		friendlist
-	op:	 		subscribe
+	do:	 		friendlist 
+	op:	 		subscribe 
 	uid:		用户id, 无则代表登陆用户的uid  
-	perpage: 	分页大小， 默认10
-	page:		当前页
+	name:		订阅号名称，默认空 
+	perpage: 	分页大小， 默认10 
+	page:		当前页 
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器 
 【调用方式】  
 网站域名/dapi/space.php?do=friendlist&op=subscribe    
