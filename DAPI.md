@@ -865,6 +865,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	vipstatus:			personal: 个人, family： 家庭， 空值：普通用户
 	fmembers：			自己的家人数量
 	frequests:			自己的家人申请数量
+	subscribenum:		订阅号数量
 	fmemberlist：家人列表【数组】
 			uid			家人的用户id
 			username	家人的电话号码
