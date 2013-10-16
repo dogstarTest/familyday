@@ -381,6 +381,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	8) 发布渠道 
 	come:			发布渠道
 	fmessage:		被转载原文的内容
+	
+	originurl:		外部帖子网址
  
 <h3>1．5、	</h3><h3>日记详情接口</h3>
 【参数】  
@@ -442,7 +444,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	
 	outsubject: 	外部帖子主题 
 	outcome:		外部来源 
-	outurl:			外部帖子网址 
+	originurl:		外部帖子网址 
 	outpic:			外部图片 
 	
 	
@@ -704,6 +706,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		come:					最后对话发布来源
 		new:					这个对话中是否有未读消息 1是， 0否
 		newnum:					这个对话中有几个未读消息的数量
+		idtype:					对话类型(blogid, eventid,photoid,videoid)
  
 <h3>1．12、	</h3><h3>对话详情接口</h3>  
 【参数】  
@@ -742,6 +745,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		lat:			纬度
 		address:		地名
 		come:			发布来源
+		idtype:			对话类型(blogid, eventid,photoid,videoid)
 
 
 <h3>1．13、	</h3><h3>通知列表接口</h3>  
@@ -1874,6 +1878,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	lng			经度（客户端生成）
 	address		发布地址（客户端生成）
 	come		发布来源（iphone或者ipad或者android，客户端生成）
+	idtype:		对话类型(blogid, eventid,photoid,videoid)
 	pmsubmit	提交信息的表单验证，设为1即可  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
