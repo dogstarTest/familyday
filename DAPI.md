@@ -240,6 +240,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 		name: 			用户昵称
 		note : 			关系备注
+		issubscribe		是否订阅号 1 是 0 否
 		dateline: 		动态时间
 		tag:
 			tagid:		空间id
