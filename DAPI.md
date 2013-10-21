@@ -310,6 +310,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	
 	7） 最新的两条评论  
 		comment： 	数组
+			cid：			评论主键id
 			authorid：		评论人的uid
 			authorname:		评论人的名字
 			message：		评论内容
@@ -675,6 +676,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		subject:	标题
 		message:	概述
 		commentlist 评论内容【数组】
+			cid：		评论主键id
 			authorid	评论人的uid
 			author		评论人的用户名
 			authorname	评论人的昵称
@@ -1197,6 +1199,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	
 	7） 最新的两条评论  
 		comment： 	数组
+			cid：			评论主键id
 			authorid：		评论人的uid
 			authorname:		评论人的名字
 			message：		评论内容
@@ -1402,6 +1405,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		
 		7） 最新的两条评论  
 			comment： 	数组
+				cid：			评论主键id
 				authorid：		评论人的uid
 				authorname:		评论人的名字
 				message：		评论内容
@@ -1505,6 +1509,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	
 	7） 最新的两条评论  
 		comment： 	数组
+			cid：			评论主键id
 			authorid：		评论人的uid
 			authorname:		评论人的名字
 			message：		评论内容
