@@ -41,7 +41,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．33、[家庭动态列表按天分组接口](#家庭动态列表按天分组接口)
 	* 1．34、[家庭行为动态列表接口](#家庭行为动态列表接口)
 	* 1．35、[每日图片接口](#每日图片接口)
-	* 1．36、[订阅号列表接口](#订阅号列表接口)
+	* 1．36、[订阅号列表接口](#订阅号列表接口) 
+	* 1．37、[家人的家人列表接口](#家人的家人列表接口)  
 	
 	
 * 第二部分 [上行接口部分](#上行接口部分)
@@ -1565,7 +1566,27 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	hadsubcribe【多维数组】：已订阅号
 		字段同【未订阅号】
 
+<h3>1．37、	</h3><h3>家人的家人列表接口</h3>  
+【参数】  
+>  
 
+	uid:		用户id, 无则代表登陆用户的uid    
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+【调用方式】  
+网站域名/dapi/space.php?do=ffmembers&m_auth=?  
+【返回值】  
+>  
+
+	uid:				自己的用户id
+	name:				自己的昵称
+	avatar:				自己的头像
+	vipstatus:			personal: 个人, family： 家庭， 空值：普通用户
+	fmemberlist：家人的家人列表【数组】
+			uid			家人的用户id
+			username	家人的电话号码
+		    name		家人的昵称
+		    avatar：	家人的头像
+			vipstatus	personal: 个人, family： 家庭， 空值：普通用户
   		
 	
 <h2>第二部分 </h2><h2>上行接口部分</h2>
