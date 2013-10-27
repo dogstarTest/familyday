@@ -99,6 +99,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 2.53、	[设置密码接口](#设置密码接口)  
 	* 2.54、	[订阅接口](#订阅接口)  
 	* 2.55、	[退订接口](#退订接口)  
+	* 2.56、	[发布提醒接口](#发布提醒接口)  
+	* 2.57、	[查看提醒列表接口](#查看提醒列表接口)  
+	* 2.58、	[编辑提醒显示接口](#编辑提醒显示接口)  
+	* 2.59、	[编辑提醒保存接口](#编辑提醒保存接口)  
+	* 2.60、	[删除提醒接口](#删除提醒接口)  
 	
 	
  
@@ -114,12 +119,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	2)	上行接口中，除非标注有GET方式，否则一律用POST方式发送数据。  
 	3)	在上行接口中，包含有部分下行接口，用来生成发布界面，如：空间列表，和谁在一起。  
 	4)	如果服务器返回：
-		"data": {
-			"return": "-1",
+		data: {
+			return:-1
 		},
-		"msgkey": "auth_failure",
-		"msg": "auth_failure",
-		"error": 1
+		msgkey:auth_failure
+		msg:auth_failure
+		error: 1
 		则代表m_auth不对或者已经失效，需要重新登录更新m_auth。  
 
 所有的接口服务器均以Json格式返回数据，在每个返回的信息中，分别是：   
@@ -136,16 +141,16 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 
 	{
 
-		"data": {
-			"adid": "2",
-			"title": "手机广告",
-			"imagesrc": "http://www.baidu.com/img/baidu_sylogo1.gif",
-			"idtype": "blog",
-			"id": "1"
+		data: {
+			adid:2
+			title:手机广告
+			imagesrc:http://www.baidu.com/img/baidu_sylogo1.gif
+			idtype:blog
+			id:1
 		},
-		"msgkey": "rest_success",
-		"msg": "数据获取成功",
-		"error": 0
+		msgkey:rest_success
+		msg:数据获取成功
+		error: 0
 	}
 
 
@@ -1282,7 +1287,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 	
-	unames:	 上传上去的用户，手机号和名称中间用":"连接，多个用"|"连接，如：13578909878:弟弟| 13578909879:妹妹
+	unames:	 上传上去的用户，手机号和名称中间用:连接，多个用|连接，如：13578909878:弟弟| 13578909879:妹妹
 	m_auth:	 API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】【POST方式】 
 网站域名/dapi/dapi/cp.php?ac=friend&op=find  
@@ -2834,4 +2839,116 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 
 <h3>2.55、	</h3><h3>退订接口</h3>  
 调用   2．36、		忽略/删除家人接口
+
+<h3>2.56、	</h3><h3>发布提醒接口</h3>  
+【参数】  
+> 
+
+	subject		 	 提醒内容	
+	time			 提醒时间, 格式：12:47
+	repeatday		 重复方式（0：不重复，1：每天一次，2：每周一次, 3：每月一次, 4：每年一次）
+	date			 日期【可选】，（不重复时格式：2013-10-26，每年一次时格式：10-26，其他重复方式时不需要）
+	wday			 周几【可选】，每周一次时才需要，（0-6 代表 周日-周六）
+	day			 	 某天【可选】，每月一次时才需要，（0-31）
+	friends			 @的家人的uid【可选】，多个用|连接	可以调用2.33、和谁在一起的人列表接口 显示列表
+	calendarsubmit   1
+	m_auth:		  	 API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	
+【调用方式】  
+网站域名/dapi/cp.php?ac=calendar 
+【返回值】  
+>  
+	
+	msgkey：		信息提示码
+	msg：			返回的提示信息
+	error:			返回的错误的状态, 0无错误，1出错
+
+<h3>2.57、	</h3><h3>查看提醒列表接口</h3>  
+【参数】  
+> 
+
+	date			 日期
+	m_auth:		  	 API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	
+【调用方式】  
+网站域名/dapi/cp.php?ac=calendar&op=getcalendar 
+【返回值】  
+>  
+	
+	list【数组】
+		id:			提醒主键id
+		subject:	提醒内容
+		time:		提醒时间
+		year:		年
+		month:		月
+		day:		日
+		wday:		周几		
+		uid:		提醒人的uid
+		repeatday:	重复方式
+		idtype:		birth生日提醒
+	count:			提醒总数
+
+<h3>2.58、	</h3><h3>编辑提醒显示接口</h3>  
+【参数】  
+> 
+
+	id				 提醒的主键id
+	m_auth:		  	 API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	
+【调用方式】  
+网站域名/dapi/cp.php?ac=calendar&op=editcalendar 
+【返回值】  
+>  
+	
+	id:			提醒主键id
+	subject:	提醒内容
+	time:		提醒时间
+	year:		年
+	month:		月
+	day:		日
+	wday:		周几		
+	uid:		提醒人的uid
+	repeatday:	重复方式
+	idtype:		birth生日提醒
+	
+<h3>2.59、	</h3><h3>编辑提醒保存接口</h3>  
+【参数】  
+> 
+
+	id				 	提醒的主键id
+	subject		 	 	提醒内容	
+	time			 	提醒时间, 格式：12:47
+	repeatday		 	重复方式（0：不重复，1：每天一次，2：每周一次, 3：每月一次, 4：每年一次）
+	date			 	日期【可选】，（不重复时格式：2013-10-26，每年一次时格式：10-26，其他重复方式时不需要）
+	wday			 	周几【可选】，每周一次时才需要，（0-6 代表 周日-周六）
+	day			 	 	某天【可选】，每月一次时才需要，（0-31）
+	friends				@的家人的uid【可选】，多个用|连接	可以调用2.33、和谁在一起的人列表接口 显示列表
+	editcalendarsubmit  1
+	m_auth:		  		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	
+【调用方式】  
+网站域名/dapi/cp.php?ac=calendar&op=editcalendar 
+【返回值】  
+>  
+	
+	msgkey：		信息提示码
+	msg：			返回的提示信息
+	error:			返回的错误的状态, 0无错误，1出错
+	
+	
+<h3>2.60、	</h3><h3>删除提醒接口</h3>  
+【参数】  
+> 
+
+	id				 提醒的主键id
+	m_auth:		  	 API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	
+【调用方式】  
+网站域名/dapi/cp.php?ac=calendar&op=delcalendar 
+【返回值】  
+>  
+	
+	msgkey：		信息提示码
+	msg：			返回的提示信息
+	error:			返回的错误的状态, 0无错误，1出错
 	
