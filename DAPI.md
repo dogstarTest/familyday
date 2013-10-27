@@ -2764,7 +2764,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	客户端界面上应该会有所区分吧,请参考评论列表接口，新增了一个字段candel。
 	
 【调用方式】  
-网站域名/dapi/cp.php?ac=delcomment 
+网站域名/dapi/cp.php?ac=delcomment    
 【返回值】  
 >  
 	
@@ -2782,7 +2782,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	m_auth:		  	 API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
-网站域名/dapi/cp.php?ac=familyspace 
+网站域名/dapi/cp.php?ac=familyspace   
 【返回值】  
 >  
 	
@@ -2791,7 +2791,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	error:			返回的错误的状态, 0无错误，1出错		
 	
 
-<h3>2.52、	</h3><h3>绑定手机号接口</h3>  
+<h3>2.52、	</h3><h3>绑定手机号接口</h3>   
 【参数】  
 > 
 
@@ -2808,8 +2808,8 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	m_auth:		  	 API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
-网站域名/dapi/cp.php?ac=phone 
-【返回值】  
+网站域名/dapi/cp.php?ac=phone    
+【返回值】   
 >  
 	data: 
         exits: 		如果为 1， 则说明该手机之前绑定过，可以为此手机号设置一个密码，调用2.53接口设置
@@ -2826,7 +2826,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	m_auth:		  	 API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
-网站域名/dapi/cp.php?ac=password 
+网站域名/dapi/cp.php?ac=password    
 【返回值】  
 >  
 	
@@ -2855,7 +2855,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	m_auth:		  	 API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
-网站域名/dapi/cp.php?ac=calendar 
+网站域名/dapi/cp.php?ac=calendar    
 【返回值】  
 >  
 	
@@ -2871,7 +2871,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	m_auth:		  	 API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
-网站域名/dapi/cp.php?ac=calendar&op=getcalendar 
+网站域名/dapi/cp.php?ac=calendar&op=getcalendar    
 【返回值】  
 >  
 	
@@ -2896,7 +2896,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	m_auth:		  	 API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
-网站域名/dapi/cp.php?ac=calendar&op=editcalendar 
+网站域名/dapi/cp.php?ac=calendar&op=editcalendar     
 【返回值】  
 >  
 	
@@ -2927,7 +2927,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	m_auth:		  		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
-网站域名/dapi/cp.php?ac=calendar&op=editcalendar 
+网站域名/dapi/cp.php?ac=calendar&op=editcalendar    
 【返回值】  
 >  
 	
@@ -2944,7 +2944,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	m_auth:		  	 API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
-网站域名/dapi/cp.php?ac=calendar&op=delcalendar 
+网站域名/dapi/cp.php?ac=calendar&op=delcalendar    
 【返回值】  
 >  
 	
