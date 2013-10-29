@@ -731,7 +731,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	endtime:	取数据的结束时间，不包含变量自身, 默认空值不设置数据范围 
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
-网站域名/dapi/space.php?do=pm&subop=view&m_auth=?&touid=4  
+网站域名/dapi/space.php?do=pm&subop=view 
 【返回值】  
 >  
 
@@ -746,7 +746,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		name:			对方的name
 		avatar:			对方头像url
 		vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
-	dialog: 多条信息的数组
+	dialog: 多条信息的数组		
+		pmid			信息内容id
+		plid			对话id（一个对话包括多条信息）
 		msgfromid:		发信人uid
 		msgtoid:		接收信息人uid
 		message:		信息内容
