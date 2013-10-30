@@ -747,8 +747,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		avatar:			对方头像url
 		vipstatus:		personal: 个人, family： 家庭， 空值：普通用户
 	dialog: 多条信息的数组		
-		pmid			信息内容id
-		plid			对话id（一个对话包括多条信息）
+		id				信息内容id
+		pmid			对话id（一个对话包括多条信息）
 		msgfromid:		发信人uid
 		msgtoid:		接收信息人uid
 		message:		信息内容
