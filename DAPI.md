@@ -861,6 +861,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	tags:			空间数量
 	note：			关系备注
 	lastlogin:		最后一次登录时间
+	issubscribe		是否是订阅号 1是 0否
 
  
 <h3>1．16、	</h3><h3>家人列表接口</h3>  
