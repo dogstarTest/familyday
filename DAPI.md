@@ -274,6 +274,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		mylove			是否是我收藏的，1：是，0：否
 		eventdetail		活动详情   
         eventstarttime	活动时间  
+		calendarnum		提醒数量
 	2）转采  
 		fuid				原作者uid
 		fname				原作者名称
@@ -1476,6 +1477,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		mylove			是否是我收藏的，1：是，0：否
 		eventdetail		活动详情   
 		eventstarttime	活动时间  
+		calendarnum		提醒数量
 	2）转采  
 		fuid				原作者uid
 		fname				原作者名称
