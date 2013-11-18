@@ -2865,10 +2865,10 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 网站域名/dapi/cp.php?ac=calendar    
 【返回值】  
 >  
-	
-	msgkey：		信息提示码
-	msg：			返回的提示信息
-	error:			返回的错误的状态, 0无错误，1出错
+	data【数组】
+		id			提醒主键id
+		idtype		提醒idtype
+		uid			提醒uid
 
 <h3>2.57、	</h3><h3>查看提醒列表接口</h3>  
 【参数】  
