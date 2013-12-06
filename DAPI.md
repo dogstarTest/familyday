@@ -2556,6 +2556,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	name			被邀请人的昵称 
 	notename		被邀请人的备注名称 
 	smsinvite		提交信息的表单验证，设为1即可   
+	smsfromphone	设为1则表示由手机自己发短信，默认为空   
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=invite&username=?&name=?&smsinvite=1  
