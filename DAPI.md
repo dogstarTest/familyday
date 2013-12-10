@@ -43,6 +43,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．35、[每日图片接口](#每日图片接口)
 	* 1．36、[订阅号列表接口](#订阅号列表接口) 
 	* 1．37、[家人的家人列表接口](#家人的家人列表接口)  
+	* 1．38、[cube模板列表接口](#cube模板列表接口)  
 	
 	
 * 第二部分 [上行接口部分](#上行接口部分)
@@ -1618,7 +1619,24 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		    name		家人的昵称
 		    avatar：	家人的头像
 			vipstatus	personal: 个人, family： 家庭， 空值：普通用户
-  		
+
+<h3>1．38、	</h3><h3>cube模板列表接口</h3>  
+【参数】  
+>  
+
+	op:			未购买：cubetemplate 已购买：mycubetemplate  
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器   
+【调用方式】 
+网站域名/dapi/space.php?do=service  
+【返回值】  
+>  
+	data【数组】  
+		subject: 		模板名称  
+		price: 			价格  
+		credit: 		金币  
+		pic: 			模板图片  
+		description: 	模板描述		
+
 	
 <h2>第二部分 </h2><h2>上行接口部分</h2>
 ==================
