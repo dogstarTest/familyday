@@ -44,7 +44,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．36、[订阅号列表接口](#订阅号列表接口) 
 	* 1．37、[家人的家人列表接口](#家人的家人列表接口)  
 	* 1．38、[cube模板列表接口](#cube模板列表接口)  
-	
+	* 1．39、[按月获取提醒及动态接口](#按月获取提醒及动态接口)  	
 	
 * 第二部分 [上行接口部分](#上行接口部分)
 	* 2.1、 [普通登录接口](#普通登录接口)
@@ -1637,7 +1637,40 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		pic: 			模板图片  
 		description: 	模板描述		
 
+<h3>1．39、	</h3><h3>按月获取提醒及动态接口</h3>  
+【参数】  
+>  
+
+	do:	 		calendarmonth
+	year:		年，默认为当前年
+	month:		月，默认为当前月
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器   
+【调用方式】  
+网站域名/dapi/space.php?do=calendarmonth&m_auth=?    
+【返回值】  
+
+>
 	
+	数组
+			date:			日期
+			calendarnum:	提醒数量
+			calendarinfo: 	一条提醒内容
+                id：		提醒主键
+                subject：	提醒内容
+                calendarto: 被提醒的人【数组】
+					uid：			用户uid
+					username：		用户名
+					avatar: 		头像url
+					vipstatus:		personal: 个人, family： 家庭， 空值：普通用户		
+			feed: 一条动态	
+				uid:			行为人uid
+				subject：		被操作的对象名称
+				title: 			动态标题
+				image_1:		动态带的图片
+				id：			被操作的id
+				idtype：		被操作的类型
+				
+
 <h2>第二部分 </h2><h2>上行接口部分</h2>
 ==================
 
