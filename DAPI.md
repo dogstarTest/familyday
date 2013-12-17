@@ -1653,23 +1653,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >
 	
 	数组
-			date:			日期
-			calendarnum:	提醒数量
-			calendarinfo: 	一条提醒内容
-                id：		提醒主键
-                subject：	提醒内容
-                calendarto: 被提醒的人【数组】
-					uid：			用户uid
-					username：		用户名
-					avatar: 		头像url
-					vipstatus:		personal: 个人, family： 家庭， 空值：普通用户		
-			feed: 一条动态	
-				uid:			行为人uid
-				subject：		被操作的对象名称
-				title: 			动态标题
-				image_1:		动态带的图片
-				id：			被操作的id
-				idtype：		被操作的类型
+			calendars:【数组】有提醒的日期	
+			feeds:    【数组】有动态的日期
 				
 
 <h2>第二部分 </h2><h2>上行接口部分</h2>
