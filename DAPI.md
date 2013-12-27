@@ -45,6 +45,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．37、[家人的家人列表接口](#家人的家人列表接口)  
 	* 1．38、[cube模板列表接口](#cube模板列表接口)  
 	* 1．39、[按月获取提醒及动态接口](#按月获取提醒及动态接口)  	
+	* 1．40、[查询家人的生日接口](#查询家人的生日接口)  	
 	
 * 第二部分 [上行接口部分](#上行接口部分)
 	* 2.1、 [普通登录接口](#普通登录接口)
@@ -1627,7 +1628,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	op:			未购买：cubetemplate 已购买：mycubetemplate  
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器   
 【调用方式】 
-网站域名/dapi/space.php?do=service  
+网站域名/dapi/space.php?do=service&op=?  
 【返回值】  
 >  
 	
@@ -1656,7 +1657,25 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 			calendars:【数组】有提醒的日期	
 			feeds:    【数组】有动态的日期
 				
+<h3>1．40、	</h3><h3>查询家人的生日接口</h3>  
+【参数】  
+>  
 
+	do:	 		fbirthday
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器   
+【调用方式】  
+网站域名/dapi/space.php?do=fbirthday&m_auth=?    
+【返回值】  
+
+>
+	
+	birthdays:数组
+			uid:	 	家人uid
+			name:    	家人昵称
+			notename:	家人备注名
+			date:	 	家人出生年月日
+			
+			
 <h2>第二部分 </h2><h2>上行接口部分</h2>
 ==================
 
