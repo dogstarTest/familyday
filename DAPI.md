@@ -2681,15 +2681,15 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 		
 <h3>2.41、	</h3><h3>孩子资料修改接口</h3>  
 【参数】  
->  
-	
+>
+  
+	babyid:				孩子id
 	babyname:			孩子姓名
 	babysex:			孩子性别
 	babybirthday:		孩子出生年月
-	babyeditsubmit：	提交表单用的验证，设为1即可  
-	babyid:				孩子id
-	tagid:				空间详情id
 	pic:				孩子头像url，调用2.21单张图片上传接口得到pic
+	babyeditsubmit：	提交表单用的验证，设为1即可  	
+	tagid:				空间详情id 【可选】	
 	m_auth:				API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/cp.php?ac=baby  
