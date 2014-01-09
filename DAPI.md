@@ -46,6 +46,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．38、[cube模板列表接口](#cube模板列表接口)  
 	* 1．39、[按月获取提醒及动态接口](#按月获取提醒及动态接口)  	
 	* 1．40、[查询家人的生日接口](#查询家人的生日接口)  	
+	* 1．41、[cube模板显示接口](#cube模板显示接口)  	
 	
 * 第二部分 [上行接口部分](#上行接口部分)
 	* 2.1、 [普通登录接口](#普通登录接口)
@@ -1675,7 +1676,24 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 			notename:	家人备注名
 			date:	 	家人出生年月日
 			
-			
+<h3>1．41、	</h3><h3>cube模板显示接口</h3>  
+【参数】  
+>  
+
+	op:			showcubetemplate
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器   
+【调用方式】 
+网站域名/dapi/space.php?do=service&op=?  
+【返回值】  
+>  
+	
+	data【数组】  
+		pic: 模板图片地址
+        month: 模板生效月
+        day: 模板生效日
+        type: 模板类型，1：普通 2: 生日 3: 节日
+
+
 <h2>第二部分 </h2><h2>上行接口部分</h2>
 ==================
 
