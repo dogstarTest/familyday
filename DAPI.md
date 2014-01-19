@@ -1706,6 +1706,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	username:		账号
 	password:		密码
 	iscookie:		是否保存密码，为1时保存
+	isenglish:		是否是英文登录 1：是, 0：否， 默认0 英文注册时开通的默认空间为default  
 	
 【调用方式】  
 网站域名/dapi/do.php?ac=login  
@@ -1782,6 +1783,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	name:			用户昵称
 	password:		密码
 	seccode:		手机验证码  
+	isenglish:		是否是英文注册 1：是, 0：否， 默认0 英文注册时开通的默认空间为default  
 	
 	如果需要绑定新浪微博，需要提供以下参数【可选】： 
 	sina_uid			新浪微博用户id
@@ -2630,6 +2632,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	username		被邀请人的用户名(即手机号) 
 	name			被邀请人的昵称 
 	notename		被邀请人的备注名称 
+	isenglish:		是否是英文邀请注册 1：是 , 0：否[默认] 英文注册时开通的默认空间为default  
 	smsinvite		提交信息的表单验证，设为1即可   
 	smsfromphone	设为1则表示由手机自己发短信，默认为空   
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
