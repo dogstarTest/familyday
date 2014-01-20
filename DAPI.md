@@ -110,6 +110,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 2.61、	[转发提醒接口](#转发提醒接口)  
 	* 2.62、	[设为不再提醒接口](#设为不再提醒接口)  
 	* 2.63、	[绑定wptoken接口](#绑定wptoken接口)  
+	* 2.64、	[上传声音接口](#上传声音接口)  
 	
 	
  
@@ -3128,5 +3129,19 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	msg：			返回的提示信息
 	error:			返回的错误的状态, 0无错误，1出错
 	
+<h3>2.64、	</h3><h3>上传声音接口</h3>  
+【参数】  
+> 
+
+	op		 		 uploadsound
+	m_auth:		  	 API密钥, 由登录后返回的，客户端需要存储, 每次调用接口需要使用此参数发到服务器  
 	
+【调用方式】  
+网站域名/dapi/cp.php?ac=upload    
+【返回值】  
+>  
+	
+	data 
+        soundid: 	声音文件的id
+        soundurl:   声音文件的url地址
 	
