@@ -1780,11 +1780,11 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 	注册前调用 2.43、注册获取验证码接口
 	
-	username:		注册用户名(手机号)
+	username:		注册用户名(手机号)/邮箱注册
 	name:			用户昵称
 	password:		密码
-	seccode:		手机验证码  
-	isenglish:		是否是英文注册 1：是, 0：否， 默认0 英文注册时开通的默认空间为default  
+	seccode:		手机验证码/邮箱注册不用提供
+	isenglish:		是否是英文注册 1：是, 0：否 如果是采用邮箱注册必须设置为1
 	
 	如果需要绑定新浪微博，需要提供以下参数【可选】： 
 	sina_uid			新浪微博用户id
@@ -2630,10 +2630,10 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 >
 
 	ac				invite  
-	username		被邀请人的用户名(即手机号) 
+	username		被邀请人的用户名(即手机号) /电子邮箱
 	name			被邀请人的昵称 
 	notename		被邀请人的备注名称 
-	isenglish:		是否是英文邀请注册 1：是 , 0：否[默认] 英文注册时开通的默认空间为default  
+	isenglish:		是否是英文邀请注册 1：是 , 0：否[默认] 如果是邮箱注册必须设为1
 	smsinvite		提交信息的表单验证，设为1即可   
 	smsfromphone	设为1则表示由手机自己发短信，默认为空   
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
@@ -3133,7 +3133,9 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 【参数】  
 > 
 
-	op		 		 uploadsound
+	sounddata:		 上传声音文件的表单【FILE类型】 
+	soundtime:		 声音的时长【秒为单位】 
+	op		 		 uploadsound 
 	m_auth:		  	 API密钥, 由登录后返回的，客户端需要存储, 每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
