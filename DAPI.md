@@ -242,6 +242,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	view:		查看人的范围【可选】，默认wme(代表自己及家人), 指定值 me: 只查看自己的
 	apptype:	默认为空[显示全部类型的动态], 设为pm[则去掉评论以及行为动态]
 	date:		指定日期的动态，格式: 2013-08-01
+	version191	1 设置此值可以截断帖子内容，评论全部读取
 【调用方式】  
 网站域名/dapi/space.php?do=home&m_auth=?    
 【返回值】  
@@ -1785,6 +1786,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	password:		密码
 	seccode:		手机验证码/邮箱注册不用提供
 	isenglish:		是否是英文注册 1：是, 0：否 如果是采用邮箱注册必须设置为1
+	version191 		1 设置此值可以不用验证码
 	
 	如果需要绑定新浪微博，需要提供以下参数【可选】： 
 	sina_uid			新浪微博用户id
