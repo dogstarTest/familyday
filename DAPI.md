@@ -112,7 +112,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 2.62、	[设为不再提醒接口](#设为不再提醒接口)  
 	* 2.63、	[绑定wptoken接口](#绑定wptoken接口)  
 	* 2.64、	[上传声音接口](#上传声音接口)  
-	
+	* 2.66、	[保存图片接口](#保存图片接口)  
 	
  
 <h2>前言</h2>  
@@ -3168,4 +3168,22 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
         soundid: 	声音文件的id
         soundurl:   声音文件的url地址
 		soundtime:  声音文件的时长【秒】
+
+<h3>2.65、	</h3><h3>保存图片接口</h3>  
+【参数】  
+> 
+
+	Filedata:		 上传图片文件的表单【FILE类型】 
+	op		 		 savepic 
+	m_auth:		  	 API密钥, 由登录后返回的，客户端需要存储, 每次调用接口需要使用此参数发到服务器  
+	
+【调用方式】  
+网站域名/dapi/cp.php?ac=upload&op=savepic    
+【返回值】  
+>  
+	
+	data 
+        picid: 		图片的id
+        picurl:   	图片的url地址		
+
 	
