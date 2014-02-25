@@ -1242,6 +1242,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	page:		当前页
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器 
 	idtype:		动态的类型【可选】，默认为空（代表全部），如果指定值（则只得到该类型的动态）
+	subscribe:	设为1 则取订阅号数据
 【调用方式】  
 网站域名/dapi/space.php?do=lovefeedpm&m_auth=?    
 【返回值】  
