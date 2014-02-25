@@ -1807,7 +1807,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	password:		密码
 	seccode:		手机验证码/邮箱注册不用提供
 	isenglish:		是否是英文注册 1：是, 0：否 如果是采用邮箱注册必须设置为1
-	canclecode 		1 设置此值可以不用验证码
+	canclecode 		1 设置此值可以不用验证码【v2.0新增】
 	
 	如果需要绑定新浪微博，需要提供以下参数【可选】： 
 	sina_uid			新浪微博用户id
