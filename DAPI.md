@@ -49,6 +49,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．41、[cube模板显示接口](#cube模板显示接口)  	
 	* 1．42、[帖子搜索接口](#帖子搜索接口)  	
 	* 1．43、[珍藏照片列表接口](#珍藏照片列表接口)  	
+	* 1．44、[首页主题图片接口](#首页主题图片接口)  	
 	
 * 第二部分 [上行接口部分](#上行接口部分)
 	* 2.1、 [普通登录接口](#普通登录接口)
@@ -1739,7 +1740,25 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
         hasdata: 	 有图片的日期数组 
         totalimages: 图片总数 
 		
+<h3>1．44、	</h3><h3>首页主题图片接口</h3>  
+【参数】  
+>  
 
+	date:		指定取数据的起始日期，格式:2014-2-25
+	tagid:		空间id，默认取全部
+	picnum：	取的图片的数量
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器   
+	
+【调用方式】 
+网站域名/dapi/space.php?do=favorites   
+【返回值】  
+>  
+	
+	data【数组】  
+        filepath: 	图片路径 
+        width: 		图片宽 
+        height: 	图片高 
+		
 		
 <h2>第二部分 </h2><h2>上行接口部分</h2>
 ==================
