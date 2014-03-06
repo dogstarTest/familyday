@@ -861,6 +861,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	uid:			自己的用户id, 无则代表登陆用户的uid  
 	fuid:			对方的用户id  
 	photo:			设为1则取图片和背景图【V2.0新增】
+	photonumber:	取图片的数量，默认3【V2.0新增】
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=friend&m_auth=?&fuid=?  
