@@ -47,8 +47,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．39、[按月获取提醒及动态接口](#按月获取提醒及动态接口)  	
 	* 1．40、[查询家人的生日接口](#查询家人的生日接口)  	
 	* 1．41、[cube模板显示接口](#cube模板显示接口)  	
-	* 1．42、[帖子搜索接口](#帖子搜索接口)  	
-	* 1．43、[珍藏照片列表接口](#珍藏照片列表接口)  	
+	* 1．42、[帖子搜索接口](#帖子搜索接口)  			【v2.0新增】   
+	* 1．43、[珍藏照片列表接口](#珍藏照片列表接口)  	【v2.0新增】  
 	* 1．44、[首页主题图片接口](#首页主题图片接口)  	【v2.0新增】  
 	
 * 第二部分 [上行接口部分](#上行接口部分)
@@ -860,6 +860,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 
 	uid:			自己的用户id, 无则代表登陆用户的uid  
 	fuid:			对方的用户id  
+	photo:			设为1则取图片和背景图【V2.0新增】
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=friend&m_auth=?&fuid=?  
@@ -878,6 +879,14 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	note：			关系备注
 	lastlogin:		最后一次登录时间
 	issubscribe		是否是订阅号 1是 0否
+	images【数组】:	最新三张图片【V2.0新增】
+		filepath: 	图片路径 
+        width: 		图片宽 
+        height: 	图片高 
+	themepic:		用户背景图【V2.0新增】
+		filepath: 	图片路径 
+        width: 		图片宽 
+        height: 	图片高 
 
  
 <h3>1．16、	</h3><h3>家人列表接口</h3>  
@@ -1750,7 +1759,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器   
 	
 【调用方式】 
-网站域名/dapi/space.php?do=favorites   
+网站域名/dapi/space.php?do=themepic   
 【返回值】  
 >  
 	
