@@ -896,6 +896,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 
 	uid:		用户id, 无则代表登陆用户的uid    
 	subscribe:	是否显示订阅号，1：显示 0：不显示  
+	dialogue:	是否最后一条对话，1：显示 默认为空：不显示  【V2.0新增】 
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=fmembers&m_auth=?  
@@ -919,7 +920,10 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		    fmembers：	家人的家人数量
 		    birthday：	家人的生日
 			subscribe:	是否是订阅号 1 是 0 否
-			
+			dialogue：	最后对话内容  【V2.0新增】 
+				lastsummary:	对话内容 
+				lastdateline:	对话时间 
+				new:			是否为新的对话 1是 0 否 
 
 
 <h3>1．17、	</h3><h3>搜索家人接口</h3>  
