@@ -1739,20 +1739,25 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 
-	date:		指定取数据的起始日期，格式:2014-2-25
-	tagid:		空间id，默认取全部
-	picnum：	取的图片的数量
-	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器   
+	year:		指定年开始的数据,为空则去当前时间年份 
+	month:		指定开始月的数据 
+	day:		指定开始日的数据 
+	tagid:		空间id，默认取全部 
+	page：		取的图片的开始页，默认1 
+	perpage：	取的图片的每页数量，默认4 
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器    
 	
 【调用方式】 
 网站域名/dapi/space.php?do=favorites   
 【返回值】  
 >  
-	
 	data【数组】  
-		images:      图片数组 
-        hasdata: 	 有图片的日期数组 
-        totalimages: 图片总数 
+        hasdata: 	 有图片的日期数组,按年格式[2013,2014],按月格式[2014-02,2014-03],按日格式[2014-03-01,2014-03-02]  
+        albums:      相册数组 
+			tagid	 相册(空间)id 
+			tagname	 相册(空间)名称 
+			images	 相册(空间)图片数组 
+	
 		
 <h3>1．44、	</h3><h3>首页主题图片接口</h3>  
 【参数】  
