@@ -880,6 +880,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	note：			关系备注
 	lastlogin:		最后一次登录时间
 	issubscribe		是否是订阅号 1是 0否
+	subscribe		订阅号简介 
 	images【数组】:	最新三张图片【V2.0新增】
 		filepath: 	图片路径 
         width: 		图片宽 
@@ -1743,8 +1744,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	month:		指定开始月的数据 
 	day:		指定开始日的数据 
 	tagid:		空间id，默认取全部 
-	page：		取的图片的开始页，默认1 
-	perpage：	取的图片的每页数量，默认4 
+	picnum:		取的图片的数量，默认4 
+	page：		空间的开始页，默认1 
+	perpage：	取空间的每页数量，默认4 
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器    
 	
 【调用方式】 
