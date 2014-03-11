@@ -881,6 +881,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	lastlogin:		最后一次登录时间
 	issubscribe		是否是订阅号 1是 0否
 	subscribe		订阅号简介 
+	newdialog		未读对话数量 
 	images【数组】:	最新三张图片【V2.0新增】
 		filepath: 	图片路径 
         width: 		图片宽 
