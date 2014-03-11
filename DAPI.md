@@ -1758,6 +1758,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
         albums:      相册数组 
 			tagid	 相册(空间)id 
 			tagname	 相册(空间)名称 
+			feednum	 相册(空间)帖子数量  
 			images	 相册(空间)图片数组 
 	
 		
