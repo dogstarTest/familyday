@@ -678,6 +678,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	page:			当前页，默认1
 	perpage:		每页大小，默认1 (如果是ipad版本，可以传递大点的值过来,比如：10)  
 	date:			指定取该日期之后的数据，格式：整年：2014，整月：2014-2, 某天：2014-2-25【v2.0新增】
+	view:			设置为：me，并且将tagid设为空（则取该uid自己的）  【v2.0新增】
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
@@ -1359,6 +1360,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 
 	do:	 		feedday
 	uid:		用户id, 无则代表登陆用户的uid  
+	view:		默认wme(自己+家人), me（只取对应的自己的）  【v2.0新增】
 	perpage: 	分页大小， 默认10
 	page:		当前页
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器 
