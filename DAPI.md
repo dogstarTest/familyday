@@ -1367,6 +1367,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	idtype:		动态的类型【可选】，默认为空（代表全部），如果指定值（则只得到该类型的动态）
 	apptype:	默认为空[显示全部类型的动态], 设为pm[则去掉评论以及行为动态]
 	date:		指定日期的动态，格式: 2013-08-01
+	allcomment	设置为1可以读取全部评论【v2.0新增】 
+	fullsubject	设置为1可以不截断帖子内容【v2.0新增】 
+	commentnum:	读取的评论的条数，默认10, 要配合allcomment一起使用 【v2.0新增】 
 	showcalendar 如果设为1，则表示需要取提醒的动态
 【调用方式】  
 网站域名/dapi/space.php?do=feedday&m_auth=?    
