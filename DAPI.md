@@ -50,6 +50,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．42、[帖子搜索接口](#帖子搜索接口)  			【v2.0新增】   
 	* 1．43、[珍藏照片列表接口](#珍藏照片列表接口)  	【v2.0新增】  
 	* 1．44、[首页主题图片接口](#首页主题图片接口)  	【v2.0新增】  
+	* 1．45、[日志详情html接口](#日志详情html接口)  	【v2.0新增】  
 	
 * 第二部分 [上行接口部分](#上行接口部分)
 	* 2.1、 [普通登录接口](#普通登录接口)
@@ -1786,7 +1787,23 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
         filepath: 	图片路径 
         width: 		图片宽 
         height: 	图片高 
-		
+
+<h3>1．45、	</h3><h3>日志详情html接口</h3>  
+【参数】  
+>  
+
+	id:			日志id
+	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器   
+	
+【调用方式】 
+网站域名/dapi/space.php?do=bloghtml   
+【返回值】  
+>  
+	
+	data  
+        blogid: 	日志id 
+        message: 	日志内容 	
+
 		
 <h2>第二部分 </h2><h2>上行接口部分</h2>
 ==================
