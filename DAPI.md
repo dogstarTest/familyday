@@ -623,6 +623,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	note:			关系备注
 	message:		评论内容
 	dateline:		评论时间
+	soundid:		语音评论id 
+	soundurl:		语音评论文件url	
+	soundtime:		语音评论时间	
 	lng:			经度
 	lat:			纬度
 	address:		地名
@@ -2059,6 +2062,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	id				被评论的对象id
 	idtype			被评论的对象id类型(blogid, videoid, photoid, eventid)，转发的也是这几个
 	message			评论内容  
+	soundid			语音评论的文件id  调用 【2.64、上传声音接口】 得到
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/do.php?ac=comment  
