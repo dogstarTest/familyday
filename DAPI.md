@@ -609,6 +609,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	perpage:	每页数量，默认10
 	starttime:	取数据的开始时间，不包含变量自身, 默认空值不设置数据范围 
 	endtime:	取数据的结束时间，不包含变量自身, 默认空值不设置数据范围 
+	audio:		设为1 才取语音评论 【v2.0新增】
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 
 【调用方式】  
@@ -683,6 +684,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	perpage:		每页大小，默认1 (如果是ipad版本，可以传递大点的值过来,比如：10)  
 	date:			指定取该日期之后的数据，格式：整年：2014，整月：2014-2, 某天：2014-2-25【v2.0新增】
 	view:			设置为：me，并且将tagid设为空（则取该uid自己的）  【v2.0新增】
+	audio:			设为1 才取语音评论 【v2.0新增】
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 	
 【调用方式】  
@@ -1375,6 +1377,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	fullsubject	设置为1可以不截断帖子内容【v2.0新增】 
 	commentnum:	读取的评论的条数，默认10, 要配合allcomment一起使用 【v2.0新增】 
 	showcalendar 如果设为1，则表示需要取提醒的动态
+	audio:		设为1 才取语音评论 【v2.0新增】
+	
 【调用方式】  
 网站域名/dapi/space.php?do=feedday&m_auth=?    
 【返回值】  
