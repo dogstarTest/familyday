@@ -1759,6 +1759,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	day:		指定开始日的数据 
 	tagid:		空间id，默认取全部 
 	picnum:		取的图片的数量，默认4 
+	order:		排序方式 (time:按时间排序) 
 	page：		空间的开始页，默认1 
 	perpage：	取空间的每页数量，默认4 
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器    
