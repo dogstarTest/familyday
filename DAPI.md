@@ -1378,6 +1378,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	commentnum:	读取的评论的条数，默认10, 要配合allcomment一起使用 【v2.0新增】 
 	showcalendar 如果设为1，则表示需要取提醒的动态
 	audio:		设为1 才取语音评论 【v2.0新增】
+	keyword:	搜索关键词，按标题内容搜索，默认为空值
 	
 【调用方式】  
 网站域名/dapi/space.php?do=feedday&m_auth=?    
