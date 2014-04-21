@@ -1761,6 +1761,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	tagid:		空间id，默认取全部 
 	picnum:		取的图片的数量，默认4 
 	order:		排序字段 (time:按时间, address:按地点, person：按人物) 
+	timerange:	order为time时，时间区间，day:按天(默认)，month:按月，year:按年 
 	ordertype:	排序方式 (asc:升序,desc:降序) ,默认: desc
 	page：		空间的开始页，默认1 
 	perpage：	取空间的每页数量，默认4 
