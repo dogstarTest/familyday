@@ -1881,22 +1881,22 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	 name:     用户昵称  
 	 avatar:   用户头像  
 	 vipstatus:	personal: 个人, family： 家庭， 空值：普通用户
-	 credit：  本次登录的积分
+	 credit：   本次登录的积分
 	 experience 本次登录的经验
-	 is_sina_bind 是否绑定新浪微博 1 是 0 否
-	 is_qq_bind   是否绑定腾讯微博 1 是 0 否
+	 is_sina_bind 			是否绑定新浪微博 1 是 0 否
+	 is_qq_bind   			是否绑定腾讯微博 1 是 0 否
+	 is_instagram_bind   	是否绑定instagram 1 是 0 否
 	 birthday   生日
 	 
 <h3>2.2、	</h3><h3>第三方登录接口</h3>  
 【参数】  
 >  
-
-	以下参数二选一：
+	
 	新浪微博登录
 	logintype:			weibo	
-	name:				新浪微博昵称 
+	name:				新浪微博的昵称 
 	sina_uid			新浪微博的uid 	
-	sina_token			新浪微博token  
+	sina_token			新浪微博的token  
 	sina_expires_in		新浪微博token过期时间(格式：2013-05-12 22:59:59) 
 	avatar				新浪微博的头像(如果有传这个参数，会更新familyday的用户头像)
 	
@@ -1904,8 +1904,15 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	logintype:			qq  		
 	name:				腾讯微博的昵称 
 	qq_openid			腾讯微博的id  
-	qq_token			腾讯微博token 
+	qq_token			腾讯微博的token 
 	avatar				腾讯微博的头像(如果有传这个参数，会更新familyday的用户头像)
+	
+	instagram登陆 
+	logintype:			instagram  		
+	name:				instagram的昵称 
+	instagram_uid		instagram的id  
+	instagram_token		instagram的access_token 
+	avatar				instagram的头像(如果有传这个参数，会更新familyday的用户头像)
 	
 	如果用户未绑定，后台会自动用参数进行注册并登录。已经绑定的，直接登录。
 【调用方式】  
@@ -1926,9 +1933,10 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		vipstatus:	 personal: 个人, family： 家庭， 空值：普通用户
 		credit：  	 本次登录的积分
 		experience 	 本次登录的经验
-		is_sina_bind 是否绑定新浪微博 1 是 0 否  
-		is_qq_bind   是否绑定腾讯微博 1 是 0 否  
-		birthday   生日 
+		is_sina_bind 		是否绑定新浪微博 1 是 0 否  
+		is_qq_bind   		是否绑定腾讯微博 1 是 0 否  
+		is_instagram_bind   是否绑定instagram 1 是 0 否  
+		birthday   	 生日 
 
  
 <h3>2.3、	</h3><h3>注册接口</h3>  
@@ -1951,6 +1959,12 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	如果需要绑定腾讯微博，需要提供以下参数【可选】： 
 	qq_openid		腾讯微博用户id
 	qq_token		腾讯微博token
+	
+	如果需要instagram，需要提供以下参数【可选】： 
+	instagram_uid		instagram用户id
+	instagram_token		instagram的access_token
+	
+	
 【调用方式】  
 网站域名/dapi/do.php?ac=register  
 【返回值】  
@@ -1970,8 +1984,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 					name:      用户昵称  
 					avatar:    用户头像  
 					vipstatus:   personal: 个人, family： 家庭， 空值：普通用户
-					is_sina_bind 是否绑定新浪微博 1 是 0 否  
-					is_qq_bind   是否绑定腾讯微博 1 是 0 否  
+					is_sina_bind 		是否绑定新浪微博 1 是 0 否  
+					is_qq_bind   		是否绑定腾讯微博 1 是 0 否  
+					is_instagram_bind   是否绑定instagram 1 是 0 否  
 					birthday   生日
 
  
