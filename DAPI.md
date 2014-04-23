@@ -51,6 +51,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 1．43、[珍藏照片列表接口](#珍藏照片列表接口)  	【v2.0新增】  
 	* 1．44、[首页主题图片接口](#首页主题图片接口)  	【v2.0新增】  
 	* 1．45、[日志详情html接口](#日志详情html接口)  	【v2.0新增】  
+	* 1．46、[珍藏照片详情接口](#珍藏照片详情接口)  	【v2.0新增】  
 	
 * 第二部分 [上行接口部分](#上行接口部分)
 	* 2.1、 [普通登录接口](#普通登录接口)
@@ -1815,6 +1816,41 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
         blogid: 	日志id 
         message: 	日志内容 	
 
+<h3>1．46、	</h3><h3>珍藏照片详情接口</h3>  
+【参数】  
+>  
+
+	id:				id  
+	idtype:			uid: person，time:时间，address：地点
+	page:			当前页，默认1
+	perpage:		每页大小，默认1 (如果是ipad版本，可以传递大点的值过来,比如：10)  
+	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
+	
+【调用方式】  
+网站域名/dapi/space.php?do=favorites_detail    
+【返回值】  
+>  
+
+	name:			名称(人名/时间/地点)
+	feednum:		信息数量
+	feedlist:		信息详情，【数组】
+		image_1		图片地址
+		imagesize	图片信息
+			height: 图片高度
+			width:	图片宽度
+		idtype:		信息的类型，包括（'blogid','photoid','eventid','videoid','reblogid','rephotoid','reeventid','revideoid'）
+		id:			信息的id
+		uid:		该条信息的发布人uid
+		name:		该条信息的发布人昵称
+		subject:	标题
+		message:	概述
+		commentlist 评论内容【数组】
+			cid：		评论主键id
+			authorid	评论人的uid
+			author		评论人的用户名
+			authorname	评论人的昵称
+			message		评论内容		
+			
 		
 <h2>第二部分 </h2><h2>上行接口部分</h2>
 ==================
