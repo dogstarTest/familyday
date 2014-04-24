@@ -3013,6 +3013,7 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	type:			sina/qq/instagram  
 	id:				第三方平台的id 
 	token:			第三方平台的token 
+	bindtype:		bind:绑定【默认】，unbind：解绑   
 	m_auth:		  	API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/do.php?ac=bindweibo   
