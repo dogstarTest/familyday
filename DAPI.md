@@ -1338,6 +1338,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 网站域名/dapi/dapi/cp.php?ac=friend&op=find  
 【返回值】  
 >  
+	
 	data【多维数组】
 		uid:		用户uid，如果没找到，则返回字符串
 		username:	上传时的手机号
@@ -1358,6 +1359,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 网站域名/dapi/space.php?do=feednew&m_auth=?   
 【返回值】  
 >  
+	
 	data
 		newfeednum			新的动态的数量		
 
@@ -1750,6 +1752,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【返回值】  
 
 >
+	
 	返回参数同1.3 接口
 		
 
@@ -1773,6 +1776,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 网站域名/dapi/space.php?do=favorites   
 【返回值】  
 >  
+	
 	data【数组】  
         hasdata: 	 有图片的日期数组,按年格式[2013,2014],按月格式[2014-02,2014-03],按日格式[2014-03-01,2014-03-02]  
         albums:      相册数组 
@@ -1943,6 +1947,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 <h3>2.3、	</h3><h3>注册接口</h3>  
 【参数】  
 >  
+	
 	注册前调用 2.43、注册获取验证码接口
 	
 	username:		注册用户名(手机号)/邮箱注册
