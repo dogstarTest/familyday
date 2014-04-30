@@ -1869,6 +1869,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	password:		密码
 	iscookie:		是否保存密码，为1时保存
 	isenglish:		是否是英文登录 1：是, 0：否， 默认0 英文注册时开通的默认空间为default  
+	phone			手机号
 	
 【调用方式】  
 网站域名/dapi/do.php?ac=login  
@@ -1896,28 +1897,27 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 <h3>2.2、	</h3><h3>第三方登录接口</h3>  
 【参数】  
 >  
+	公共参数：
+	name:				昵称
+	avatar				头像url(如果有传这个参数，会更新familyday的用户头像)
+	phone				手机号
 	
+	可选择参数组合：
 	新浪微博登录
-	logintype:			weibo	
-	name:				新浪微博的昵称 
+	logintype:			weibo		 
 	sina_uid			新浪微博的uid 	
 	sina_token			新浪微博的token  
 	sina_expires_in		新浪微博token过期时间(格式：2013-05-12 22:59:59) 
-	avatar				新浪微博的头像(如果有传这个参数，会更新familyday的用户头像)
 	
 	腾讯微博登陆 
 	logintype:			qq  		
-	name:				腾讯微博的昵称 
 	qq_openid			腾讯微博的id  
 	qq_token			腾讯微博的token 
-	avatar				腾讯微博的头像(如果有传这个参数，会更新familyday的用户头像)
 	
 	instagram登陆 
 	logintype:			instagram  		
-	name:				instagram的昵称 
 	instagram_uid		instagram的id  
-	instagram_token		instagram的access_token 
-	avatar				instagram的头像(如果有传这个参数，会更新familyday的用户头像)
+	instagram_token		instagram的access_token 	
 	
 	如果用户未绑定，后台会自动用参数进行注册并登录。已经绑定的，直接登录。
 【调用方式】  
@@ -1956,6 +1956,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	seccode:		手机验证码/邮箱注册不用提供
 	isenglish:		是否是英文注册 1：是, 0：否 如果是采用邮箱注册必须设置为1
 	canclecode 		1 设置此值可以不用验证码【v2.0新增】
+	phone			手机号
 	
 	如果需要绑定新浪微博，需要提供以下参数【可选】： 
 	sina_uid			新浪微博用户id
