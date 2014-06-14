@@ -118,6 +118,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	* 2.63、	[绑定wptoken接口](#绑定wptoken接口)  
 	* 2.64、	[上传声音接口](#上传声音接口)  
 	* 2.66、	[保存图片接口](#保存图片接口)  【v2.0新增】
+	* 2.67、	[设置是否接收提醒信接口](#设置是否接收提醒信息接口)  【v2.0新增】
 	
  
 <h2>前言</h2>  
@@ -871,6 +872,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	fuid:			对方的用户id  
 	photo:			设为1则取图片和背景图【V2.0新增】
 	photonumber:	取图片的数量，默认3【V2.0新增】
+	isqrcode:		设为1则表示是通过二维码打开的【v2.2新增】	
 	m_auth:			API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器  
 【调用方式】  
 网站域名/dapi/space.php?do=friend&m_auth=?&fuid=?  
@@ -891,6 +893,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	issubscribe		是否是订阅号 1是 0否
 	subscribe		订阅号简介 
 	newdialog		未读对话数量 
+	isremind		是否接收改用户的提醒信息 1：是 0：否 【V2.2新增】
 	images【数组】:	最新三张图片【V2.0新增】
 		filepath: 	图片路径 
         width: 		图片宽 
@@ -3348,5 +3351,23 @@ m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用�
 	data 
         picid: 		图片的id
         picurl:   	图片的url地址		
+		
+<h3>2.66、	</h3><h3>设置是否接收提醒信接口</h3>  
+【参数】  
+> 
+
+	uid:		 被设置是否接收提醒的人的uid
+	isremind	 是否接收提醒 1：接收 0：不接收 
+	m_auth:		 API密钥, 由登录后返回的，客户端需要存储, 每次调用接口需要使用此参数发到服务器  
+	
+【调用方式】  
+网站域名/dapi/cp.php?ac=noremind    
+【返回值】  
+>  
+	
+	msgkey：		信息提示码
+	msg：			返回的提示信息
+	error:			返回的错误的状态, 0无错误，1出错	
+		
 
 	
