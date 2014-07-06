@@ -1130,6 +1130,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	pmcount：		新对话数量  
 	applycount：	家人申请数量  
 	notecount：		新通知总数  
+	fmembers：		家人数量  
 
 <h3>1．25、	</h3><h3>pm版本动态接口</h3>  
 【参数】  
