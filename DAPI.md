@@ -412,7 +412,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	photo_tag_data: [	照片标签 【v2.4新增】
 		{
 			tagtype: 1, //人物类型
-			name: 人名,
+			taguname: 人名,
 			taguid: 人物uid,
 			pointx: 图片上选中的点的x值,
 			pointy: 图片上选中的点的y值
@@ -1529,7 +1529,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 		photo_tag_data: [	照片标签 【v2.4新增】
 			{
 				tagtype: 1, //人物类型
-				name: 人名,
+				taguname: 人名,
 				taguid: 人物uid,
 				pointx: 图片上选中的点的x值,
 				pointy: 图片上选中的点的y值
