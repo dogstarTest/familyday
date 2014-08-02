@@ -2389,8 +2389,13 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 	
-	message		照片描述
-	tag_data	1:人物，2:地点 3:标签，数据格式,多个用||连接，每个类型中，第一个数字代表类型,类型后面是具体每个字段的值，(如：1:1,2,3||2:1,2,3,4,5,6,7,8||3:1,2,3，含义是：人物:taguid,pointx,pointy||地址:pointx,pointy,lat,lng,code,city,area,other||标签:pointx,pointy,tagname),注意分隔符全部是英文半角，即: || : ,
+	message		照片描述  
+	tag_data	1:人物，2:地点 3:标签，多个用||连接  【v2.4新增】
+				每个类型中(类型:字段1的值,字段2的值,字段3的值),分隔符全部是英文半角,字段值顺序必须严格要求 
+				人物:taguid,pointx,pointy   
+				地址:pointx,pointy,lat,lng,code,city,area,other   
+				标签:pointx,pointy,tagname   
+				(如：1:1,2,3||2:1,2,3,4,5,6,7,8||3:1,2,3)    
 	picids		图片id, 多个用|连接(如：1|2|3)，调用2.21单张图片上传接口得到picid
 	soundid		声音id，调用2.64 上传声音接口 得到 soundid 【新增】
 	friend		查看范围：1家人可见，2仅自己可见，0全站用户可见
@@ -2427,7 +2432,13 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 >  
 	
 	photoid		照片id
-	message		照片总体描述
+	message		照片总体描述  
+	tag_data	1:人物，2:地点 3:标签，多个用||连接  【v2.4新增】
+				每个类型中(类型:字段1的值,字段2的值,字段3的值),分隔符全部是英文半角,字段值顺序必须严格要求 
+				人物:taguid,pointx,pointy   
+				地址:pointx,pointy,lat,lng,code,city,area,other   
+				标签:pointx,pointy,tagname   
+				(如：1:1,2,3||2:1,2,3,4,5,6,7,8||3:1,2,3)    
 	friend		查看范围：1家人可见，2仅自己可见，0全站用户可见
 	tags		空间名
 	friends		和谁在一起uid, 多个用|连接(如：1|2|3)  
