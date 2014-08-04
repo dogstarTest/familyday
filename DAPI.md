@@ -1,7 +1,7 @@
 
 **接口调用文档**
 
-Author:  [Linkenpeng](mailto:collin_linken@qq.com)
+Author:  [Linkenpeng](mailto:collin_linken@qq.com)  
 
 [前言](#前言)
 
