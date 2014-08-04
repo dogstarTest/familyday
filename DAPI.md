@@ -424,6 +424,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 			lat: 经度,
 			lng: 纬度,
 			code: 邮政编码,
+			country: 国家,
+			province: 省,
 			city: 市,
 			area: 区,
 			other: 其他（店名等）
@@ -1541,6 +1543,8 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 				lat: 经度,
 				lng: 纬度,
 				code: 邮政编码,
+				country: 国家,
+				province: 省,				
 				city: 市,
 				area: 区,
 				other: 其他（店名等）
@@ -2393,9 +2397,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	tag_data	1:人物，2:地点 3:标签，多个用||连接  【v2.4新增】
 				每个类型中(类型:字段1的值,字段2的值,字段3的值),分隔符全部是英文半角,字段值顺序必须严格要求 
 				人物:taguid,pointx,pointy   
-				地址:pointx,pointy,lat,lng,code,city,area,other   
+				地址:pointx,pointy,lat,lng,code,country,province,city,area,other   
 				标签:pointx,pointy,tagname   
-				(如：1:1,2,3||2:1,2,3,4,5,6,7,8||3:1,2,3)    
+				(如：1:1,2,3||2:1,2,3,4,5,6,7,8,9,10||3:1,2,3)    
 	picids		图片id, 多个用|连接(如：1|2|3)，调用2.21单张图片上传接口得到picid
 	soundid		声音id，调用2.64 上传声音接口 得到 soundid 【新增】
 	friend		查看范围：1家人可见，2仅自己可见，0全站用户可见
@@ -2436,9 +2440,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	tag_data	1:人物，2:地点 3:标签，多个用||连接  【v2.4新增】
 				每个类型中(类型:字段1的值,字段2的值,字段3的值),分隔符全部是英文半角,字段值顺序必须严格要求 
 				人物:taguid,pointx,pointy   
-				地址:pointx,pointy,lat,lng,code,city,area,other   
+				地址:pointx,pointy,lat,lng,code,country,province,city,area,other   
 				标签:pointx,pointy,tagname   
-				(如：1:1,2,3||2:1,2,3,4,5,6,7,8||3:1,2,3)    
+				(如：1:1,2,3||2:1,2,3,4,5,6,7,8,9,10||3:1,2,3)    
 	friend		查看范围：1家人可见，2仅自己可见，0全站用户可见
 	tags		空间名
 	friends		和谁在一起uid, 多个用|连接(如：1|2|3)  
