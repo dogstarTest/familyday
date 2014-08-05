@@ -1414,6 +1414,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	showcalendar 如果设为1，则表示需要取提醒的动态
 	audio:		设为1 才取语音评论 【v2.0新增】
 	keyword:	搜索关键词，按标题内容搜索，默认为空值
+	phototagtype:	按照片标签类型搜索 1：人物 2：地址 3：标签【v2.4新增】   
 	
 【调用方式】  
 网站域名/dapi/space.php?do=feedday&m_auth=?    
