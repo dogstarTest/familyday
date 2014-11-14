@@ -1218,7 +1218,9 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	date:		指定某天的动态【格式:2013-08-21】，默认空，为空时则取全部动态
 	dayfeed:	默认为空值，设为：1 则动态按天分组
 	m_auth:		API密钥, 由登录后返回的，客户端需要存储,每次调用接口需要使用此参数发到服务器 
-	idtype:		动态的类型【可选】，默认为空（代表全部），如果指定值（则只得到该类型的动态）
+	idtype:		动态的类型【可选】，默认为空（代表全部），如果指定值（则只得到该类型的动态）  
+	video:	是否取视频的动态 1：是 0：否，默认0【新增】          
+	
 【调用方式】  
 网站域名/dapi/space.php?do=lovefeed&m_auth=?    
 【返回值】  
@@ -1420,6 +1422,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 	keyword:	搜索关键词，按标题内容搜索，默认为空值
 	phototagtype:	按照片标签类型搜索 1：人物 2：地址 3：标签【v2.4新增】            
 	phototagname:	按照片标签名搜索【v2.4新增】            
+	video:	是否取视频的动态 1：是 0：否，默认0【新增】            
 	
 【调用方式】  
 网站域名/dapi/space.php?do=feedday&m_auth=?    
