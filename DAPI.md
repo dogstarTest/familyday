@@ -1352,7 +1352,7 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 【参数】  
 >  
 
-	type:	 	客户端类型(可选值：iphone,ipad,android,winphone,iphonepm,androidpm,cube)
+	type:	 	客户端类型(可选值：iphone,ipad,android,winphone,iphonepm,androidpm,cube,dongfuCube1,dongfuCube2,YiHengKePad)
 【调用方式】  
 网站域名/dapi/upgrade.php?type=?  
 【返回值】  
