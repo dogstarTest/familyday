@@ -1939,12 +1939,13 @@ Author:  [Linkenpeng](mailto:collin_linken@qq.com)
 网站域名/dapi/space.php?do=lovemost    
 【返回值】  
 >  
-
-	id: 		帖子id 
-	idtype: 	帖子id类型 
-	uid: 		发布该贴的用户id 
-	username: 	发布该贴的用户名 
-	love: 		收藏数量 
+	
+	data [数组]
+			id: 		帖子id 
+			idtype: 	帖子id类型 
+			uid: 		发布该贴的用户id 
+			username: 	发布该贴的用户名 
+			love: 		收藏数量 
 			
 
 		
